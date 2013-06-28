@@ -65,15 +65,8 @@ class Step < Erector::Widget
 
   def switch_to_home_directory
     message "`cd` stands for change directory."
-
-    option "Windows" do
-      console "cd c:\\Sites"
-      message "`cd c:\\Sites` sets our Sites directory to our current directory."
-    end
-    option "Mac or Linux" do
-      console "cd ~"
-      message "`cd ~` sets our home directory to our current directory."
-    end
+    console "cd ~"
+    message "`cd ~` sets our home directory to our current directory."
   end
 
   def consider_deploying
@@ -127,8 +120,10 @@ class Step < Erector::Widget
 
   def next_step name
     div :class => "step next_step" do
-      h1 do
-        prefix "Next Step:"
+      if ENV['SHOW_NEXT_STEP']
+        h1 do
+          prefix "Next Step:"
+        end
       end
       link name
     end
@@ -220,8 +215,8 @@ class Step < Erector::Widget
   RESULT_CAPTION = "Expected result:"
   FUZZY_RESULT_CAPTION = "Approximate expected result:"
 
-  def console(commands)
-    console_with_message(TERMINAL_CAPTION, commands)
+  def console(*commands)
+    console_with_message(TERMINAL_CAPTION, *commands)
   end
 
   def console_with_message(message, *commands)
@@ -232,8 +227,8 @@ class Step < Erector::Widget
     end
   end
 
-  def console_without_message(commands)
-    console_with_message("", commands)
+  def console_without_message(*commands)
+    console_with_message("", *commands)
   end
 
   def irb_command(*messages)
@@ -326,7 +321,13 @@ class Step < Erector::Widget
   private
 
   def add_prompt_to_messages(prompt, messages)
-    messages.map{ |message| "#{prompt} #{message} \n" }.join
+    messages.map do |message|
+      if message.start_with?("=>")
+        "#{message}\n"
+      else
+        "#{prompt} #{message}\n"
+      end
+    end.join
   end
 
   def _render_inner_content
