@@ -1,8 +1,8 @@
 # The Railsbridge Documentation Project
 
-[![Build Status](https://travis-ci.org/railsbridge/docs.png)](https://travis-ci.org/railsbridge/docs)
+[![Build Status](https://travis-ci.org/railsbridge-boston/docs.png)](https://travis-ci.org/railsbridge-boston/docs)
 
-[List of Contributors](https://github.com/railsbridge/docs/contributors) -- join us!
+[List of Contributors](https://github.com/railsbridge-boston/docs/contributors) -- join us!
 
 # Usage
 
