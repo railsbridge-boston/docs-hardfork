@@ -47,7 +47,7 @@ class DocPage < Erector::Widgets::Page
   end
 
   def site_title
-    "Railsbridge #{site_name.split(/[-_]/).map(&:capitalize).join(" ")}"
+    "RailsBridge Boston"
   end
 
   def page_title
@@ -97,25 +97,23 @@ class DocPage < Erector::Widgets::Page
 
   def top_links
     [
-      TopLink.new(name: "toc", href: "#", extraclass: 'show-when-small', toggle_selector: '#table_of_contents'),
-      TopLink.new(name: "sites", href: "#", toggle_selector: '#site_index'),
-      TopLink.new(name: "src", href: src_url),
-      TopLink.new(name: "git", href: git_url),
+      TopLink.new(name: "Sponsors", href: "/sponsors"),
+      TopLink.new(name: "Curriculum", href: "/docs"),
+      TopLink.new(name: "Workshop Info", href: "/workshop-info"),
     ]
   end
 
   def body_content
     div.top {
+      h1 { a site_title, :href => "/" }
       div.top_links {
         top_links.each do |top_link|
           widget top_link
         end
       }
-      h1 { a site_title, :href => "/#{site_name}" }
     }
 
     widget Contents, site_name: site_name, page_name: page_name
-    widget SiteIndex, site_name: site_name
 
     div(:class=>:main) {
       h1 doc_title, :class=>"doc_title"
@@ -133,7 +131,7 @@ class DocPage < Erector::Widgets::Page
     }
 
     div(class: 'bottom') {
-      p "Railsbridge Docs"
+      p "RailsBridge Boston"
       p do
         text "Source: "
         url "https://github.com/railsbridge/docs"
