@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Telex';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Telex-Regular'), url(https://themes.googleusercontent.com/static/fonts/telex/v1/jGZ4PgolKXEtn2OM186qHaCWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+
 body {
   font-family: 'Open Sans',helvetica,arial,sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 1170px;
 }
 
 h1 {
@@ -10,25 +18,51 @@ h1 {
 }
 
 .top {
+  background-color: #D85333;
+  background-image: -moz-linear-gradient(top, #D85333, rgb(231,66,34));
+  background-image: -ms-linear-gradient(top, #D85333, rgb(231,66,34));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#D85333), to(rgb(231,66,34)));
+  background-image: -webkit-linear-gradient(top, #D85333, rgb(231,66,34));
+  background-image: -o-linear-gradient(top, #D85333, rgb(231,66,34));
+  background-image: linear-gradient(top, #D85333, rgb(231,66,34));
+  background-repeat: repeat-x;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+  font-family: 'Telex', sans-serif;
   margin-bottom: 1em;
-  padding: 2px 6px;
-  background-color: black;
+  min-height: 40px;
 }
 
 .top h1 {
-  padding: 0.5em 0 0.5em 1.4em;
-  font-size: 1.4em;
-  font-weight: normal;
-  color: white;
+  float: left;
+  padding: 6px 20px 10px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+  color: #F5F5F5;
 }
 
 .top a {
   text-decoration: none;
-  color: white;
+  color: #F5F5F5;
 }
 
 .top a:visited {
-  color: white;
+  color: #F5F5F5;
+}
+
+.top .top_links {
+  float: left;
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+.top a.top_link {
+  float: right;
+  margin: 2px;
+  margin-top: 8px;
+  margin-right: 28px;
 }
 
 .bottom {
@@ -166,21 +200,6 @@ h1 {
 
 .doc blockquote {
   margin: 0.5em 0 .5em 20px;
-}
-
-.top .top_links {
-  float: right;
-  margin-right: 8px;
-}
-
-.top a.top_link {
-  float: right;
-  margin: 2px;
-  border: 1px solid #999;
-  padding: 5px 10px 5px 10px;
-  margin-top: 8px;
-  margin-right: 15px;
-  background-color: #555;
 }
 
 img {
