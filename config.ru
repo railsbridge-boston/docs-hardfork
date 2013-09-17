@@ -1,4 +1,5 @@
 require 'rack/codehighlighter'
+require 'rack/showexceptions'
 require 'coderay'
 
 use Rack::ShowExceptions
