@@ -90,7 +90,6 @@ DEPENDENCIES
   coderay
   deckrb (>= 0.3.0)
   erector (~> 0.9.0)
-  eventmachine (= 1.0.0.rc.4)
   files (>= 0.3.0)
   nokogiri
   rack-codehighlighter
