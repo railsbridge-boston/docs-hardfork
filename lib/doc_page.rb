@@ -91,21 +91,25 @@ class DocPage < Erector::Widgets::Page
     "https://github.com/railsbridge/docs/blob/master/sites/#{@site_name}/#{file_name}"
   end
 
+  def rbb_url
+    "http://www.railsbridgeboston.org"
+  end
+
   def src_url
     "#{file_name.split('.').first}/src"
   end
 
   def top_links
     [
-      TopLink.new(name: "Sponsors", href: "/sponsors"),
       TopLink.new(name: "Curriculum", href: "/docs"),
-      TopLink.new(name: "Workshop Info", href: "/workshop-info"),
-    ]
+      TopLink.new(name: "Workshop Info", href: "#{rbb_url}/workshop-info"),
+      TopLink.new(name: "Sponsors", href: "#{rbb_url}/sponsors"),
+    ].freeze
   end
 
   def body_content
     div.top {
-      h1 { a site_title, :href => "/" }
+      h1 { a site_title, :href => rbb_url }
       div.top_links {
         top_links.each do |top_link|
           widget top_link
