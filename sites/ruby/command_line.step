@@ -1,3 +1,15 @@
+message "<P>The <B>command line</B> is a text-based way to interact with your computer.</P>
+
+<P>In Windows and OSX we use graphical user interfaces (GUIs). GUIs let you operate your computer with pictures
+and a mouse. We start programs by clicking an icon, look through files and folders in Finder or File Explorer,
+or pick a command from a dropdown menu.</P>
+
+<P>In the command line, we type commands to run programs and navigate through files and folders.  This lesson
+covers the commands we need for the workshop.</P>"
+
+message "It\'s helpful to keep Finder(OSX) or File Explorer(Windows) open during this topic.
+    We\'ll make files and move between directories. A graphical file browser will help you see the results more clearly."
+
 goals do
   goal "Learn about the command line"
   goal "Make a new directory"
@@ -8,15 +20,47 @@ goals do
 end
 
 step do
-  message 'Open up a command line application on your computer. On Macs, this program is called Terminal. On Windows, you might want to use the "Command Line With Ruby and Rails" shortcut that came with RailsInstaller.'
+  message 'Open up a command line application on your computer.
+   On Macs, in Finder, start Applications > Utilities > Terminal.
+   On Windows, you might want to use the "Command Line With Ruby and Rails" shortcut that came with RailsInstaller.'
+  message 'We will call this "the terminal" or "the command line", no matter what program you\'re using. '
+  message 'Terminals start in your home directory, the way OSX and Windows open up in your Desktop.
+  We\'ll talk more about the home directory in a few steps.'
+
+end
+
+step do
+  message 'The first word you type in the terminal is always the name of a program.
+             Many programs are included in OSX and Windows, like `ls` and `pwd`.  Others
+             are programs you installed, like `ruby`, `irb`, or `vagrant`.'
+  console 'ls'
+  message 'Hit **RETURN** or **ENTER** to run the command.'
+  message '`ls` stands for **list**, and lists the contents of the current directory.'
+  message 'You are in your home directory. You may see directories like \'Documents\' or \'Desktop\'.
+    If you start the Finder (OSX) or File Explorer (Windows) program, you\'ll see the same files and folders listed.'
+  todo 'Find out what utility is used in Ubuntu.'
+end
+
+step do
   console "pwd"
   message '`pwd` means "print working directory". It shows you what **directory** you\'re currently in. Directories are also often called **folders**.'
-  message '`pwd` can help orient you in the command line if you get lost somewhere in your computer.'
+  message '`pwd` can tell you where you are if you get lost somewhere in your computer.'
+  message 'What directory are you in right now?'
+end
+
+step do
+  console 'cd Desktop'
+  message '`cd` means **c**hange **d**irectory. You use cd when you want to move from the current directory into some other directory.'
+  console 'pwd'
+  message "Notice how it changed? The working directory ends in \'\\Desktop\' ."
+  todo "cd into the Vagrant directory that we created during installation."
 end
 
 step do
   console 'mkdir railsbridge_ruby'
   message '`mkdir` means **m**ake **d**irectory. You use mkdir when you want to create a new directory.'
+  console 'ls'
+  message "Now the directory railsbridge_ruby shows up in the list."
   message 'The command line is just one way of manipulating the files on your computer. Try to find the new directory you created in Finder or Windows Explorer.'
   message 'If you get an error saying the directory already exists, maybe someone did these steps on your computer before. Don\'t fret.'
 end
@@ -24,19 +68,18 @@ end
 step do
   console 'cd railsbridge_ruby'
   message '`cd` means **c**hange **d**irectory. You use cd when you want to move from the current directory into some other directory.'
+  console 'pwd'
+  message "Now the working directory ends in \'\\Desktop\railsbridge_ruby' ."
 end
 
 step do
+  message "Let\'s go back to your home directory."
   message "If you're on a Mac or Linux computer:"
   console 'cd ~'
-  message "`~` indicates your **home directory**, a directory owned by the account currently logged in to the computer. Your home directory might be something like `/home/sparklepants` (Linux) or `/Users/saucyfrank` (Mac)"
+  message "`~` indicates your **home directory**, a directory owned by the account currently logged in to the computer.
+    Your home directory might be something like `/home/sparklepants` (Linux) or `/Users/saucyfrank` (Mac)"
+  console 'pwd'
   message "Practice moving in and out of various directories. Remember that you can always get back to your home with `cd ~`."
-end
-
-step do
-  console 'ls'
-  message '`ls` stands for **list**, and shows the contents of the current directory.'
-  message 'Since you moved back to your Home directory, you should see the newly-created railsbridge_ruby directory in the output of `ls`.'
 end
 
 step do
