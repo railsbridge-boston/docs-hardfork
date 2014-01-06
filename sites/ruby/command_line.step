@@ -4,8 +4,8 @@ message "<P>The <B>command line</B> is a text-based way to interact with your co
 and a mouse. We start programs by clicking an icon, look through files and folders in Finder or File Explorer,
 or pick a command from a dropdown menu.</P>
 
-<P>In the command line, we type commands to run programs and navigate through files and folders.  This lesson
-covers the commands we need for the workshop.</P>"
+<P>In the command line, we type commands to run programs and navigate through files and folders. We will need this to run
+  Ruby progams from files.  This lesson covers the commands we need for the workshop.</P>"
 
 message "It\'s helpful to keep Finder(OSX) or File Explorer(Windows) open during this topic.
     We\'ll make files and move between directories. A graphical file browser will help you see the results more clearly."
@@ -69,7 +69,15 @@ step do
   console 'cd railsbridge_ruby'
   message '`cd` means **c**hange **d**irectory. You use cd when you want to move from the current directory into some other directory.'
   console 'pwd'
-  message "Now the working directory ends in \'\\Desktop\railsbridge_ruby' ."
+  message "Now the working directory ends in \'\\Desktop\\railsbridge_ruby' ."
+  message "Create another directory and change into it before leaving here."
+  console <<-LINES
+mkdir another_directory
+cd another_directory
+pwd
+  LINES
+  message "Now the working directory ends in \'\\Desktop\\railsbridge_ruby\\another_directory' ."
+
 end
 
 step do
@@ -79,8 +87,49 @@ step do
   message "`~` indicates your **home directory**, a directory owned by the account currently logged in to the computer.
     Your home directory might be something like `/home/sparklepants` (Linux) or `/Users/saucyfrank` (Mac)"
   console 'pwd'
-  message "Practice moving in and out of various directories. Remember that you can always get back to your home with `cd ~`."
+  message "Remember that you can always get back to your home with `cd ~`."
 end
+
+step do
+    message "The dash is a special shortcut that brings you back to your last location - like undo for cd."
+    console 'cd -'
+    message 'What command shows you your current directory?'
+    console 'pwd'
+    message 'You\'re back in railsbridge_ruby\another_directory.'
+
+end
+
+
+step do
+   message "There are two tricks to save you some typing. The first one is command history."
+   message "Press the `up arrow` key."
+   result 'pwd'
+   message "Press `ENTER` to run the command."
+   message "Keep pressing the arrow key to replay commands. The `up arrow` moves backward through history, and the `down arrow` moves forward."
+end
+
+step do
+    message "The `TAB` key will autocomplete a command."
+    console <<-LINES
+cd ~
+ls
+cd rai
+    LINES
+    message '... and hit `TAB`.'
+    result 'cd railsbridge_ruby'
+    message <<-LINES
+Autocomplete will be as smart as it can.  If you started with `cd`, it will list directories.
+     If it could be a command, it will suggest commands. When there are multiple matches, it will show you the options.
+     LINES
+     console 'p'
+     message '... and hit `TAB`. What happens?  Hit `TAB` a second time.'
+     result 'Display all 203 possibilities? (y or n)'
+     message 'When autocomplete is stumped, it\ll wait for another hint. It will ask when there are too many possibilities.'
+     console 'y'
+     message 'There are quite a few commands that begin with `p`!  Autocomplete can remind you when you don\'t know what all the choices are.'
+
+end
+
 
 step do
   console 'man ls'

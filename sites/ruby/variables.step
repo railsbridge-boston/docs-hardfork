@@ -1,23 +1,34 @@
 goals do
+  goal "Understand what a variable is for"
   goal "Store data in variables"
   goal "Replace data in an existing variable"
 end
 
+message "A variable is a way to name a piece of data so we can do things with it. It can hold all kinds of things -
+words, numbers, the result of a function, and even a function itself."
 step do
-  message 'Start irb again'
+  message 'Start irb '
   console 'irb'
 end
 
 step do
   irb 'my_variable = 5'
   message 'This creates a new variable called my_variable and stores the value 5 in it.'
+  message 'Let\'s confirm that. To see what value a variable holds, type its name.'
+    irb 'my_variable'
+    result '5'
+
   irb 'another_variable = "hi"'
+
   message 'This creates another variable and stores the value "hi" in it.'
+
 end
 
 step do
   irb 'my_variable = 10'
   message 'This reassigns my_variable, which already exists, to 10.'
+  irb 'my_variable'
+  result '10'
 end
 
 step do
@@ -28,10 +39,18 @@ fruits = 2 + apples + bananas
 bananas = fruits - apples
   IRB
   message 'Variables are assigned using a single equals sign (=).'
-  message 'The right side of the equals sign is evaluated first, then the value is assigned to the variable named on the left side of the equals.'
+  message 'The right side of the equals sign is evaluated first,
+  then the result is assigned to the variable named on the left side of the equals.'
 end
 
 step do
+   message 'You\'ve created a lot of variables. Let\'s see the list.'
+   irb 'local_variables'
+   message ''
+end
+
+step do
+    message "There are some rules about what you can name a variable."
 	message <<-VARIABLE_NAMES
 Try making variables with the following kinds of names names in irb:
 
@@ -53,8 +72,13 @@ Which worked? Which didn't?
   VARIABLE_NAMES
 end
 
+step do
+   message "Variables can hold the result of a function."
+   irb 'shouting="hey, you!".upcase'
+end
+
 explanation do
   message "Variables allow you to store data so you can refer to it by name later. The data you store in variables will persist as long as your program keeps running."
 end
 
-next_step "strings"
+next_step "datatypes"
