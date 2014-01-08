@@ -1,6 +1,6 @@
 goals do
-  goal "Write a ruby program into a file"
-  goal "Execute a ruby program stored in a file"
+  goal "Write a Ruby program into a file"
+  goal "Execute a Ruby program stored in a file"
 end
 
 step do
@@ -18,7 +18,7 @@ step do
 end
 
 explanation do
-  message "Actual ruby programs aren't written in irb, they're written in files. As your program becomes larger and larger, it may span many files!"
+  message "Actual Ruby programs aren't written in irb, they're written in files. As your program becomes larger and larger, it may span many files!"
 end
 
 next_step "conditionals"

@@ -1,7 +1,7 @@
 message <<-MARKDOWN
 ### Goal
 
-To teach you Ruby we are going to explain the basic building blocks used in the ruby language and allow you reinforce what you've learned through challenges.
+To teach you Ruby we are going to explain the basic building blocks used in the Ruby language and allow you reinforce what you've learned through challenges.
 
 When you have completed this curriculum you should understand:
 
@@ -15,7 +15,7 @@ When you have completed this curriculum you should understand:
 
 We're going to be working with:
 
-* ruby 1.9.3 installed via rvm (mac or linux) or RailsInstaller (windows)
+* Ruby 1.9.3 installed via rvm (mac or linux) or RailsInstaller (windows)
 * a command line program like Terminal (mac) or CMD.EXE (windows)
 * the text editor of your choice
 
