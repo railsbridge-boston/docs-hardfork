@@ -19,7 +19,7 @@ See [Foundational Skills](foundational_skills) for a slide set describing the ba
 
 ### Slides
 
-The Railsbridge Workshop curriculum lives on http://docs.railsbridge.org, which is backed by the code in http://github.com/railsbridge/docs
+The Railsbridge Workshop curriculum lives on http://docs.railsbridge.org, which is backed by the code in http://github.com/railsbridge-boston/docs
 
 Here's a whiteboarded roadmap/flowchart of the old slides:
 

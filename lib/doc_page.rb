@@ -88,7 +88,7 @@ class DocPage < Erector::Widgets::Page
 
   # todo: test
   def git_url
-    "https://github.com/railsbridge/docs/blob/master/sites/#{@site_name}/#{file_name}"
+    "https://github.com/railsbridge-boston/docs/blob/master/sites/#{@site_name}/#{file_name}"
   end
 
   def rbb_url
@@ -138,7 +138,7 @@ class DocPage < Erector::Widgets::Page
       p "RailsBridge Boston"
       p do
         text "Source: "
-        url "https://github.com/railsbridge/docs"
+        url "https://github.com/railsbridge-boston/docs"
       end
     }
   end

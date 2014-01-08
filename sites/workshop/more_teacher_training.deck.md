@@ -240,6 +240,6 @@ You need to read the curriculum through, beginning to end, before teaching it.
 
 First workshop? Be a TA!
 
-#### Where to submit pull requests: https://github.com/railsbridge/docs
+#### Where to submit pull requests: https://github.com/railsbridge-boston/docs
 
 We need your help! Thank you!!!

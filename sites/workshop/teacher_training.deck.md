@@ -171,7 +171,7 @@ You should be aware of these, even if you don't tell the students all of them ri
   * MVC <http://ruby.railstutorial.org/chapters/a-demo-app#sec-mvc_in_action>
   * git <https://github.com/alexch/mission/raw/master/git.png>
 * Workshop Github repo (slides and diagrams)
-  * <http://github.com/railsbridge/docs>
+  * <http://github.com/railsbridge-boston/docs>
 
 <!SLIDE subsection>
 # General Teaching Advice
