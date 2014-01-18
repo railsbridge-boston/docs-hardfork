@@ -5,7 +5,7 @@ require 'lib/media_wiki'
 include MediaWiki
 ARGV.each do |arg|
   old_path = arg
-  new_path = arg.gsub(/\.mw$/, '.step')
+  new_path = arg.gsub(/\.mw$/, 'summary:_basics.step')
   old = File.read(old_path)
   puts new_path
   File.open(new_path, "w") do |f|

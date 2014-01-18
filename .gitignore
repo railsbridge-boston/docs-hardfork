@@ -6,3 +6,7 @@
 .rvmrc
 .sass-cache
 Thumbs.db
+
+sandbox.rb
+
+*.rb~

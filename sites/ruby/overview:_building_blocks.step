@@ -1,0 +1,15 @@
+goals do
+end
+
+message ''
+
+step do
+end
+
+step do
+end
+
+step do
+end
+
+next_step 'variables'

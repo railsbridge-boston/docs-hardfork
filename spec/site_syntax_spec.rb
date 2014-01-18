@@ -23,6 +23,7 @@ describe InstallFest do
     Site.all.each do |site|
       site.docs.each do |doc|
         it "renders #{doc.filename}" do
+          puts "Checking /#{site.name}/#{doc.name}"
           get! "/#{site.name}/#{doc.name}"
           assert { last_response.ok? }
           if doc.filename.end_with?('.step')

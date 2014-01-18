@@ -1,0 +1,7 @@
+goals do
+end
+
+step do
+end
+
+next_step 'arrays'
