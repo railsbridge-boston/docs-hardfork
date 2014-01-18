@@ -81,4 +81,4 @@ further_reading do
   a "Ruby's documentation for String", href: 'http://www.ruby-doc.org/core-1.9.3/String.html'
 end
 
-next_step 'arrays'
+next_step 'input_and_output'

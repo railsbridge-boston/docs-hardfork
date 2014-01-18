@@ -13,4 +13,4 @@ end
 step do
 end
 
-next_step 'booleans'
+next_step 'arithmetic'

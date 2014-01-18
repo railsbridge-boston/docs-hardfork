@@ -13,4 +13,4 @@ end
 step do
 end
 
-next_step "summary:_tools"
+next_step 'overview:_building_blocks'

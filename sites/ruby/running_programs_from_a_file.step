@@ -21,4 +21,4 @@ explanation do
   message "Actual Ruby programs aren't written in irb, they're written in files. As your program becomes larger and larger, it may span many files!"
 end
 
-next_step "conditionals"
+next_step "getting_help"

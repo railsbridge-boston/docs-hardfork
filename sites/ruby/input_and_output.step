@@ -1,4 +1,5 @@
 goals do
+
 end
 
 message do
@@ -13,4 +14,4 @@ end
 step do
 end
 
-next_step
+next_step 'numbers'
