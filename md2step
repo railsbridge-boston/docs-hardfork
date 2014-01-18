@@ -4,7 +4,7 @@ $:<<here
 
 ARGV.each do |arg|
   old_path = arg
-  new_path = arg.gsub(/\.md$/, '.step')
+  new_path = arg.gsub(/\.md$/, 'summary_basics.step')
   old = File.read(old_path)
   puts new_path
   File.open(new_path, "w") do |f|
