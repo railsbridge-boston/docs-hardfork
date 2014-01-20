@@ -71,9 +71,9 @@ end
 
 step do
   message "Let\'s go back to your home directory."
-  message "If you're on a Mac or Linux computer:"
   console 'cd ~'
-  message "`~` is the tilde key. On US keyboards, it's on the top left, next the 1 key, and you have to press `SHIFT`.
+  message "`~` is the tilde key. On US keyboards, it's on the top left, next the
+  1 key, and you have to press `SHIFT` along with it.
 
    On the command line, the tilde means your **home directory**, a directory owned by the account currently logged in to the computer.
     Your home directory might be something like `/home/sparklepants` (Linux) or `/Users/saucyfrank` (Mac).
