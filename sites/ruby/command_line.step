@@ -70,21 +70,6 @@ step do
 end
 
 step do
-  console 'cd railsbridge_ruby'
-  message '`cd` means **c**hange **d**irectory. You use `cd` when you want to move from the current directory into some other directory.'
-  console 'pwd'
-  message "Now the working directory ends in \'\\Desktop\\railsbridge_ruby' ."
-  message "Create another directory and change into it before leaving here."
-  console <<-LINES
-mkdir another_directory
-cd another_directory
-pwd
-  LINES
-  message "Now the working directory ends in \'\\Desktop\\railsbridge_ruby\\another_directory' ."
-
-end
-
-step do
   message "Let\'s go back to your home directory."
   message "If you're on a Mac or Linux computer:"
   console 'cd ~'
