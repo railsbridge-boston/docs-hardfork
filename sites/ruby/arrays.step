@@ -90,4 +90,4 @@ further_reading do
   a "Ruby's documentation for Array", href: 'http://www.ruby-doc.org/core-1.9.3/Array.html'
 end
 
-next_step "hashes"
+next_step 'hashes'

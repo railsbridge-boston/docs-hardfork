@@ -2,8 +2,7 @@ goals do
 
 end
 
-message do
-end
+message ''
 
 step do
 end

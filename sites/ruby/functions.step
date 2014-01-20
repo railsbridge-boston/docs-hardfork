@@ -25,4 +25,4 @@ explanation do
   message "Pedantic Programmers might want to tell you that Ruby doesn't technically have **functions**, and everything in Ruby is really a **method**. It is appropriate to slap these people."
 end
 
-next_step 'objects'
+next_step 'classes'

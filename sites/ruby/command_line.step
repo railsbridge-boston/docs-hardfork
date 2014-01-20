@@ -23,7 +23,7 @@ step do
   message 'Open up a command line application on your computer.
    On Macs, in Finder, start Applications > Utilities > Terminal.
    On Windows, you might want to use the "Command Line With Ruby and Rails" shortcut that came with RailsInstaller.'
-  message 'We will call this "the terminal" or "the command line", no matter what program you\'re using. '
+  message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
   message 'Terminals start in your home directory, the way OSX and Windows open up in your Desktop.
   We\'ll talk more about the home directory in a few steps.'
 

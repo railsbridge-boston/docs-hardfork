@@ -47,4 +47,4 @@ further_reading do
   a "Ruby's documentation for Hash", href: 'http://www.ruby-doc.org/core-1.9.3/Hash.html'
 end
 
-next_step 'loops'
+next_step 'functions'

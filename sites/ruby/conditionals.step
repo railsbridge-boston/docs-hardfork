@@ -3,10 +3,9 @@ goals do
     rawtext(md2html('Use `gets` to get input from the user of your program.'))
   end
   goal 'Use a conditional statement to execute a branch of code only some of the time.'
-  if/elsif/else
-  while
-  unless
+  goal 'if/elsif/else, while, unless'
 end
+
 
 step do
   message 'Create a new file called conditionals_test.rb'
@@ -34,6 +33,7 @@ end
   message 'The `if ... else ... end` construct is a way of changing which lines of your program get executed depending on your data.'
   message 'Try running the program with different values for apple_count to see each side of the conditional get executed.'
 end
+
 
 step do
   message 'What goes after the `if` is any expression that returns a **boolean**, (the values `true` or `false`). Here\'s some more expressions that return `true` or `false`:'
@@ -88,4 +88,4 @@ explanation do
   message 'Now that you know *conditionals*, *loops*, *arrays*, *hashes* and *strings*, you can make some pretty complicated programs!'
 end
 
-next_step 'functions'
+next_step 'overview:_organizing'
