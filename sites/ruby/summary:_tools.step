@@ -1,16 +1,16 @@
-goals do
-end
 
-message do
-end
+message <<-SUMMARY
+We have seen:
+<UL>
+<LI>How to open the command line program on your laptop
+</LI><LI>How to move between directories and run progams from the command line
+</LI><LI>How to explore with irb
+</LI><LI>How to run longer programs stored in a file
+</LI><LI>How to start and stop the RailsBridge virtual machine
+ </LI>
+</UL>
+Let's dive into the ABCs of Ruby.
 
-step do
-end
-
-step do
-end
-
-step do
-end
+SUMMARY
 
 next_step 'overview:_building_blocks'

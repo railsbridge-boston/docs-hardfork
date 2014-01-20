@@ -1,4 +1,9 @@
 goals do
+goal "Meet True and False"
+goal "Evaluate numbers -  == < > "
+goal "Evaluate logic and, or, not"
+goal "Methods with question marks"
+goal "Truthiness - Ruby is stricter than other languages"
 end
 
 message ''

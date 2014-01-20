@@ -64,4 +64,4 @@ explanation do
   message "As you build complex programs, you'll want to do something to many pieces of data without typing it all out. Loops help solve this problem."
 end
 
-next_step 'working_with_collections'
+next_step 'summary:_basics'

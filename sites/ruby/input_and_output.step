@@ -1,5 +1,6 @@
 goals do
-
+goal "Print to the screen with puts"
+goal "Read user input with gets"
 end
 
 message ''
