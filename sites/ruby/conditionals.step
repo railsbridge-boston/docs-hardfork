@@ -88,4 +88,4 @@ explanation do
   message 'Now that you know *conditionals*, *loops*, *arrays*, *hashes* and *strings*, you can make some pretty complicated programs!'
 end
 
-next_step 'overview:_organizing'
+next_step 'arrays'
