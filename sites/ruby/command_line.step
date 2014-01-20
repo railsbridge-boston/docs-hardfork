@@ -16,7 +16,7 @@ goals do
   goal "Learn about the command line"
   goal "Make a new directory"
   goal "Browse some directories on your computer"
-  goal do 
+  goal do
     rawtext md2html("Learn the commands `pwd`, `mkdir`, `ls`, `cd` and `man`")
   end
 end
@@ -54,7 +54,7 @@ end
 
 step do
   console 'cd Desktop'
-  message '`cd` means **c**hange **d**irectory. You use cd when you want to move from the current directory into some other directory.'
+  message '`cd` means **c**hange **d**irectory. You use `cd` when you want to move from the current directory into some other directory.'
   console 'pwd'
   message "Notice how it changed? The working directory ends in \'\\Desktop\' ."
   todo "cd into the Vagrant directory that we created during installation."
@@ -62,16 +62,16 @@ end
 
 step do
   console 'mkdir railsbridge_ruby'
-  message '`mkdir` means **m**ake **d**irectory. You use mkdir when you want to create a new directory.'
+  message '`mkdir` means **m**ake **d**irectory. You use `mkdir` when you want to create a new directory.'
   console 'ls'
-  message "Now the directory railsbridge_ruby shows up in the list."
+  message 'Now the directory "railsbridge_ruby" shows up in the list.'
   message 'The command line is just one way of manipulating the files on your computer. Try to find the new directory you created in Finder or Windows Explorer.'
   message 'If you get an error saying the directory already exists, maybe someone did these steps on your computer before. Don\'t fret.'
 end
 
 step do
   console 'cd railsbridge_ruby'
-  message '`cd` means **c**hange **d**irectory. You use cd when you want to move from the current directory into some other directory.'
+  message '`cd` means **c**hange **d**irectory. You use `cd` when you want to move from the current directory into some other directory.'
   console 'pwd'
   message "Now the working directory ends in \'\\Desktop\\railsbridge_ruby' ."
   message "Create another directory and change into it before leaving here."
