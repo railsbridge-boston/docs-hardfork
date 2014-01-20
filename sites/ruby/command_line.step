@@ -7,8 +7,10 @@ or pick a command from a dropdown menu.</P>
 <P>In the command line, we type commands to run programs and navigate through files and folders. We will need this to run
   Ruby progams from files.  This lesson covers the commands we need for the workshop.</P>"
 
-message "It\'s helpful to keep Finder(OS X) or File Explorer(Windows) open during this topic.
-    We\'ll make files and move between directories. A graphical file browser will help you see the results more clearly."
+message "It\'s helpful to keep Finder (OS X), File Explorer (Windows), or
+Nautilus (Ubuntu) open during this topic.  We\'ll make files and move between
+directories. A graphical file browser will help you see the results more
+clearly."
 
 goals do
   goal "Learn about the command line"
@@ -20,9 +22,11 @@ goals do
 end
 
 step do
-  message 'Open up a command line application on your computer.
-   On Macs, in Finder, start Applications > Utilities > Terminal.
-   On Windows, you might want to use the "Command Line With Ruby and Rails" shortcut that came with RailsInstaller.'
+  message 'Open up a command line application on your computer.'
+  message 'On Macs, in Finder, start Applications > Utilities > Terminal.'
+  message 'On Windows, open up Git Shell from your desktop or All Programs menu.'
+  message 'On Linux, you can press Ctrl + Alt + T or find Terminal under the
+  Accessories category of your applications menu.'
   message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
   message 'Terminals start in your home directory, the way OS X and Windows open up in your Desktop.
   We\'ll talk more about the home directory in a few steps.'
@@ -36,9 +40,9 @@ step do
   console 'ls'
   message 'Hit **RETURN** or **ENTER** to run the command.'
   message '`ls` stands for **list**, and lists the contents of the current directory.'
-  message 'You are in your home directory. You may see directories like \'Documents\' or \'Desktop\'.
-    If you start the Finder (OS X) or File Explorer (Windows) program, you\'ll see the same files and folders listed.'
-  todo 'Find out what utility is used in Ubuntu.'
+  message 'You are in your home directory. You may see directories like
+  \'Documents\' or \'Desktop\'.  If you start up Finder, File Explorer, or
+  Nautilus, you\'ll see the same files and folders listed.'
 end
 
 step do
