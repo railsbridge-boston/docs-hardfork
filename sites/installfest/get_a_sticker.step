@@ -6,7 +6,7 @@ verify "tool installation" do
 
   tip "Most of the time, the version numbers don't have to match exactly. In general, if the *first two* numbers match, or if the full number you have is *greater* than the one below, then you're cool."
 
-  h3 "If you're on OSX or Linux:"
+  h3 "If you're on OS X or Linux:"
 
   console "rvm -v"
   fuzzy_result "rvm 1{FUZZY}.x.x by Wayne E. Seguin (wayneeseguin@gmail.com) [https://rvm.beginrescueend.com/]{/FUZZY}"
