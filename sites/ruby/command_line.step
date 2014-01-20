@@ -118,7 +118,7 @@ Autocomplete will be as smart as it can.  If you started with `cd`, it will list
      console 'p'
      message '... and hit `TAB`. What happens?  Hit `TAB` a second time.'
      result 'Display all 203 possibilities? (y or n)'
-     message 'When autocomplete is stumped, it\ll wait for another hint. It will ask when there are too many possibilities.'
+     message 'When autocomplete is stumped, it\'ll wait for another hint. It will ask when there are too many possibilities.'
      console 'y'
      message 'There are quite a few commands that begin with `p`!  Autocomplete can remind you when you don\'t know what all the choices are.'
 
