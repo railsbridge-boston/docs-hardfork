@@ -13,4 +13,4 @@ end
 step do
 end
 
-next_step ''
+next_step 'overview:_organizing'
