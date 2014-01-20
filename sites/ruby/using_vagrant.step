@@ -1,6 +1,6 @@
 
 message <<-INTRO
-For this workshop we asked OSX and Windows users to use a virtual machine.  
+For this workshop we asked OS X and Windows users to use a virtual machine.  
 Linux and Chromebook users can skip to the next step.
 INTRO
 
@@ -28,7 +28,7 @@ step do
   message <<-CONTENTS
   By itself, a vm image is just a file like any other.  It needs something to run it.  
 
-  We\'re using VirtualBox.  If a vm image is a fish, VirtualBox is the aquarium it lives in. It knows how to translate the features of this Linux image into something Windows or OSX understands, and display it on your monitor.  It knows how to translate your keyboard and mouse input to something the Linux machine can use. 
+  We\'re using VirtualBox.  If a vm image is a fish, VirtualBox is the aquarium it lives in. It knows how to translate the features of this Linux image into something Windows or OS X understands, and display it on your monitor.  It knows how to translate your keyboard and mouse input to something the Linux machine can use. 
 
   Mac users may already be familiar with running Windows images with Parallels, or with VMWare Fusion.  
 CONTENTS

@@ -1,13 +1,13 @@
 message "<P>The <B>command line</B> is a text-based way to interact with your computer.</P>
 
-<P>In Windows and OSX we use graphical user interfaces (GUIs). GUIs let you operate your computer with pictures
+<P>In Windows and OS X we use graphical user interfaces (GUIs). GUIs let you operate your computer with pictures
 and a mouse. We start programs by clicking an icon, look through files and folders in Finder or File Explorer,
 or pick a command from a dropdown menu.</P>
 
 <P>In the command line, we type commands to run programs and navigate through files and folders. We will need this to run
   Ruby progams from files.  This lesson covers the commands we need for the workshop.</P>"
 
-message "It\'s helpful to keep Finder(OSX) or File Explorer(Windows) open during this topic.
+message "It\'s helpful to keep Finder(OS X) or File Explorer(Windows) open during this topic.
     We\'ll make files and move between directories. A graphical file browser will help you see the results more clearly."
 
 goals do
@@ -24,20 +24,20 @@ step do
    On Macs, in Finder, start Applications > Utilities > Terminal.
    On Windows, you might want to use the "Command Line With Ruby and Rails" shortcut that came with RailsInstaller.'
   message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
-  message 'Terminals start in your home directory, the way OSX and Windows open up in your Desktop.
+  message 'Terminals start in your home directory, the way OS X and Windows open up in your Desktop.
   We\'ll talk more about the home directory in a few steps.'
 
 end
 
 step do
   message 'The first word you type in the terminal is always the name of a program.
-             Many programs are included in OSX and Windows, like `ls` and `pwd`.  Others
+             Many programs are included in OS X and Windows, like `ls` and `pwd`.  Others
              are programs you installed, like `ruby`, `irb`, or `vagrant`.'
   console 'ls'
   message 'Hit **RETURN** or **ENTER** to run the command.'
   message '`ls` stands for **list**, and lists the contents of the current directory.'
   message 'You are in your home directory. You may see directories like \'Documents\' or \'Desktop\'.
-    If you start the Finder (OSX) or File Explorer (Windows) program, you\'ll see the same files and folders listed.'
+    If you start the Finder (OS X) or File Explorer (Windows) program, you\'ll see the same files and folders listed.'
   todo 'Find out what utility is used in Ubuntu.'
 end
 
