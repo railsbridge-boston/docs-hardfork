@@ -84,11 +84,12 @@ What\'s your home directory?"
 end
 
 step do
-    message "The dash is a special shortcut that brings you back to your last location - like undo for cd."
+    message 'The dash is a special shortcut that brings you back to your last
+    location, like an "undo" for `cd`.'
     console 'cd -'
     message 'What command shows you your current directory?'
     console 'pwd'
-    message 'You\'re back in railsbridge_ruby\another_directory.'
+    message 'You should be back in "railsbridge\_ruby\another\_directory".'
 
 end
 
