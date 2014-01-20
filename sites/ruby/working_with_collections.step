@@ -10,4 +10,4 @@ end
 step do
 end
 
-next_step  ''
+next_step  'summary:_basics'
