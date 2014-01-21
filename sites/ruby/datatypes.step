@@ -1,7 +1,7 @@
 
 goals do
-    message "Variables are easygoing about the objects they hold. You can assign a word, then a number, then a list of words."
-    message "Sometimes it matters what type of data we assign a variable. The fancy word for \'type of data\' is \'class\'".
+    message "Variables are easygoing about the objects they hold. You can assign a word, then assign a number, then a list of words."
+    message "But sometimes it matters what type of data we assign a variable. The fancy word for \'type of data\' is **class**."
     message "Ruby has several built-in classes. In a later section, we\'ll explore how to make your own classes."
     goal "Know the basic data types"
     goal "Know why it matters"

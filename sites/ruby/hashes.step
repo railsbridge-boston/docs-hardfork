@@ -1,3 +1,4 @@
+todo "Original file - proofread"
 goals do
   goal "Make some hashes and get data back out of them"
   goal "Understand why we might use a Hash"

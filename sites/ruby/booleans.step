@@ -9,6 +9,39 @@ end
 
 message ''
 
+todo "Clean up this language:"
+step do
+  message '...is any expression that returns a **boolean**, (the values `true` or `false`). Here\'s some more expressions that return `true` or `false`:'
+  irb <<-IRB
+15 < 5
+10 == 12
+'foo' != 'bar'
+  IRB
+  irb <<-IRB
+'sandwich'.end_with?('h')
+'sandwich'.end_with?('z')
+[1,2,3].include?(2)
+[1,2,3].include?(9)
+  IRB
+  message 'Many methods return `true` or `false` as well. By convention, methods in Ruby that return booleans end with a question mark.'
+end
+
+
+step do
+  message 'By convention, methods in Ruby that return booleans end with a question mark.'
+  irb <<-IRB
+'sandwich'.end_with?('h')
+'sandwich'.end_with?('z')
+[1,2,3].include?(2)
+[1,2,3].include?(9)
+'is my string'.empty?
+''.empty?
+'is this nil'.nil?
+nil.nil?
+  IRB
+  
+end
+
 step do
 end
 

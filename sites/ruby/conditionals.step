@@ -1,4 +1,4 @@
-todo "This is the orginal file - proofread and move content to other pages if appropriate.  * move true false stuff to booolean file * remove nesting a conditional in a loop - loops are later"
+todo "This is mostly the orginal file minus chunks that got moved to other pages. - proofread, test examples, fill out."
 goals do
   goal do 
     rawtext(md2html('Use `gets` to get input from the user of your program.'))
@@ -23,7 +23,10 @@ end
 
 step do
   message 'Continuing on from the end of conditionals_test.rb...'
-  type_in_file 'conditionals_test.rb', <<-'CONTENTS'
+   type_in_file 'conditionals_test.rb', <<-'CONTENTS'
+print "How many apples do you have? > "
+apple_count = gets.to_i
+
 if apple_count > 5
   puts "Lots of apples!"
 else
@@ -37,37 +40,13 @@ end
 
 
 step do
-  message 'What goes after the `if` is any expression that returns a **boolean**, (the values `true` or `false`). Here\'s some more expressions that return `true` or `false`:'
-  irb <<-IRB
-15 < 5
-10 == 12
-'foo' != 'bar'
-  IRB
-  irb <<-IRB
-'sandwich'.end_with?('h')
-'sandwich'.end_with?('z')
-[1,2,3].include?(2)
-[1,2,3].include?(9)
-  IRB
-  message 'Many methods return `true` or `false` as well. By convention, methods in Ruby that return booleans end with a question mark.'
+  message 'What goes after the `if` is any expression that returns a **boolean**, (the values `true` or `false`). '
 end
 
-step do
-  message 'You can nest a conditional in a loop, as well.'
-  message 'Create a new file called conditional_loops.rb'
-  type_in_file 'conditional_loops.rb', <<-'CONTENTS'
-fruits = ['apple', 'pear', 'apricot']
-fruits.each do |fruit|
-  if fruit.start_with?('a')
-    puts "#{fruit} begins with the letter a."
-  end
-end
-  CONTENTS
-  console 'ruby conditional_loops.rb'
-  message "Try changing this conditional so it only prints fruits with at least five letters in their name. Remember to change the string you're `puts`ing as well!"
-end
 
 step do
+    message "A **while** loop continues repeating until a certain statement is false. Here, the program continually asks us for numbers until we say the string 'stop'."
+
     message 'Create a new file called while_loop.rb'
     type_in_file 'while_loop.rb', <<-'CONTENTS'
 total = 0
@@ -80,13 +59,12 @@ end
 puts "Your final total was #{total}!"
     CONTENTS
     console 'ruby while_loop.rb'
-    message "A **while** loop continues repeating until a certain statement is false. Here, the program continually asks us for numbers until we say the string 'stop'."
+
     message "It's easy for a while loop to get out of control! If your loop body doesn't do anything to make the **while** condition false, your loop will run forever."
 end
 
 explanation do
   message "Without some kind of conditional, your program would do the same thing every time. Conditionals let you choose to do different things depending on what data you have in hand."
-  message 'Now that you know *conditionals*, *loops*, *arrays*, *hashes* and *strings*, you can make some pretty complicated programs!'
 end
 
 next_step 'working_with_collections'
