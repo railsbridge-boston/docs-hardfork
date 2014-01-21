@@ -1,3 +1,9 @@
+todo <<-CONTENT
+* start command line - update to git client, remove railsinstaller
+* update summary table of commands at the end
+* find out how to start in Ubuntu
+CONTENT
+
 message "<P>The <B>command line</B> is a text-based way to interact with your computer.</P>
 
 <P>In Windows and OSX we use graphical user interfaces (GUIs). GUIs let you operate your computer with pictures
@@ -141,10 +147,13 @@ step do
   message "If you see a colon at the bottom of your terminal when viewing a man page, it means you're in a **pager**. Pagers are special programs for showing text that spans multiple pages. You can press the up and down arrows to page through the text, or type `q` to exit."
 end
 
+
 explanation do
   message "The command line is an essential tool for computer programmers. While daunting at first, it offers great flexibility in moving around your computer and manipulating files."
   message "There are many, many, many more commands available on the command line than what we've seen here, but these are enough to get you going."
   message 'Command summary:'
+  todo "Add the rest of the commands to this table" 
+
   table class: 'bordered' do
     tr do
       td 'pwd'
@@ -169,4 +178,5 @@ explanation do
   end
 end
 
-next_step "irb"
+
+next_step "using_virtual_machines"

@@ -1,11 +1,12 @@
+message "A variable is a way to name a piece of data so we can do things with it. It can hold all kinds of things -
+words, numbers, the result of a function, and even a function itself."
+
 goals do
   goal "Understand what a variable is for"
   goal "Store data in variables"
   goal "Replace data in an existing variable"
 end
 
-message "A variable is a way to name a piece of data so we can do things with it. It can hold all kinds of things -
-words, numbers, the result of a function, and even a function itself."
 step do
   message 'Start irb '
   console 'irb'
@@ -26,7 +27,7 @@ end
 
 step do
   irb 'my_variable = 10'
-  message 'This reassigns my_variable, which already exists, to 10.'
+  message 'my_variable has a new value.'
   irb 'my_variable'
   result '10'
 end
@@ -38,9 +39,9 @@ bananas = 10 + 5
 fruits = 2 + apples + bananas
 bananas = fruits - apples
   IRB
-  message 'Variables are assigned using a single equals sign (=).'
-  message 'The right side of the equals sign is evaluated first,
-  then the result is assigned to the variable named on the left side of the equals.'
+  message 'Variables are assigned a value using a single equals sign (=).'
+  message 'The right side of the equals sign is evaluated,
+  and the result is assigned to the variable named on the left side of the equals.'
 end
 
 step do
@@ -78,7 +79,7 @@ step do
 end
 
 explanation do
-  message "Variables allow you to store data so you can refer to it by name later. The data you store in variables will persist as long as your program keeps running."
+  message "Variables allow you to store data so you can refer to it by name later. The data you store in variables will persist as long as your program keeps running and vanish when it stops."
 end
 
 next_step "datatypes"

@@ -1,3 +1,5 @@
+todo "Point to ruby-lang documentation - demystify the process"
+
 goals do
     goal "Know where to find Ruby documentation"
     goal "Read an error message"

@@ -1,7 +1,7 @@
 
 goals do
     message "Variables are easygoing about the objects they hold. You can assign a word, then a number, then a list of words."
-    message "Sometimes it matters what type of data we assign a variable. The fancy word for \'type of data\' is \'class\'"
+    message "Sometimes it matters what type of data we assign a variable. The fancy word for \'type of data\' is \'class\'".
     message "Ruby has several built-in classes. In a later section, we\'ll explore how to make your own classes."
     goal "Know the basic data types"
     goal "Know why it matters"
@@ -85,10 +85,11 @@ step do
 end
 
 explanation do
-    message "Sometimes it\'s necessary to know what type of data you\'re working with."
+    message "Sometimes it\'s necessary to think about what type of data you\'re working with."
     message "Use the `class` method to find out what class an object is."
     message "Use the `methods` method to find out what methods an object has."
     message "Use conversion methods to get a transformed version of an object."
+    message "A `TypeError` message is a hint to look more carefully at an object\'s class."
     message "Let\'s look at the basic datatypes in more detail."
 end
 

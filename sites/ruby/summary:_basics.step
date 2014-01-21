@@ -1,3 +1,5 @@
+todo "Fill in page.  We\'ve seen built in data types, input and output, making decisions with conditionals, looping"
+
 goals do
 end
 
@@ -13,4 +15,5 @@ end
 step do
 end
 
-next_step ''
+next_step "overview:_organizing"
+

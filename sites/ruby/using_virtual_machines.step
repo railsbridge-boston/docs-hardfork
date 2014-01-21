@@ -1,6 +1,9 @@
+todo "Make sure explanation is complete  * mention Parallels *  mention PC Anywhere, Remote Desktop, or other comparable apps people may already know from work"
 
 message <<-INTRO
-For this workshop we asked OSX and Windows users to use a virtual machine.  
+For this workshop we asked OSX and Windows users to use a virtual machine. To run Ruby, you need to start and connect
+to the virtual machine.
+
 Linux and Chromebook users can skip to the next step.
 INTRO
 
@@ -12,7 +15,7 @@ goals do
 end
 
 message <<-CONTENTS
-Before we begin, we have to install Ruby on your laptop.  Individually, this isn\'t too hard.  Getting 75+ people ready at a workshop is a big logistical challenge.  Participants in the January 2014 workshop are using four different operating systems,  with at least 15 versions all together.  
+Most laptops don't come with Ruby installed. Getting 75+ people ready at a workshop is a big logistical challenge.  Participants in the January 2014 workshop are using four different operating systems,  with at least 15 versions all together. 
 
 To get going quickly and to have things work the same for everyone, we\'re using a virtual machine. Using a virtual machine adds some extra steps, which we'll practice here. 
 CONTENTS
@@ -95,7 +98,9 @@ CONTENTS
 end
 
 
-explanation do
+further_reading do 
+message <<-CONTENTS
+ "What\'s virtualization? Why get that nerdy?" Lifehacker explains it all in [The Beginner's Guide to Creating VMs with VirtualBox](http://lifehacker.com/5204434/the-beginners-guide-to-creating-virtual-machines-with-virtualbox)
+ CONTENTS
 end
-
- next_step 'running_programs_from_a_file'
+ next_step 'irb'

@@ -1,3 +1,4 @@
+todo "Recap what we've seen: oranizing things into functions and classes"
 goals do
 end
 
@@ -12,4 +13,4 @@ end
 step do
 end
 
-next_step ""
+next_step "how_to_write_a_program"

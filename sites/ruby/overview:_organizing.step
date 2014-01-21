@@ -1,7 +1,8 @@
+todo "Fill in page.  We organize little steps into functions and classes."
 goals do
 end
 
 step do
 end
 
-next_step 'arrays'
+next_step 'functions'

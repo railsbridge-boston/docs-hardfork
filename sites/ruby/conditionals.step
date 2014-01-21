@@ -1,3 +1,4 @@
+todo "This is the orginal file - proofread and move content to other pages if appropriate.  * move true false stuff to booolean file * remove nesting a conditional in a loop - loops are later"
 goals do
   goal do 
     rawtext(md2html('Use `gets` to get input from the user of your program.'))

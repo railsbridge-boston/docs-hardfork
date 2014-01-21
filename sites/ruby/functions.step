@@ -1,3 +1,4 @@
+todo "This hasn\;t been proofread.  Explain def and end. Write more examples, write more about motivations."
 goals do
   goal "Create a function"
   goal "Call a function"
@@ -15,7 +16,7 @@ radius = gets.to_i
 
 puts "Your circle has an area of #{circle_area(radius)}"
   CONTENTS
-  console 'Ruby area.rb'
+  console 'ruby area.rb'
   message 'When prompted, type in a radius for your circle.'
 end
 

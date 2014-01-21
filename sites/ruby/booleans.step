@@ -1,3 +1,4 @@
+todo "Explain booleans, as below.  Move some content out of conditionals. Point out that == != =  .  "
 goals do
 goal "Meet True and False"
 goal "Evaluate numbers -  == < > "

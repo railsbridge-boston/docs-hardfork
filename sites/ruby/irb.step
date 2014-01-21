@@ -1,7 +1,7 @@
 goals do
+  goal "Understand how and when to use irb"
   goal "Understand how to start and stop irb"
   goal "Understand the difference between irb and the command line"
-  goal "Understand how and when to use irb"
   goal "Execute some simple Ruby statements"
 end
 
@@ -74,4 +74,4 @@ explanation do
   message "When you write a full-fledged program, you'll save it into a text file on your computer.  We\'ll see this in a later step."
 end
 
-next_step 'using_vagrant'
+next_step 'running_programs_from_a_file'
