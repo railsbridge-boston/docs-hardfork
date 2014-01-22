@@ -23,13 +23,12 @@ end
 
 step do
   message 'Open up a command line application on your computer.'
-  message 'On Macs, in Finder, start Applications > Utilities > Terminal.'
-  message 'On Windows, open up Git Shell from your desktop or All Programs menu.'
-  message 'On Linux, you can press Ctrl + Alt + T or find Terminal under the
-  Accessories category of your applications menu.'
+  message "**On Macs:** In Finder, start Applications > Utilities > Terminal, or find the Terminal application through Spotlight (click the magnifying glass in the top right of the screen and start typing 'Terminal')"
+  message '**On Windows:** open up Git Shell from your desktop or All Programs menu.'
+  message '**On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.'
+
   message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
-  message 'Terminals start in your home directory, the way OS X and Windows open up in your Desktop.
-  We\'ll talk more about the home directory in a few steps.'
+  message 'Consoles will either start in your home directory, the way OS X and Windows open up in your Desktop, or in the directory you ended in during your last console session.  We\'ll talk more about the home directory in a few steps.'
 
 end
 

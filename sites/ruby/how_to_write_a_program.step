@@ -1,13 +1,14 @@
 todo <<-CONTENTS
-fill in page
-we\'re going to shift to writing a first program.  How do you break that into manageable steps?
+Alex Jarvis will fill in this page  -- <BR>
+Goal:  transition from writing standalone functions to a whole program
+"we\'re going to shift to writing a first program.  How do you break that into manageable steps?""
 
-* what should this thing do?   Recipe example?  
-* write down the steps on paper like you\'re explaining it to a person
-* look for an activity that\'s one step - like measure measure -  especially one that's repeated - these are functions
-* pick data types
-* look at what kinds of data you\'re using ( strings, numbers )
-* any collections?  
-* work small, run often,
-
+<UL>
+<LI>* what should this thing do?   Recipe example?  
+</LI><LI>* write down the steps on paper like you\'re explaining it to a person
+</LI><LI>* look for an activity that\'s one step - like measure measure -  especially one that's repeated - these are functions
+</LI><LI>* pick data types
+</LI><LI>* look at what kinds of data you\'re using ( strings, numbers )  -- any collections?  
+</LI><LI>* work small, run often,</LI>
+</UL>
 CONTENTS
