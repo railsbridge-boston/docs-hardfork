@@ -96,21 +96,6 @@ step do
   message "Right now, our program is one big method, and that is not very good for readability or maintability. Lets organize this a little more thoughtfully, and make a class that contains this behavior."
 
   type_in_file 'roller.rb', <<-'CONTENTS'
-  def roll(sides)
-    rand(sides) + 1
-  end
-
-  puts roll(6)
-  CONTENTS
-
-  message 'Now, our program can roll any number of die, so long as we pass in the number of sides to the roll method.'
-end
-
-step do
-  message "We've got one more goal to knock down: **Roll any number of dice**."
-  message 'We can pass in another argument, but we still have to consider how to show this information to the user. For now, lets add the numbers together.'
-  message "We're going to need to increase the method somewhat. Make the changes to the method that you see below."
-  type_in_file 'roller.rb', <<-'CONTENTS'
   class Die
 
     def initialize(sides)
