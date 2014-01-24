@@ -56,7 +56,9 @@ step do
 end
 
 step do
-    message "You may see something like this:
+    message "Symbols are like sticky labels from a label gun. We can stick it on stuff to keep  track of it for later. We can label five different spice bottles as 'cinnamon'. Even if the brands and shapes are different, we know they're all the same thing.  Sometimes we do care about the contents. Is this the fancy expensive cinnamon I use in desserts, or the cheap kind I use in mulled cider?  In that case we would use variable so we could look more closely at the individual bottle. 
+
+You may see something like this:
     
     months = [:January, :February, :March, :April, :May, :June, 
               :July, :August, :September, :October, :November, :December]
@@ -64,7 +66,6 @@ step do
     
 Here, we don't care if the month is 'January', 'january', or 'jAnUaRy' - we're talking about the same month. Same idea.
 
-Symbols are like sticky labels from a label gun. We can stick it on stuff to keep  track of it for later. We can label five different spice bottles as 'cinnamon'. Even if the brands and shapes are different, we know they're all the same thing.  Sometimes we do care about the contents. Is this the fancy expensive cinnamon I use in desserts, or the cheap kind I use in mulled cider?  In that case we would use variable so we could look more closely at the individual bottle. 
 
 [The Ruby documentation says](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/):  *If you\’re in doubt whether to use a Symbol or a String, consider what\’s more important: the identity of an object (i.e. a Hash key), or the contents (in the example above, “george”).*
 "
