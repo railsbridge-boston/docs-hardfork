@@ -18,9 +18,9 @@ step do
     5.class
     3.14.class
     true.class
-    [ 1, 2, 3].class
-    {"name" => "value"}.class
     :symbol.class
+    [ 1, 2, 3].class
+    {:name => "value"}.class
     nil.class
     Class.class
     TRYME
