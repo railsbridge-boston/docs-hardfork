@@ -67,4 +67,4 @@ explanation do
   message "Without some kind of conditional, your program would do the same thing every time. Conditionals let you choose to do different things depending on what data you have in hand."
 end
 
-next_step 'working_with_collections'
+next_step 'symbols'

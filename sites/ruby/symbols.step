@@ -1,0 +1,84 @@
+
+message  "
+Symbols are, if not unique to Ruby, at least not found in most other languages. 
+
+They address problems that are difficult to explain at the beginner stage, such as efficient memory use. 
+They're problems you don't think about yet -- but you will! 
+
+For now, focus on recognizing and declaring symbols. 
+"
+
+
+goals do
+    goal "Know a symbol when you see it"
+    goal "Learn how to declare a symbol"
+    goal "Notice when symbols are used"
+end
+
+
+
+step do
+    message "Symbols start with a colon. Let's look at one. "
+    irb <<-CONTENTS
+    :north.class
+    :north.methods
+    CONTENTS
+end
+
+
+step do
+    message "Here are more examples:"
+    irb <<-CONTENTS
+    :north
+    :TUESDAY
+    :"symbols can have spaces if in quotes but it's a lot to type"
+    :'single quotes work too'
+CONTENTS
+    message "Experiment with naming symbols. Do they use the same rules as variables?"
+end
+
+
+step do
+    message "Symbols are constants, like letters and numbers.  Symbols aren't variables. You can't assign a value to them."
+    irb <<-CONTENTS
+    1 = 1
+    "A" = "a"
+    :north = :south
+     CONTENTS
+
+   message "Symbols print their names when they're converted to strings."
+   irb <<-CONTENTS
+    :Saturday.to_s
+    puts "Today is \#{:Saturday}"
+    CONTENTS
+   
+   message  "Symbols are used in a similar way to enums or named constants in other languages -  for unchanging ideas that you want to refer to the same way, no matter where you are in a program. Unlike enums and named constants, you never initialize them with a value." 
+end
+
+step do
+    message "You may see something like this:
+    
+    months = [:January, :February, :March, :April, :May, :June, 
+              :July, :August, :September, :October, :November, :December]
+    month = :January
+    
+Here, we don't care if the month is 'January', 'january', or 'jAnUaRy' - we're talking about the same month. Same idea.
+
+Symbols are like sticky labels from a label gun. We can stick it on stuff to keep  track of it for later. We can label five different spice bottles as 'cinnamon'. Even if the brands and shapes are different, we know they're all the same thing.  Sometimes we do care about the contents. Is this the fancy expensive cinnamon I use in desserts, or the cheap kind I use in mulled cider?  In that case we would use variable so we could look more closely at the individual bottle. 
+
+[The Ruby documentation says](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/):  *If you\’re in doubt whether to use a Symbol or a String, consider what\’s more important: the identity of an object (i.e. a Hash key), or the contents (in the example above, “george”).*
+"
+end
+
+
+explanation do
+    message "Symbols are the labels we apply to keep track of all kinds of things in Ruby. You'll see them again soon in Hashes."
+    message "Symbols are a bit of a cliffhanger - you'll learn more about them in later seasons.  For now, when you see a symbol, think about why the programmer chose to use one. Is the idea important here, or the contents?"
+end
+
+further_reading  do
+    message "[The Difference Between Ruby Symbols and Strings ](http://www.robertsosinski.com/2009/01/11/the-difference-between-ruby-symbols-and-strings/)"
+    message "[The Ruby_Newbie Guide to Symbols](http://www.troubleshooters.com/codecorn/ruby/symbols.htm)"
+end
+
+next_step 'working_with_collections'
