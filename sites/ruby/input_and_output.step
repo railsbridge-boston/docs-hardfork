@@ -52,16 +52,16 @@ puts "You have #{apple_count} apples."
   message "`print` is like `puts` but doesn't make a new line after printing."
   message "`gets`, or **get** **s**tring, pauses your program and waits for the user to type something and hit the enter key. It then returns the value back to your program and continues execution. Since the user could have typed anything ('banana', '19.2', '<<!!@@') we use to_i to ensure what comes out is an integer. If the user didn't type a valid integer, `to_i` returns `0`."
 end
-todo "Rewrite that gets.to_i so it doesn't use method chaining - maybe break validation into a second example"
 
+challenge do
+  message 'Create a program that echoes (or repeats) user input. Use `puts` and `gets` to make this program work.'
 
-step do
+  message 'Here is a sample of how the program might run. The `>` has been used below to indicate that the user should input the value proceeding it.'
+
+  source_code <<-'CONTENTS'
+What do you want to say?
+> sally sells seashells
+You said: sally sells seashells
+CONTENTS
 end
-
-step do
-end
-
-step do
-end
-
 next_step "numbers_and_arithmetic"
