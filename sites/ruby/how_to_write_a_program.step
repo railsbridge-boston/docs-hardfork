@@ -130,7 +130,7 @@ step do
 end
 step do
   message "One option for breaking it up would be to seperate out the method of rolling a single die. Right now, 'rand(sides) + 1' doesn't necessarily make sense in context. If someone was reading this code, it might not be obvious that it is actually generating a number for a rolled die. lets break that up into its own method:"
-  
+
   type_in_file 'roller.rb', <<-'CONTENTS'
     def generate_die_roll
       rand(@sides) + 1
@@ -166,7 +166,7 @@ step do
   puts "We're rolling a six sided die!"
   puts Die.new(6).roll
 
-  puts "Now we're rolling two 20 sided die!"
+  puts "Now we're rolling two 20 sided die twice!"
   puts Die.new(20).roll(2)
   CONTENTS
 
@@ -181,10 +181,10 @@ step do
   message "We're going to assign some of these dice to constants to make it easier to use later."
 
   type_in_file 'roller.rb', <<-'CONTENTS'
-  D6 = Die.new(6)
-  D8 = Die.new(8)
-  D10 = Die.new(10)
-  D20 = Die.new(20)
+  SIX_SIDED_DIE = Die.new(6)
+  EIGHT_SIDED_DIE = Die.new(8)
+  TEN_SIDED_DIE = Die.new(10)
+  TWENTY_SIDED_DIE = Die.new(20)
   CONTENTS
 
   message "So now, our file looks like this:"
@@ -212,16 +212,16 @@ step do
     end
   end
 
-  D6 = Die.new(6)
-  D8 = Die.new(8)
-  D10 = Die.new(10)
-  D20 = Die.new(20)
+  SIX_SIDED_DIE = Die.new(6)
+  EIGHT_SIDED_DIE = Die.new(8)
+  TEN_SIDED_DIE = Die.new(10)
+  TWENTY_SIDED_DIE = Die.new(20)
 
   puts "We're rolling a six sided die!"
-  puts D6.roll
+  puts SIX_SIDED_DIE.roll
 
-  puts "Now we're rolling two 20 sided die!"
-  puts D20.roll(2)
+  puts "Now we're rolling two 20 sided die twice!"
+  puts TWENTY_SIDED_DIE.roll(2)
   CONTENTS
 
   message 'And now you have a program that works, is readable, and easy to use. Congratulations!'
