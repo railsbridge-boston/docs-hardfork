@@ -24,7 +24,7 @@ end
 step do
   message 'Open up a command line application on your computer.'
   message "**On Macs:** In Finder, start Applications > Utilities > Terminal, or find the Terminal application through Spotlight (click the magnifying glass in the top right of the screen and start typing 'Terminal')"
-  message '**On Windows:** open up Git Shell from your desktop or All Programs menu.'
+  message '**On Windows:** open up **Git Shell** from your desktop or All Programs menu. Do not use Power Shell! It doesn\'t support the ssh command that we need.'
   message '**On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.'
 
   message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
@@ -121,13 +121,6 @@ Autocomplete will be as smart as it can.  If you started with `cd`, it will list
      console 'y'
      message 'There are quite a few commands that begin with `p`!  Autocomplete can remind you when you don\'t know what all the choices are.'
 
-end
-
-
-step do
-  console 'man ls'
-  message '`man` stands for **manual** and shows you the documentation for a command. This can include various options used to run the command in different ways.'
-  message "If you see a colon at the bottom of your terminal when viewing a man page, it means you're in a **pager**. Pagers are special programs for showing text that spans multiple pages. You can press the up and down arrows to page through the text, or type `q` to exit."
 end
 
 explanation do
