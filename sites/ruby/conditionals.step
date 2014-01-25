@@ -56,7 +56,7 @@ puts "Your final total was #{total}!"
     CONTENTS
     console 'ruby while_loop.rb'
 
-    message "It's easy for a while loop to get out of control! If your loop body doesn't do anything to make the **while** condition false, your loop will run forever. Programmers call this an **infinite loop**. If you get into an infinite loop, you can terminate the program by typing ctrl+c"
+    message "It's easy for a while loop to get out of control! If your loop body doesn't do anything to make the **while** condition false, your loop will run forever. Programmers call this an **infinite loop**. If you get into an infinite loop, you can terminate the program by typing **ctrl+c**"
 end
 
 explanation do
