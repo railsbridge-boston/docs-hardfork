@@ -14,7 +14,7 @@ puts 'Hello World'
   result <<-RESULT
 irb :006 > puts 'Hello World'
 Hello World
- => nil 
+ => nil
 irb :007 >
   RESULT
   message 'The method `puts` always has the **return value** of `nil`, which is what we see after the `=>` in the output. Printing \'Hello World\' to the screen is just a side-effect.'
@@ -50,7 +50,7 @@ puts "You have #{apple_count} apples."
   message "`print` is like `puts` but doesn't make a new line after printing."
   message "`gets`, or **get** **s**tring, pauses your program and waits for the user to type something and hit the enter key. It then returns the value back to your program and continues execution. Since the user could have typed anything ('banana', '19.2', '<<!!@@') we use to_i to ensure what comes out is an integer. If the user didn't type a valid integer, `to_i` returns `0`."
 end
-todo "Rewrite that gets.to_i so it doesn't use method chaining - maybe break validation into a second example" 
+todo "Rewrite that gets.to_i so it doesn't use method chaining - maybe break validation into a second example"
 
 
 step do
@@ -62,4 +62,4 @@ end
 step do
 end
 
-next_step 'numbers'
+next_step "numbers_and_arithmetic"

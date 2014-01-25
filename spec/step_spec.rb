@@ -89,6 +89,19 @@ RUBY
       hash = URI.escape '#'
       assert { a["href"] == "choose_breakfast?back=hello#{hash}step1" }
     end
+
+    it "escapes colors in the step name" do
+      html_doc(<<-RUBY)
+step "food" do
+  link "overview:_food"
+end
+RUBY
+
+      a = html_doc.css(".step a.link").first
+      hash = URI.escape '#'
+      colon = URI.escape ':', ':'
+      assert { a["href"] == "overview#{colon}_food?back=hello#{hash}step1" }
+    end
   end
 
   describe 'source_code' do

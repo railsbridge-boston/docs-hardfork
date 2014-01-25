@@ -1,4 +1,3 @@
-todo "Explain hashes first? arrays are a special case where keys are automatically assigned?"
 goals do
   goal "Make some arrays and do stuff with them"
   goal "Retrieve data from arrays"

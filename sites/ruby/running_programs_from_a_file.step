@@ -89,4 +89,4 @@ explanation do
     your program becomes larger and larger, it may span many files!"
 end
 
-next_step "getting_help"
+next_step "summary:_tools"

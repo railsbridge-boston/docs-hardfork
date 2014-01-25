@@ -1,0 +1,33 @@
+todo "Demonstrate basic arithmetic - use a bunch of try this:...  * cover everything we\'ll use in a cash register app"
+
+goals do
+  goal "Understand the difference between an integer and a float"
+  goal "Perform basic arithmetic operations"
+end
+
+step do
+  message "In programming, we like to distinguish between different kinds of
+    numbers. Here, we'll talk about integers (whole numbers) and floats
+    (decimals)."
+  irb <<-TRYME
+1.class
+1.0.class
+TRYME
+  message "You'll notice that `1.class` and `1.0.class` are actually 2 different
+    kinds of objects."
+  message "With that in mind, let's see how that plays into performing
+    arithmetic opertions."
+end
+
+step do
+  irb <<-TRYME
+1 + 2
+1.0 + 2.0
+1 + 2.0
+TRYME
+  message "Here, you'll notice that performing an operation on 2 integers will
+    produce an integer and operating on 2 floats will produce a float, but mixing
+    an integer with a float would actually produce a float."
+end
+
+next_step "booleans"

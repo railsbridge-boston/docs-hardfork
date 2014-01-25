@@ -108,9 +108,9 @@ class Step < Erector::Widget
       text "Go on to "
       # todo: extract StepFile with unified name/title/path routines
       require 'uri'
-      hash = URI.escape '#'
-      href = name + "?back=#{page_name}#{hash}step#{current_anchor_num}"
-      a as_title(name), :href => href, :class => 'link'
+      href = "#{name}?back=#{page_name}#step#{current_anchor_num}"
+      escaped_href = URI.escape href, '#:'
+      a as_title(name), href: escaped_href, class: 'link'
     end
   end
 
