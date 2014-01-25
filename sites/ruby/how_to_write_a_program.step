@@ -30,7 +30,7 @@ step do
   message "Open up 'roller.rb' and write this method into the file."
   type_in_file 'roller.rb', <<-'CONTENTS'
   def roll
-    rand(6) +1
+    rand(6) + 1
   end
   puts roll
   CONTENTS
