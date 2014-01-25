@@ -122,6 +122,12 @@ Autocomplete will be as smart as it can.  If you started with `cd`, it will list
 
 end
 
+challenge do
+  message "Using the command line and your editor, create a new directory that contains a set of text files. These text files will be lists of the various things you want to learn."
+
+  message "For example, you might want to learn various things about ruby and HTML. You could create a `ruby.txt` file and a `html.txt` file in the same directory. In each file, enter in a few questions you have about those topics."
+end
+
 explanation do
   message "The command line is an essential tool for computer programmers. While daunting at first, it offers great flexibility in moving around your computer and manipulating files."
   message "There are many, many, many more commands available on the command line than what we've seen here, but these are enough to get you going."
