@@ -36,18 +36,16 @@ IRB
 end
 
 step do
+  message "Try out some of these String methods."
   irb <<-IRB
 'I have many characters'.length
-  IRB
-  message 'The thing after the dot is called a **method**. Methods are things you can do to a given **object**: more on Objects later, just recognize here that the Object is a String.'
-  message "Here's some more methods for you to try:"
-  irb <<-IRB
 'forwards'.reverse
 'jane smith'.upcase
 'a plain old sentence'.delete('aeiou')
-'some string'.methods
   IRB
-  message "There's a method that's simply called `methods` -- it tells you all the methods you can use on a given object."
+  message "<a href='/ruby/datatypes'>Recall</a> that you can see what methods
+  are available for an object by calling `.methods` on it."
+  irb "'some string'.methods"
 end
 
 explanation do
