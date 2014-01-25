@@ -1,19 +1,17 @@
-todo "Fill in page.  We\'ve seen built in data types, input and output, making decisions with conditionals, looping"
+message "We\'ve seen built in data types, input and output, making decisions with conditionals, looping"
 
-goals do
-end
 
-message do
-end
+message <<-CONTENT
+<UL>
+<LI>How would you write "if my age is 18 or more, I can vote?"</LI>
+<LI>How can you read something the user inputs? How can you repeat it back to them?</LI>
+<LI>Add up five numbers.</LI>
+<LI>Make a hash for the people at your table, where the key is their name and the value is their favorite color.</LI>
+<LI>Make an array of the months in the year.</LI>
+</UL>
+CONTENT
 
-step do
-end
 
-step do
-end
-
-step do
-end
-
+message "When programs get big, they get disorganized and hard to read.  Next we'll look at how to keep things tidy with functions and classes."
 next_step "overview:_organizing"
 

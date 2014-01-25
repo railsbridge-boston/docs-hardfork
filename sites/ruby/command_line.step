@@ -52,11 +52,10 @@ step do
 end
 
 step do
-  console 'cd Desktop'
+  console 'cd workspace'
   message '`cd` means **c**hange **d**irectory. You use `cd` when you want to move from the current directory into some other directory.'
   console 'pwd'
-  message "Notice how it changed? The working directory ends in \'\\Desktop\' ."
-  todo "cd into the Vagrant directory that we created during installation."
+  message "Notice how it changed? The working directory ends in '/workspace'."
 end
 
 step do
