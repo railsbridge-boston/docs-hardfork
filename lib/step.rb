@@ -45,6 +45,7 @@ class Step < Erector::Widget
   @@header_sections = {
     steps:"Steps",
     explanation:"Explanation",
+    challenge:"Challenge(s)",
     overview:"Overview",
     discussion:"Discussion Items",
     hints:"Hints",

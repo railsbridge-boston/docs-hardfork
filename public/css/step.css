@@ -112,6 +112,7 @@ table.bordered tr {
 .explanation > h1:before,
 .deploying > h1:before,
 .overview > h1:before,
+.challenge > h1:before,
 .further-reading > h1:before {
   content: "\00a0";
   display: inline-block;
@@ -153,6 +154,10 @@ table.bordered tr {
 
 .hints > h1:before {
   background-color: #86DFD4;
+}
+
+.challenge h1:before {
+  background-color: #F7C6A6;
 }
 
 .tools_and_references > h1:before {
