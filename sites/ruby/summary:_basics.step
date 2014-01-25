@@ -4,8 +4,8 @@ message "Challenge yourself to create programs for the following situations."
 
 message <<-CONTENT
 <UL>
-<LI>Write a program that verifies whether someone can vote based on their supplied age</LI>
-<LI>Write a program that plays back the message they inputted</LI>
+<LI>Write a program that verifies whether someone can vote based on their supplied age.</LI>
+<LI>Write a program that plays back the message a user supplied.</LI>
 <LI>Write a program that adds up five user-supplied numbers.</LI>
 <LI>Make a hash for the people at your table, where the key is their name and the value is their favorite color.</LI>
 <LI>Make an array of the months in the year.</LI>
