@@ -58,6 +58,21 @@ end
     message " The `do ... end` syntax is typically used when a block needs to span multiple lines, while the `{ ... }` syntax is for a single line block."
 end
 
+challenge do
+  message "Let's write a program that greets everyone in your group. Use an array to store everyone's name."
+
+  message 'Here is a sample of how the program might run.
+
+  source_code <<-'CONTENTS'
+Oh, hello, Sally Samsonite!
+Oh, hello, Johnny Jameson!
+Oh, hello, Beth Benitsky!
+Oh, hello, Corinne Camelia!
+CONTENTS
+
+  message "Your program should be written in a way that group members can be removed and added to your array without requiring a change to the rest of your program. Use what you now know about loops so that only one `puts` statement is in your program."
+end
+
 explanation do
   message "As you build complex programs, you'll want to do something to many pieces of data without typing it all out. Loops help solve this problem."
 end
