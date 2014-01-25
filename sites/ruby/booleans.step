@@ -31,9 +31,9 @@ step do
 a = 'apple'
 b = 'banana'
 a == b
-puts a b
+puts a + b
 a = b
-puts a b
+puts a + b
 IRB
    message "Surprise!"
 end
