@@ -70,7 +70,19 @@ Oh, hello, Beth Benitsky!
 Oh, hello, Corinne Camelia!
 CONTENTS
 
-  message "Your program should be written in a way that group members can be removed and added to your array without requiring a change to the rest of your program. Use what you now know about loops so that only one `puts` statement is in your program."
+  message 'Your program should be written in a way that group members can be removed and added to your array without requiring a change to the rest of your program. Use what you now know about loops so that only one `puts` statement is in your program.'
+
+  todo "decide on potential alternative"
+
+  message "Let's write a program that adds up a set of numbers in an array. The numbers you can use as a test case are 4, 6, 5, 5, 10"
+
+  message 'Here is a sample of how the program might run.'
+
+  source_code <<-'CONTENTS'
+The sum of all of the numbers is 30.
+CONTENTS
+
+  message "Your program should be written in a way that doesn't require massive changes when the array of numbers is modified."
 end
 
 explanation do
