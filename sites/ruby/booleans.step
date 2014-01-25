@@ -1,13 +1,16 @@
-message "George Boole was an English mathematician who specialized in logic, especially logic rules involving  true and false.  The Boolean datatype is named in his honor.  
+message "George Boole was an English mathematician who specialized in logic,
+especially logic rules involving true and false.  The Boolean datatype
+is named in his honor.
 
-In code, as in life we base a lot of decisions on whether something is true or false. *\"If it is raining, then I will bring an umbrella; otherwise I will wear sunglasses.\"*  
-"
+In code, as in life we base a lot of decisions on whether something is true or
+false. *\"If it is raining, then I will bring an umbrella; otherwise I will wear
+sunglasses.\"*"
 
 goals do
-goal "Meet True and False"
-goal "Evaluate numbers -  == < > "
-goal "Evaluate logic and, or, not"
-goal "Methods with question marks"
+  goal "Meet True and False"
+  goal "Compare numbers and strings"
+  goal "Evaluate 'and', 'or', and 'not' logic"
+  goal "Understand methods ending with question marks (predicates)"
 end
 
 
@@ -23,7 +26,7 @@ end
 
 
 step do
-  message 'Notice we use a double equals sign to check if things are equal.  It\'s a common mistake to use a single equals sign.'   
+  message 'Notice we use a double equals sign to check if things are equal.  It\'s a common mistake to use a single equals sign.'
   irb <<-IRB
 a = 'apple'
 b = 'banana'
@@ -36,44 +39,44 @@ IRB
 end
 
 step do
-    message "For 'not equals', try these:"
-    irb <<-IRB
-    a = 'apple'
-    b = 'banana'
-    a != b
-    IRB
-    message "The exclamation point means **the opposite of**"
-    irb <<-IRB
-    ! true
-    ! false
-    ! a == b
-    IRB
-    message "In `! a == b`,  Ruby first evaluated `a == b`, then gave the opposite."
-    message "It also means **not true** .  In conditionals, we'll see things like
+  message "For 'not equals', try these:"
+  irb <<-IRB
+a = 'apple'
+b = 'banana'
+a != b
+IRB
+  message "The exclamation point means **the opposite of**"
+  irb <<-IRB
+! true
+! false
+! a == b
+IRB
+  message "In `! a == b`,  Ruby first evaluated `a == b`, then gave the opposite."
+  message "It also means **not true** .  In conditionals, we'll see things like
 
         if ! sunny
             puts \"Bring an umbrella!\"
 
-We can also say 
+We can also say
+
         if sunny == false
             puts \"Bring an umbrella!\"
-but 'if not sunny' is a little more natural sounding.  It's also a little safer - that double equals is easy to mistype as a single equals. 
-
-    "
+but \"if not sunny\" is a little more natural sounding.  It's also a little safer
+- that double equals is easy to mistype as a single equals."
 end
 
 step do
-    message "We can check more than one condition with **and** and **or** . **&&** and ***||** (two pipes) is another notation for and and or."
+    message "We can check more than one condition with `and` and `or` . `&&` and `||` (two pipes) is another notation for `and` and `or`."
 irb <<-IRB
-    yes = true
-    no = false
-    yes and yes
-    yes && yes
-    yes and no
-    no and yes
-    no and no
-    yes or no
-    yes || no 
+yes = true
+no = false
+yes and yes
+yes && yes
+yes and no
+no and yes
+no and no
+yes or no
+yes || no
 IRB
     message "We do something like this with Google when we say 'microsoft and cambridge and not seattle'"
 end
