@@ -1,6 +1,5 @@
-todo "This is mostly the orginal file minus chunks that got moved to other pages. - proofread, test examples, fill out."
 goals do
-  goal do 
+  goal do
     rawtext(md2html('Use `gets` to get input from the user of your program.'))
   end
   goal 'Use a conditional statement to execute a branch of code only some of the time.'
@@ -9,16 +8,13 @@ end
 
 
 step do
-  message 'Create a new file called conditionals_test.rb'
-  type_in_file 'conditionals_test.rb', <<-'CONTENTS'
+  message "In this section, we'll modify the file we've created in previous steps which we called `conditionals_test.rb`. Verify that it has only the following contents."
+
+  contents_in_file 'conditionals_test.rb', <<-'CONTENTS'
 print "How many apples do you have? > "
 apple_count = gets.to_i
 puts "You have #{apple_count} apples."
   CONTENTS
-  console 'ruby conditionals_test.rb'
-  message 'When prompted, type in a number of apples and press enter.'
-  message "`print` is like `puts` but doesn't make a new line after printing."
-  message "`gets`, or **get** **s**tring, pauses your program and waits for the user to type something and hit the enter key. It then returns the value back to your program and continues execution. Since the user could have typed anything ('banana', '19.2', '<<!!@@') we use to_i to ensure what comes out is an integer. If the user didn't type a valid integer, `to_i` returns `0`."
 end
 
 step do
@@ -34,8 +30,8 @@ else
 end
   CONTENTS
   console 'ruby conditionals_test.rb'
-  message 'The `if ... else ... end` construct is a way of changing which lines of your program get executed depending on your data.'
-  message 'Try running the program with different values for apple_count to see each side of the conditional get executed.'
+  message 'Sometimes, we want our programs to make decisions for us. We call this concept **flow control** and it is found in most object oriented programming languages. The `if ... else ... end` construct is a way of selectively executing code based on values that exist in the program.'
+  message 'Try running the program with different values for `apple_count` to see each side of the conditional get executed. Notice how if you enter an apple count less than or equal to 5, `Not many apples...` is outputted. If you enter an apple count greater than 5, then `Lots of apples!` is outputted. The results of the expression `apple_count > 5` returns true or false, and with the use of the `if` statement, your program can start to make decisions as to what parts of the program to execute.'
 end
 
 

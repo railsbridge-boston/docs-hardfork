@@ -252,6 +252,12 @@ class Step < Erector::Widget
     end
   end
 
+  def contents_in_file filename, msg
+    div do
+      source_code :ruby, msg
+    end
+  end
+
   def further_reading
     div :class => "further-reading" do
       h1 "Further Reading"
