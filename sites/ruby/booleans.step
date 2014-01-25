@@ -47,11 +47,11 @@ a != b
 IRB
   message "The exclamation point means **the opposite of**"
   irb <<-IRB
-! true
-! false
-! a == b
+!true
+!false
+!(a == b)
 IRB
-  message "In `! a == b`,  Ruby first evaluated `a == b`, then gave the opposite."
+  message "In `!(a == b)`,  Ruby first evaluated `a == b`, then gave the opposite."
   message "It also means **not true** .  In conditionals, we'll see things like
 
 
