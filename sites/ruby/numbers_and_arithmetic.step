@@ -67,4 +67,19 @@ TRYME
   message "Uh oh! Notice how we did not get a result here. The ruby interpreter raised an error. These errors tell the programmer that they tried to do something that the interpreter does not like or cannot use. Each error has a classification and a message. In this case, we get a `ZeroDivisionError` with the message: divided by 0"
 end
 
+challenge do
+  message "Write a calculator that performs addition. Your program should prompt the user to enter two numbers and output the sum."
+
+  message 'Here is a sample of how the program might run. The `>` has been used below to indicate that the user should input the value proceeding it.'
+
+  source_code <<-'CONTENTS'
+What is the first number?
+> 2
+What is the second number?
+> 4
+The sum is 6
+CONTENTS
+
+end
+
 next_step "booleans"
