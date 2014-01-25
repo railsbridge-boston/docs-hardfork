@@ -1,11 +1,12 @@
-message "We\'ve seen built in data types, input and output, making decisions with conditionals, looping"
+message "We\'ve seen built in data types, input and output, making decisions with conditionals as well as some looping. We've also identified two interesting data structures: the **array** and the **hash**."
 
+message "Challenge yourself to create programs for the following situations."
 
 message <<-CONTENT
 <UL>
-<LI>How would you write "if my age is 18 or more, I can vote?"</LI>
-<LI>How can you read something the user inputs? How can you repeat it back to them?</LI>
-<LI>Add up five numbers.</LI>
+<LI>Write a program that verifies whether someone can vote based on their supplied age</LI>
+<LI>Write a program that plays back the message they inputted</LI>
+<LI>Write a program that adds up five user-supplied numbers.</LI>
 <LI>Make a hash for the people at your table, where the key is their name and the value is their favorite color.</LI>
 <LI>Make an array of the months in the year.</LI>
 </UL>
