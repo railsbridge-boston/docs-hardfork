@@ -61,7 +61,7 @@ end
 challenge do
   message "Let's write a program that greets everyone in your group. Use an array to store everyone's name."
 
-  message 'Here is a sample of how the program might run.
+  message 'Here is a sample of how the program might run.'
 
   source_code <<-'CONTENTS'
 Oh, hello, Sally Samsonite!
