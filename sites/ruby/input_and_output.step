@@ -24,7 +24,7 @@ end
 step do
   message "`print` is like `puts` but doesn't make a new line after printing."
 
-  message 'Create a new file called input_and_output.rb'
+  message 'Create a new file called input\_and\_output.rb'
   type_in_file 'input_and_output.rb', <<-'CONTENTS'
 print "All"
 print " "
@@ -34,6 +34,7 @@ print "a"
 print " "
 print "row"
 CONTENTS
+  message "Save the file and exit out of irb."
   console 'ruby input_and_output.rb'
 end
 
@@ -45,6 +46,7 @@ print "How many apples do you have? > "
 apple_count = gets.to_i
 puts "You have #{apple_count} apples."
   CONTENTS
+  message "Save the file and exit out of irb."
   console 'ruby conditionals_test.rb'
   message 'When prompted, type in a number of apples and press enter.'
   message "`print` is like `puts` but doesn't make a new line after printing."
