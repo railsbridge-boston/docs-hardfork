@@ -2,7 +2,7 @@
 
 goals do
   goal "Use loops to do operations for every element in an array."
-  goal do 
+  goal do
     rawtext(md2html("Use `puts` to print strings to the screen."))
   end
   goal 'Learn the two different syntaxes for creating blocks in Ruby.'
@@ -24,7 +24,7 @@ CONTENTS
 
 message 'The straight up-and-down `|` is called the **\'pipe character\'**. On a US keyboard, it\'s typically the shifted version of the `\` (backslash) key.'
 message "The variable between the pipes is a **block variable**.  It's a way to refer to each item in the collection."
-  message '`each` takes the first element in the array and sends it to the block, which temporarily stores it in the **block variable** and then runs the code after the pipes. It then goes back and does this again for each of the remaining items in the array.'  
+  message '`each` takes the first element in the array and sends it to the block, which temporarily stores it in the **block variable** and then runs the code after the pipes. It then goes back and does this again for each of the remaining items in the array.'
   irb <<-'IRB'
 ducks = ['Huey', 'Dewey', 'Louie']
 ducks.each { |duck| puts "#{duck} quacks!" }
@@ -35,7 +35,11 @@ end
 
 step do
 irb "('a'..'z').each { |letter| puts letter }"
-todo "Explain ranges or cut this example"
+message "In ruby, we have a special construct called a **range**. A range gives us a shortcut in defining a list of objects that fall within starting and ending point. In the example above, we're defining a range of all the lowercase characters between and including 'a' and 'z'. When used with an `each` statement, a range will loop through each value within that starting point and ending point."
+
+irb "('a'...'z').each { |letter| puts letter }"
+
+message "How is this line different from the previous example? The three dots tells us to **omit** the starting and ending points."
 end
 
 step do
