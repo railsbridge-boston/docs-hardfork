@@ -1,10 +1,11 @@
 # The RailsBridge Documentation Project
 
-[![Build Status](https://travis-ci.org/railsbridge/docs.png)](https://travis-ci.org/railsbridge/docs)
+[![Build
+Status](https://travis-ci.org/railsbridge-boston/docs.png)](https://travis-ci.org/railsbridge-boston/docs)
 
 ## Overview
 
-This is a Sinatra app, deployed at <http://docs.railsbridge.org>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop "Suggestotron" curriculum.
+This is a Sinatra app, deployed at <http://docs.railsbridgeboston.org>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop "Suggestotron" curriculum.
 
 Each subproject (a "site") comprises files stored under the "sites" directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The "en" means "English" -- see "Locales" below.)
 
