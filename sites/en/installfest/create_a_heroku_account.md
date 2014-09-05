@@ -1,4 +1,3 @@
-# Create a Heroku Account
 ## 1. Visit the Heroku web site
 
 [http://heroku.com](http://heroku.com)
@@ -8,7 +7,7 @@ click the big **Sign Up** button (it's about halfway down the page)
 
 Enter your email address.
 
-![](/images/warning.png)Use the same email address for heroku, git, github, and ssh.
+![Warning](/img/warning.png) Use the same email address for heroku, git, github, and ssh.
 
 ## 3. Activate your account
 Heroku will send you an activation email. Open it and click on the activation link. It will take you to the Heroku site. Enter and confirm your password. Hit Save.
@@ -48,5 +47,3 @@ heroku keys:add
 
 ## Success!
 You are now ready to deploy web applications with Heroku!
-
-[«Back](/installfest)

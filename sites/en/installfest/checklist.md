@@ -14,12 +14,16 @@
 
 6. Stop the virtual machine for the night:  type `vagrant halt`.
 
-7. From Finder or the Start menu, start Submlime Text or your text editor application. 
+7. From Finder or the Start menu, start Sublime Text or your text editor application.
 
 8. Get a setup confirmation sticker from a staff member and stick it on
-   your laptop where it will be visible when you come back tomorrow morning.
+   your laptop where it will be visible when you return tomorrow.
 
-Congratulations! You are ready to learn how to program with Ruby! 
+### You're Done!
 
-[« Back to Installfest](/installfest)
+Congratulations, you're done with the Friday session. We'll see you at 9:30am
+tomorrow. Please bring the same laptop you used tonight.
 
+If you have any questions, comments, or feedback on tonight's material,
+don't hesitate to let a staff member know. We also have a feedback form
+that you can use early and often to provide feedback about the workshop.

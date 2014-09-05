@@ -1,4 +1,4 @@
-# Finding and Using the Command Line
+## Finding and Using the Command Line
 
 Finding the command line is a little diffrent for each operating system.
 The first step is to find the program that will allow you to access your
@@ -28,6 +28,6 @@ has its own command line inside.
 
 ## Using the Command line
 
-You can read the slides for the
-[Command Line Intro](/workshop/command_line) presentation. If you finish
-that, there's some [Command Line Extra Credit](/installfest/command_line_extras).
+You can read the slides for the <a href="/workshop/command_line">Command Line
+Intro</a> presentation. If you finish that, there's some
+[Command Line Extra Credit](command_line_extra_credit).
