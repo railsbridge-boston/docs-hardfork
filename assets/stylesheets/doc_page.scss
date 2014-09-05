@@ -143,3 +143,14 @@ img {
     page-break-inside: avoid;
   }
 }
+
+.downloads-files {
+  width: 100%;
+}
+.downloads-files td, .downloads-files th {
+  padding: 1em;
+  background-color: #eee;
+}
+.downloads-files th {
+  background-color: #ddd;
+}
