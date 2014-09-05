@@ -87,4 +87,4 @@ you get up and running. Do these steps before coming to the workshop.
 install Ruby natively on your computer, without a virtual machine,
 even on supported versions of Mac OS X or Linux.
 
-[Go to Installfest »](/installfest)
+<a href="/installfest">Go to Installfest »</a>

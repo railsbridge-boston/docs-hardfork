@@ -1,27 +1,25 @@
-# Install a Text Editor
-
-If you already are comfortable with a programming editor, use that one. Just double-check with an instructor to make 
-sure it will work.  
+If you already are comfortable with a programming editor, use that one. Just double-check with an instructor to make
+sure it will work.
 
 If you are unsure, we suggest [Sublime Text 2](http://www.sublimetext.com/2)
 
-### 1. Open your Editor
+## 1. Open your Editor
 
-#### Windows
+### Windows
 
-1. To start Sublime Text 2 please select it from the Start Menu under
-   'All Programs'
+To start Sublime Text 2, please select it from the Start Menu under 'All
+Programs'.
 
-![Submlime Text 2](/images/installfest/sublime2.png?raw=true)
+![Submlime Text 2](/img/installfest/sublime2.png?raw=true)
 
-#### OSX
+### OSX
 
-1. Double-click the `Applications` folder in the disk image, or navigate to `Applications` in the left panel of 
-Finder.  
+1. Double-click the `Applications` folder in the disk image, or navigate to `Applications` in the left panel of
+Finder.
 1. In `Applications`, scroll down until you see `Sublime Text 2`.
 1. Double-click `Sublime Text 2` to open the editor.
 
-#### Linux
+### Linux
 
 Type this in the Terminal to start Sublime:
 
@@ -30,7 +28,7 @@ Type this in the Terminal to start Sublime:
 ```
 Or, you can use your GUIs menus, as an icon has most likely been installed.
 
-### 2. Set some basic preferences
+## 2. Set some basic preferences
 
 Sublime Text 2 reads its preferences from text files. This means you can easily
 edit settings, check your settings into version control, or share settings with
@@ -51,9 +49,6 @@ Open up User Settings (`Sublime Text 2 > Preferences > Settings - User`) and pas
 
 Save the User Settings file (`File > Save`). Your new preferences are now in effect.
 
-### Success!
+## Success!
 
 Now you have an editor that you can use to open any text file, including Ruby programs.
-
-
-[« Back to Installfest](/installfest)

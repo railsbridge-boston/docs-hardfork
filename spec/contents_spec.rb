@@ -17,7 +17,7 @@ describe Contents do
   describe "absolute links" do
     let(:site_name) { 'docs' }
     let(:site_dir) { "#{real_sites_dir}/en/#{site_name}" }
-    let(:page_name) { 'docs' }    
+    let(:page_name) { 'docs' }
     before do
       @toc_html = Nokogiri.parse(@toc.to_html)
     end
@@ -38,7 +38,7 @@ describe Contents do
 
     it 'capitalizes OS X' do
       links = @toc_html.css('a').inject({}) { |hsh, link| hsh[link.text] = link.attr('href'); hsh }
-      links['OS X RVM'].should == '/installfest/osx_rvm'
+      links['OS X'].should == '/installfest/osx'
     end
   end
 
