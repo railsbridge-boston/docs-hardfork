@@ -9,6 +9,8 @@ module Titleizer
       mvc
       rvm
       ssh
+      xp
+      vm
     )
 
     to_be_lowercased = %w(
