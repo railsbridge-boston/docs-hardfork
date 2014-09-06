@@ -41,7 +41,7 @@ class DocPage < Html5Page
   end
 
   def git_url
-    "https://github.com/railsbridge/docs/blob/master/sites/#{@locale}/#{site.name}/#{file_name}"
+    "https://github.com/railsbridge-boston/docs/blob/master/sites/#{@locale}/#{@site_name}/#{file_name}"
   end
 
   def src_url
@@ -114,20 +114,15 @@ class DocPage < Html5Page
 
     footer {
       p do
-        text "Going through this curriculum on your own? Get help on "
-        a "our Discourse forum", href: "http://discourse.bridgefoundry.org/c/railsbridge-help", target: "_blank"
-        text ", where RailsBridge volunteers can answer your questions."
-      end
-      p do
-        text "If you have a suggestion for improving the docs, please make a "
-        a "pull request ", href: "https://github.com/railsbridge/docs"
+        text "If you find something that could be improved, please make a "
+        a "pull request ", href: "https://github.com/railsbridge-boston/docs"
         text "or "
-        a "drop us a note ", href: "https://github.com/railsbridge/docs/issues/new"
+        a "drop us a note ", href: "https://github.com/railsbridge-boston/docs/issues/new"
         text "via GitHub Issues (no technical knowledge required)."
       end
       p do
         text "Source: "
-        url "https://github.com/railsbridge/docs"
+        url "https://github.com/railsbridge-boston/docs"
       end
     }
   end

@@ -62,7 +62,8 @@ Note that in this mode, links are not rewritten, so if they fail you will have t
 
 ## Contributing
 
-Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how to join our [list of contributors](https://github.com/railsbridge/docs/contributors)!
+Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how to join our
+[list of contributors](https://github.com/railsbridge-boston/docs/contributors)!
 
 ## License
 
@@ -73,5 +74,4 @@ The code is licensed under an [MIT license](http://opensource.org/licenses/MIT),
 ## Other Resources
 
 - [StepFile Reference](step_file_reference.md)
-- Workshop organizers: See http://docs.railsbridge.org/workshop for example slide decks you can use in your opening/closing presentations.
-
+- Workshop organizers: See http://docs.railsbridgeboston.org/workshop for example slide decks you can use in your opening/closing presentations.
