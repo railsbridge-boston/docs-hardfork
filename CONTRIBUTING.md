@@ -81,12 +81,12 @@ Next, browse the [GitHub Help site](https://help.github.com) and the
 [GitHub Guides](https://guides.github.com/). The Help Site is more technical, and the
 Guides are very easy to understand tutorials.
 
-You'll want to read about
-[forking](https://help.github.com/articles/fork-a-repo) and then make your own
-fork of [railsbridge/docs](https://github.com/railsbridge/docs). Once you've
-done so, you can clone it and get started by reading up on [what to do when
-submitting a pull request](#when-submitting-a-pull-request), read up on
-[pull requests](https://help.github.com/articles/using-pull-requests)
+You'll want to read about [forking](https://help.github.com/articles/fork-a-repo)
+and then make your own fork of
+[railsbridge-boston/docs](https://github.com/railsbridge-boston/docs).  Once
+you've done so, you can clone it and get started by reading up on
+[what to do when submitting a pull request](#when-submitting-a-pull-request),
+read up on [pull requests](https://help.github.com/articles/using-pull-requests)
 themselves.
 
 If this is all too much, or you'd like a helping hand,
