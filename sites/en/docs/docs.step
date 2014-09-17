@@ -12,6 +12,16 @@ site_desc 'installfest', <<-MARKDOWN
 Instructions for installing the software on your computer in order to use Ruby and Rails.
 MARKDOWN
 
+h1 'Ruby'
+
+site_desc 'ruby', <<-MARKDOWN
+A ruby-specific curriculum, expanded from the "Ruby for Beginners" slide deck. Still new, with room for your contributions.
+MARKDOWN
+
+site_desc 'learn-to-code', <<-MARKDOWN
+A course which teaches how to code from the ground up, using Alex's [Learn To Code In Ruby](http://codelikethis.com/lessons/learn_to_code) curriculum. It's geared towards people who may never have written code before and teaches just enough Ruby to get across basic principles like variables, objects, and the command line.
+MARKDOWN
+
 h1 'Rails'
 
 site_desc 'intro-to-rails', <<-MARKDOWN
@@ -34,16 +44,6 @@ MARKDOWN
 
 site_desc 'intro-to-javascript', <<-MARKDOWN
 A Javascript specific curriculum that walks you through [building a simple game](http://snake-tutorial.zeespencer.com/).
-MARKDOWN
-
-h1 'Ruby'
-
-site_desc 'learn-to-code', <<-MARKDOWN
-A course which teaches how to code from the ground up, using Alex's [Learn To Code In Ruby](http://codelikethis.com/lessons/learn_to_code) curriculum. It's geared towards people who may never have written code before and teaches just enough Ruby to get across basic principles like variables, objects, and the command line.
-MARKDOWN
-
-site_desc 'ruby', <<-MARKDOWN
-A ruby-specific curriculum, expanded from the "Ruby for Beginners" slide deck. Still new, with room for your contributions.
 MARKDOWN
 
 h1 'Other'
