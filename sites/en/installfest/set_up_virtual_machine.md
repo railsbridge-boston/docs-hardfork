@@ -43,7 +43,7 @@ Here is what you should see (approximately):
     the comments in the Vagrantfile as well as documentation on
     `vagrantup.com` for more information on using Vagrant.
 
-Sneak preview of the command line lesson!  Type this to list all the files you've made:
+Type this to list all the files you've made:
 
     ls
 
