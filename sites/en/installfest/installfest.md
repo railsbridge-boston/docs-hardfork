@@ -62,12 +62,7 @@ Follow the instructions in the [VM Setup page](set_up_virtual_machine).
 You've installed a text editor that is designed for coding. Here are some
 suggestions for using it more effectively: [Text Editor](install_a_text_editor)
 
-### 4. Create a Heroku Account
-
-Heroku is the service that you will deploy your application to.
-[Create a Heroku Account](create_a_heroku_account).
-
-### 5. Setup Checklist
+### 4. Setup Checklist
 
 Find a staff member and run through the
 [Installfest Completion Checklist](checklist).
