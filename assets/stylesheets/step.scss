@@ -193,6 +193,10 @@ table.bordered tr {
   background-color: #FBFFCA;
 }
 
+.challenge > h1:before {
+  background-color: #FFD188;
+}
+
 .explanation > h1:before {
   background-color: #C8FFC9;
 }
@@ -305,7 +309,7 @@ table.bordered tr {
 }
 
 .vertically-centered > *:first-child,
-.vertically-centered > *:first-child > *:first-child { 
+.vertically-centered > *:first-child > *:first-child {
   margin-top: 0;
 }
 
