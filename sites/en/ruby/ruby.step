@@ -20,10 +20,10 @@ We're going to be working with:
 * A text editor of your choice
 
 Everything should be set up the night before during our
-<a href="http://www.railsbridgeboston.org/installfest">Installfest</a>. Please
+<a href="/installfest">Installfest</a>. Please
 ensure you have everything working _before_ you show up for the workshop.
 
-You can verify that you have everything working by trying this out in your terminal:
+You can verify that you have everything working by following steps 1 through 4 of the <a href="/installfest/checklist">Installfest Completion Checklist</a> and trying this out in your terminal:
 
 <div class="console"><pre>
 $ irb
