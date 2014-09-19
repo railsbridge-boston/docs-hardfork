@@ -8,15 +8,21 @@ end
 step do
   message "irb is the **i**nteractive **r**u**b**y interpreter. It's a program
     that runs Ruby code as you type it in."
-  message "Start irb."
+  message "Start irb on the **virtual machine**. Any time we ask you to use irb, it should be on the Virtual Machine"
+  console <<-LINES
+    cd ~/workspace
+    vagrant up
+    vagrant ssh
+  LINES
+  result "RailsBridge-VM:~/workspace$"
   console "irb"
-  result "irb: line 001 >"
+  result "irb(main): 001 >"
   message "The prompt changed.  This is irb's way of reminding you that it's
     running, and telling you it's ready."
   message "Hit **Enter** a few times."
-  result "irb: line 002 >
-irb: line 003 >
-irb: line 004 >"
+  result "irb(main): 002 >
+irb(main): 003 >
+irb(main): 004 >"
 
 end
 
@@ -62,9 +68,9 @@ step do
   message "Lets take a closer look at the output of irb:"
   irb "1 + 2"
   result <<-MESSAGE
-1.9.3p125 :015 > 1 + 2
+irb(main):015 > 1 + 2
  => 3
-1.9.3p125 :016 >
+irb(main):016 >
   MESSAGE
   message "Here, `=> 3` is the **return value** of the **statement** `1 + 2`,
     the result of running your code."

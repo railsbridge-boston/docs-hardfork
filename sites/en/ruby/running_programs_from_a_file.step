@@ -19,7 +19,7 @@ INTRO
 goals do
   goal "Use a text editor."
   goal "Write and save a Ruby program into a file"
-  goal "Start and connect to the RailsBridge virtual machine, if you are using it for the workshop"
+  goal "Start and connect to the RailsBridge virtual machine"
   goal "Run Ruby code saved in a file"
 end
 
@@ -37,8 +37,7 @@ step do
   message <<-INFO
 Save the file.
 
-If you're using the RailsBridge virtual machine, *save the file
-in the same folder you created the virtual machine.* That folder is shared
+Save the file in `workspace` -  the same folder you created the virtual machine. That folder is shared
 between your laptop and the vm, like Google Drive.
 
 Did you notice we added  `.rb` at the end of the name? It's standard practice to
@@ -54,8 +53,8 @@ end
 
 step do
   message "Let's look at the file."
-  message "Open your <a href='/ruby/command_line'>terminal</a>, connect to the
-    <a href='/ruby/using_virtual_machines'>VM</a>, and `cd` to your workspace directory"
+  message "Open your <a href='/ruby/command_line'>terminal</a>, and connect to the
+    <a href='/ruby/using_virtual_machines'>VM</a>"
   console "ls"
   result  "my_program.rb"
   console "more my_program.rb"
@@ -71,7 +70,7 @@ end
 
 
 step do
-  message "Now run the code.  Stay in your workspace directory."
+  message "Now run the code.  Stay in your workspace directory on the Virtual Machine."
   console "ruby my_program.rb"
   result <<-CONTENTS
 This code is in a file!
