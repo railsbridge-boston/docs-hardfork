@@ -103,18 +103,11 @@ You will see a welcome message something like this:
 
     RailsBridge-VM:~/workspace$
 
-## Disconnect from the virtual machine
+## Disconnect from the virtual machine (turning it on and off)
 
 When you're done working in the virtual machine, type `exit` to disconnect from the virtual machine.
 
 To stop the virtual machine, type `vagrant halt` from the command line.
-
-## Turning the virtual machine off and on
-
-When you're done for the day, logout and stop your machine:
-
-    logout
-    vagrant halt
 
 And close the command line window.
 
