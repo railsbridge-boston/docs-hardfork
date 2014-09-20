@@ -44,7 +44,7 @@ step do
    	from /usr/bin/irb:12:in `<main>'
    YIKES
    message "This ferocious error message is irb saying \"Huh? What??\" because
-     only irb understands Ruby."
+     irb only understands Ruby."
 end
 
 step do
