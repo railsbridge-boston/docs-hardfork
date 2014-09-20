@@ -23,13 +23,26 @@ Everything should be set up the night before during our
 <a href="/installfest">Installfest</a>. Please
 ensure you have everything working _before_ you show up for the workshop.
 
-You can verify that you have everything working by following steps 1 through 4 of the <a href="/installfest/checklist">Installfest Completion Checklist</a> and trying this out in your terminal:
+You can verify that you have everything working by following steps 1 through 4 of the <au href="/installfest/checklist">Installfest Completion Checklist</a>, which is copied and pasted below; and trying these steps out in your terminal:
+
+NOTE: When writing a command after the $ sign in your terminal, just press enter or return to execute it,
+
+1. To go to the workspace folder: type `cd ~/workspace`
+
+1. To start the virtual machine: type `vagrant up`
+
+1. To connect to the virtual machine: type  `vagrant ssh`  (this is the command line for the Virtual Machine)
+
+1. To start the Ruby interactive editor:  type  `irb`
 
 <div class="console"><pre>
-$ irb
->> 1 + 2
+$ irb  [Enter] or  [Return] 
+>> 1 + 2  [Enter] or  [Return] 
 => 3
 $
+
+1. To exit the Ruby interactive editor:  type  `exit`
+
 </pre>
 </div>
 
