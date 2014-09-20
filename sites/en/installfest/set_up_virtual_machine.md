@@ -8,7 +8,9 @@ This directory will be shared between the virtual machine and your computer. Lik
 
 This is a one-time step to create the virtual machine for the workshop.
 
-Before the workshop, you <a href="/downloads">download</a> the RailsBridge virtual machine image, and saved it in the Downloads folder.  Note that this may have been updated since our last workshop.
+Before the workshop, you might have <a href="/downloads">downloaded</a> the
+RailsBridge virtual machine image, and saved it in the Downloads folder.  Note
+that this may have been updated since our last workshop.
 
 *If you were unable to download the vm ahead of time, we have copies on USB drives.*
 
