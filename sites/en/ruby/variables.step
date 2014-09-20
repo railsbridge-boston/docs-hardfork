@@ -60,9 +60,9 @@ step do
   Check out what happens if you assign a value to a constant."
   CONTENT
   irb <<-IRB
-  true = false
-  1 = 1
-  "a" = 1
+  true == false
+  1 == 1
+  "a" == 1
   IRB
   message "(Notice in the last example we put the a in quotation marks to make it a string.)"
 end
