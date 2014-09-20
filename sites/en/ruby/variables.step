@@ -70,7 +70,7 @@ end
 step do
   message "There are some rules about what you can name a variable."
 	message <<-VARIABLE_NAMES
-Try making variables with the following kinds of names names in irb:
+Try making variables with the following kinds of names in irb:
 
 * all letters (like 'folders')
 
