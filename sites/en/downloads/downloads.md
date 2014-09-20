@@ -36,9 +36,9 @@ Find the column for your OS, and download each file.
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2014-09.box">September 2014 VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.14/VirtualBox-4.3.14-95030-OSX.dmg">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.14/VirtualBox-4.3.14-95030-Win.exe">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.14/VirtualBox-4.3.14-95030-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-OSX.dmg">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-Win.exe">VirtualBox 4.3 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
