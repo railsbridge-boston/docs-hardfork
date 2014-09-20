@@ -107,7 +107,7 @@ end
 
 step do
   message 'In some cases you will now want to connect to your Virtual Machine.'
-  console 'ssh'
+  console 'vagrant ssh'
   result 'RailsBridge-VM:~/workspace$'
 end
 
