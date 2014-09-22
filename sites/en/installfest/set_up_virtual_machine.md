@@ -45,11 +45,7 @@ Here is what you should see (approximately):
     the comments in the Vagrantfile as well as documentation on
     `vagrantup.com` for more information on using Vagrant.
 
-<<<<<<< HEAD
-Sneak preview of the command line lesson!  Type this to list all the files you've made:
-=======
 Type this to list all the files you've made:
->>>>>>> d7f26d16b766d4d0978c82e12f4f8b88ef2652b9
 
     ls
 
@@ -109,26 +105,12 @@ You will see a welcome message something like this:
 
     RailsBridge-VM:~/workspace$
 
-<<<<<<< HEAD
-## Disconnect from the virtual machine
-=======
 ## Disconnect from the virtual machine (turning it on and off)
->>>>>>> d7f26d16b766d4d0978c82e12f4f8b88ef2652b9
 
 When you're done working in the virtual machine, type `exit` to disconnect from the virtual machine.
 
 To stop the virtual machine, type `vagrant halt` from the command line.
 
-<<<<<<< HEAD
-## Turning the virtual machine off and on
-
-When you're done for the day, logout and stop your machine:
-
-    logout
-    vagrant halt
-
-=======
->>>>>>> d7f26d16b766d4d0978c82e12f4f8b88ef2652b9
 And close the command line window.
 
 When you want to use the virtual machine (tomorrow morning, for instance),
