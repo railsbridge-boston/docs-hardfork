@@ -3,6 +3,8 @@ require 'digest/md5'
 require 'erector'
 require 'i18n'
 require 'i18n/backend/fallbacks'
+require 'font-awesome-sass'
+require 'bootstrap-sass'
 
 #require 'wrong'
 #include Wrong::D
@@ -20,6 +22,8 @@ require "deck"
 require "deck/rack_app"
 require "titleizer"
 require "site"
+require 'sprockets'
+require 'jquery-cdn'
 
 class InstallFest < Sinatra::Application   # todo: use Sinatra::Base instead, with more explicit config
   include Erector::Mixin
@@ -29,6 +33,13 @@ class InstallFest < Sinatra::Application   # todo: use Sinatra::Base instead, wi
   # Set available locales in Array of Strings; this is also used when
   # checking availability in dynamic locale assignment, they must be strings.
   AVAILABLE_LOCALES = DEFAULT_SITES.keys.map(&:to_s)
+
+  set :assets, Sprockets::Environment.new
+  settings.assets.append_path "assets/stylesheets"
+  settings.assets.append_path "assets/javascripts"
+  settings.assets.append_path "public/fonts"
+  settings.assets.append_path Bootstrap.javascripts_path
+  JqueryCdn.install(settings.assets)
 
   configure do
     I18n::Backend::Simple.include(I18n::Backend::Fallbacks)
@@ -168,6 +179,22 @@ class InstallFest < Sinatra::Application   # todo: use Sinatra::Base instead, wi
 
   get '/favicon.ico' do
     halt 404
+  end
+
+  get "/assets/:file.:ext" do
+    mime_type = {
+      'js' => 'application/javascript',
+      'css' => 'text/css',
+      'ttf' => 'application/font-ttf',
+      'woff' => 'application/font-woff'
+    }[params[:ext]]
+    content_type mime_type if mime_type
+    settings.assets["#{params[:file]}.#{params[:ext]}"]
+  end
+
+  get '/fonts/font-awesome/:file' do
+    font_path = File.join(FontAwesome::Sass.gem_path, 'assets', 'fonts', 'font-awesome', params[:file])
+    send_file font_path
   end
 
   get "/" do

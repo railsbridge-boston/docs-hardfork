@@ -1,4 +1,4 @@
-message <<-CONTENT    
+message <<-CONTENT
 nil is a special Ruby data type that means "nothing".   It's equivalent to null or None in other programming languages.
 
 
@@ -9,8 +9,8 @@ goal "Know what nil is for"
 end
 
 step do
-message <<-CONTENT    
-How do you set a variable to empty?  
+message <<-CONTENT
+How do you set a variable to empty?
 
 Some of the values we could use can be legitimate values, like:
 
@@ -36,7 +36,7 @@ end
 
 step do
     message "You may have noticed this already:"
-    irb 'puts "What does puts evalute to?"' 
+    irb 'puts "What does puts evaluate to?"'
     message "Ruby returns what an expression evaluated to.  `puts` puts a string on the screen, but always evaluates to nil."
 
 end
@@ -51,11 +51,11 @@ irb <<-IRB
      word = nil
      word.upcase
 IRB
-    result "NoMethodError: undefined method 'downcase' for nil:NilClass"
+    result "NoMethodError: undefined method 'upcase' for nil:NilClass"
     message "What happened?"
     irb "word.class"
     message "`word` was set to nil. Let's look at the alphabetized list of methods the Nil class has."
-    irb "word.method.sort"
+    irb "word.methods.sort"
     message "The error message told us Nil doesn't have a method called upcase."
 
 end
@@ -69,7 +69,7 @@ word.nil?
 word = nil
 word.nil?
 # Remember, two equals signs asks if something is equal
-word == nil?
+word == nil
 IRB
 
     message "What's going on here?"
@@ -94,4 +94,3 @@ end
 
 
 next_step 'symbols'
-

@@ -105,6 +105,12 @@ Bringing machine 'default' up with 'virtualbox' provider...
 CONTENTS
 end
 
+step do
+  message 'In some cases you will now want to connect to your Virtual Machine.'
+  console 'vagrant ssh'
+  result 'RailsBridge-VM:~/workspace$'
+end
+
 further_reading do
   message <<-CONTENTS
 "What's virtualization? Why get that nerdy?" Lifehacker explains it all in [The

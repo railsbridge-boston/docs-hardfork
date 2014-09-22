@@ -79,7 +79,10 @@ CONTENTS
   message "Here is a sample of how the program might run."
 
   source_code <<-'CONTENTS'
-What number do you want to include?
+What operation would you like to do: add (1), subtract (2), multiply (3), or
+divide (4) numbers?
+> 3
+  What number do you want to include?
 > 2
 What number do you want to include?
 > 4
@@ -87,8 +90,6 @@ What number do you want to include?
 > 6
 What number do you want to include?
 > DONE
-Would you like to add (1), subtract (2), multiply (3), or divide (4) these numbers?
-> 3
 The product is 48
 CONTENTS
 end

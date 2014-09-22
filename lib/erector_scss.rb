@@ -1,4 +1,4 @@
-require 'sass' 
+require 'sass'
 
 class Erector::Widget
   def self.scss content

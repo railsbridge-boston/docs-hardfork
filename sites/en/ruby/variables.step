@@ -9,7 +9,7 @@ goals do
 end
 
 step do
-  message "Start up irb."
+  message "Start up irb on the Virtual Machine."
   console "irb"
 end
 
@@ -55,14 +55,14 @@ step do
    end
 step do
   message <<-CONTENT
-  The opposite of a variable is `constant` - a value that doesn't change. 
-  Numbers, strings, nil, true, and false are constants.  
+  The opposite of a variable is `constant` - a value that doesn't change.
+  Numbers, strings, nil, true, and false are constants.
   Check out what happens if you assign a value to a constant."
   CONTENT
   irb <<-IRB
-  true = false
-  1 = 1
-  "a" = 1
+  true == false
+  1 == 1
+  "a" == 1
   IRB
   message "(Notice in the last example we put the a in quotation marks to make it a string.)"
 end
@@ -70,7 +70,7 @@ end
 step do
   message "There are some rules about what you can name a variable."
 	message <<-VARIABLE_NAMES
-Try making variables with the following kinds of names names in irb:
+Try making variables with the following kinds of names in irb:
 
 * all letters (like 'folders')
 

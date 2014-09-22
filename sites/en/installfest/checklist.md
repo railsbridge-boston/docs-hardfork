@@ -1,22 +1,27 @@
 # Installfest Completion Checklist
 
-1. Open a command line, then go to the workspace folder : type `cd ~/workspace`
+1. Open a command line on your computer.
+  - **On Macs:** In Finder, start Applications > Utilities > Terminal, or find the Terminal application through Spotlight (click the magnifying glass in the top right of the screen and start typing 'Terminal')
+  - **On Windows:** open up **Git Shell** from your desktop or All Programs menu. Do not use Power Shell! It doesn\'t support the ssh command that we need.
+  - **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
 
-2. Start the virtual machine: type `vagrant up`
+1. Go to the workspace folder: type `cd ~/workspace`
 
-3. Connect to the virtual machine: type  `vagrant ssh`
+1. Start the virtual machine: type `vagrant up`
 
-4. Start the Ruby interactive editor:  type  `irb`
+1. Connect to the virtual machine: type  `vagrant ssh`  (this is the command line for the Virtual Machine)
 
-5. Exit the Ruby interactive editor:  type  `exit`
+1. Start the Ruby interactive editor:  type  `irb`
 
-5. Disconnect from the virtual machine by typing `exit`
+1. Exit the Ruby interactive editor:  type  `exit`
 
-6. Stop the virtual machine for the night:  type `vagrant halt`.
+1. Disconnect from the virtual machine by typing `exit`
 
-7. From Finder or the Start menu, start Sublime Text or your text editor application.
+1. Stop the virtual machine for the night:  type `vagrant halt`.
 
-8. Get a setup confirmation sticker from a staff member and stick it on
+1. From Finder or the Start menu, start Sublime Text or your text editor application.
+
+1. Get a setup confirmation sticker from a staff member and stick it on
    your laptop where it will be visible when you return tomorrow.
 
 ### You're Done!

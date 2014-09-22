@@ -4,8 +4,8 @@ message "<P>The <B>command line</B> is a text-based way to interact with your co
 and a mouse. We start programs by clicking an icon, look through files and folders in Finder or File Explorer,
 or pick a command from a dropdown menu.</P>
 
-<P>In the command line, we type commands to run programs and navigate through files and folders. We will need this to run
-  Ruby progams from files.  This lesson covers the commands we need for the workshop.</P>"
+<P>In the command line, we type commands to run programs and navigate through files and folders. We will need to do this to run
+  Ruby progams from files that contain our code.  This lesson covers the commands we need for the workshop.</P>"
 
 message "It\'s helpful to keep Finder (OS X), File Explorer (Windows), or
 Nautilus (Ubuntu) open during this topic.  We\'ll make files and move between
@@ -25,7 +25,7 @@ step do
   message '**On Windows:** open up **Git Shell** from your desktop or All Programs menu. Do not use Power Shell! It doesn\'t support the ssh command that we need.'
   message '**On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.'
 
-  message 'We will call this "the console" or "the command line", no matter what program you\'re using. '
+  message 'We will call this "the console",  "the command line" or "the terminal", no matter what program you\'re using. They all mean the same thing'
   message 'Consoles will either start in your home directory, the way OS X and Windows open up in your Desktop, or in the directory you ended in during your last console session.  We\'ll talk more about the home directory in a few steps.'
 
 end
@@ -85,8 +85,7 @@ step do
     console 'cd -'
     message 'What command shows you your current directory?'
     console 'pwd'
-    message 'You should be back in "railsbridge\_ruby\another\_directory".'
-
+    message 'You should be back in your workspace. This will match the output from `pwd` from step 4'
 end
 
 
@@ -106,10 +105,16 @@ ls
 cd rai
     LINES
     message '... and hit `TAB`.'
-    result 'cd railsbridge_ruby'
+    result 'cd railsbridge'
+    message 'Hit `TAB` twice'
+    result 'railsbridge_ruby/ railsbridgevm-2014-09.box'
+    message 'When there are multiple matches, it will show you the options. Type `_`'
+    result 'cd railsbridge_'
+    message '... and hit `TAB` again.'
+    result 'railsbridge_ruby/'
     message <<-LINES
 Autocomplete will be as smart as it can.  If you started with `cd`, it will list directories.
-     If it could be a command, it will suggest commands. When there are multiple matches, it will show you the options.
+     If it could be a command, it will suggest commands.
      LINES
      console 'p'
      message '... and hit `TAB`. What happens?  Hit `TAB` a second time.'

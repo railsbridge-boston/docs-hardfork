@@ -74,7 +74,7 @@ step do
   puts "We're rolling a six sided die!"
   puts roll(6)
 
-  puts "Now we're rolling two 20 sided die!"
+  puts "Now we're rolling two 20-sided dice!"
   puts roll(20, 2)
   CONTENTS
 
@@ -120,7 +120,7 @@ step do
   puts "We're rolling a six sided die!"
   puts Die.new(6).roll
 
-  puts "Now we're rolling two 20 sided die!"
+  puts "Now we're rolling two 20-sided dice!"
   puts Die.new(20).roll(2)
   CONTENTS
 
@@ -166,7 +166,7 @@ step do
   puts "We're rolling a six sided die!"
   puts Die.new(6).roll
 
-  puts "Now we're rolling two 20 sided die twice!"
+  puts "Now we're rolling two 20-sided dice twice!"
   puts Die.new(20).roll(2)
   CONTENTS
 
@@ -220,7 +220,7 @@ step do
   puts "We're rolling a six sided die!"
   puts SIX_SIDED_DIE.roll
 
-  puts "Now we're rolling two 20 sided die twice!"
+  puts "Now we're rolling two 20-sided dice twice!"
   puts TWENTY_SIDED_DIE.roll(2)
   CONTENTS
 

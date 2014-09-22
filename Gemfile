@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby '2.1.2'
 
-gem 'activesupport', '~> 3.2.0'
+gem 'activesupport'
 gem "erector", "~> 0.10.0"
 gem "sinatra", "~> 1.4.0"
 gem "nokogiri"
@@ -14,6 +14,10 @@ gem "deckrb", "~> 0.5.2"
 gem "sass"
 gem "redcarpet"
 gem "i18n", "~> 0.6.9"
+gem 'font-awesome-sass'
+gem 'bootstrap-sass'
+gem 'jquery-cdn'
+gem 'sprockets'
 
 group :development do
   gem "wrong", "~> 0.7.0"
