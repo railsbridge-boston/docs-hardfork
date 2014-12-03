@@ -11,7 +11,10 @@ steps do
   step do
     console "git init"
 
-    message "It doesn't look like anything really happened, but `git init` initialized its repository (or \"repo\") in a hidden directory called `.git`. You can see this by typing `ls -a` to list all files."
+    message "You'll get a message like this:"
+    message "> Initialized empty Git repository in /vagrant/railsbridge/suggestotron/.git/"
+
+    message "It doesn't look like anything really happened, but `git init` created (or initialized) a Git repository in a hidden directory called `.git`. You can see the `.git` directory by typing `ls -a` to list all files."
   end
 
   step do
