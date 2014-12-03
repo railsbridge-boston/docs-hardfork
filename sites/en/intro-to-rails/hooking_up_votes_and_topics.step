@@ -64,7 +64,7 @@ end
 
     console_with_message "Remove a vote from that topic:", "my_topic.votes.first.destroy"
 
-    message "Note that the things you can do to **Model classes** (like **Topic** and **Vote**), differ from the things you can do to **Model instances** (like my\\_topic, here). **my\\_topic.votes** is an **association**, and here behaves mostly like a model class."
+    message "Note that the things you can do to **Model classes** (like **Topic** and **Vote**), differ from the things you can do to **Model instances** (like `my_topic`, here). `my_topic.votes` is an **association**, and here behaves mostly like a model class."
 
     div do
       half_width "Model class / association methods" do
