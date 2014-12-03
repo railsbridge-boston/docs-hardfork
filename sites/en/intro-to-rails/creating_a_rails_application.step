@@ -1,8 +1,8 @@
 img src: "img/Start_page.png", alt: "Screenshot of a Ruby on Rails default home page"
 
 goals do
-  goal "Create Your New Application"
-message "Let's get started! By the end of this step, we'll have a brand-spankin'-new (empty) rails app."
+  goal "Create your new application"
+  message "Let's get started! By the end of this step, we'll have a brand-spankin'-new (empty) Rails app."
 end
 
 steps do
