@@ -28,7 +28,7 @@ steps {
 
     message "with this:"
 
-    source_code :erb, "<td><%= link_to topic.title, topic %></td>"
+    source_code :erb, "<td><%= link_to topic.title, topic_path(topic) %></td>"
   }
 }
 
@@ -48,12 +48,12 @@ explanation {
 
   hr
 
-  source_code :erb, "<td><%= link_to topic.title, topic %></td>"
+  source_code :erb, "<td><%= link_to topic.title, topic_path(topic) %></td>"
 
   message "
   Here's another use of `link_to` to create a link on the page. This
   `link_to` creates a link using the text from the topic title and goes
-  to the topic#show page."
+  to the topics#show page."
 }
 
 next_step "clean_up_links_on_the_topics_list"
