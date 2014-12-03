@@ -16,7 +16,7 @@ steps do
 
   step do
     console "mkdir railsbridge"
-    message "This command creates a new directory for us to store our project in."
+    message "`mkdir` (MaKe DIRectory) creates a new directory for us to store our project in."
   end
 
   step do
