@@ -32,19 +32,19 @@ steps do
 
   step do
     console "rails new suggestotron"
-    message "'rails new' creates a new rails project with the name you give."
-    message "In this case we told it to create a new project called `suggestotron`. We'll go into detail on what it created shortly."
+    message "`rails new` creates a new Rails project with the given name."
+    message "In this case we told it to create a new project called `suggestotron`. We'll go into detail on exactly what it did shortly."
   end
 
   step do
     console "cd suggestotron"
-    message "'cd' stands for change directory."
-    message "'cd suggestotron' makes suggestotron our current directory."
+    message "`cd` stands for change directory."
+    message "`cd suggestotron` makes suggestotron our current directory."
   end
 
   step do
     console "ls"
-    message "'ls' stands for 'list (stuff)'."
+    message '`ls` stands for "list (stuff)".'
     message "It shows you the contents of the current folder."
   end
 
