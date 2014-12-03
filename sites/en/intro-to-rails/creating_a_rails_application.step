@@ -10,8 +10,8 @@ steps do
   tip "If you have _any_ problems, contact a TA immediately."
 
   step do
-    console "cd ~"
-    message "`cd ~` sets our home directory as our current directory."
+    console "cd ~/workspace"
+    message "This command sets our workspace directory as our current directory."
   end
 
   step do
