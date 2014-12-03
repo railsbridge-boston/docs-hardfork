@@ -10,18 +10,17 @@ goals {
 }
 
 steps {
-  step "Remove the 'show' and 'edit' links" do
+  step 'Remove the "show" and "edit" links' do
     message "Open `app/views/topics/index.html.erb` and remove these two lines:"
     source_code :erb, <<-HTML
-<td><%= link_to 'Show', topic %></td>
-<td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+<td><%= link_to "Show", topic %></td>
+<td><%= link_to "Edit", edit_topic_path(topic) %></td>
     HTML
   end
 
-  step "Change 'destroy' to 'delete'" do
-
-    message "Change the line with the word 'Destroy' to this:"
-    source_code :erb, "<td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>"
+  step 'Change "destroy" to "delete"' do
+    message 'Change the line with the word "Destroy" to this:'
+    source_code :erb, '<td><%= link_to "Delete", topic, method: :delete, data: { confirm: "Are you sure?" } %></td>'
   end
 
   step "Confirm your changes" do
