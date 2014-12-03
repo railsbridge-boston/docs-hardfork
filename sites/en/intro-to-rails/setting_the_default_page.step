@@ -33,7 +33,7 @@ root 'topics#index'
 explanation {
 
  message <<-MARKDOWN
-  * `root 'topics#index'` is a rails route that says the default
+  * `root 'topics#index'` is a Rails route that says the default
     address for your site is `topics#index`. `topics#index` is the topics
     list page (the topics controller with the index action).
   * Rails routes control how URLs (web addresses) get matched with

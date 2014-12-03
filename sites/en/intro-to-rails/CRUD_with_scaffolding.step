@@ -9,7 +9,7 @@ goals {
     * **U**pdate existing records
     * **D**estroy or delete records
 
-    Because these 4 actions (CRUD) are so common, rails includes the scaffold command to make creating them easier.
+    Because these 4 actions (CRUD) are so common, Rails includes the scaffold command to make creating them easier.
   MARKDOWN
 }
 

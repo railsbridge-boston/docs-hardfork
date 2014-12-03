@@ -14,10 +14,10 @@ steps {
   step {
     console "rails generate scaffold topic title:string description:text"
     message <<-MARKDOWN
-* `generate scaffold` tells rails to create everything necessary to get up and running with topics.
-* `topic` tells rails the name of the new model.
+* `generate scaffold` tells Rails to create everything necessary to get up and running with topics.
+* `topic` tells Rails the name of the new model.
 * `title:string` says that topics have a title, which is a "string".
-* `description:text` says that topics have a description which is a "text". (What's the difference between "string" and "text"? Basically "text" is for strings that might be very long.)
+* `description:text` says that topics have a description which is a "text". A "text" is like a "string" that might be very long.
 
     MARKDOWN
     message "If you want, take some time to poke around the files listed in this step. You can learn about them in the [Rails Architecture](rails_architecture) page."
@@ -25,7 +25,7 @@ steps {
 
   step {
     console "rake db:migrate"
-    message "This tells rails to update the database to include a table for our new model."
+    message "This tells Rails to update the database to include a table for our new model."
   }
 }
 
