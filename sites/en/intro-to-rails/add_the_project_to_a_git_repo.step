@@ -33,7 +33,7 @@ steps do
         With Git, there are usually many ways to do very similar things.
 
         * `git add foo.txt` adds a file named `foo.txt`
-        * `git add .` adds all new files and changed files, but *keeps* files that you've deleted
+        * `git add .` adds all new files and changed files, but *doesn't touch* files that you've deleted
         * `git add -A` adds everything, including deletions
 
         "Adding deletions" may sound weird, but if you think of a version control system as keeping
