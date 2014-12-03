@@ -30,6 +30,40 @@ steps {
 }
 
 explanation {
+  h2 "Databases don't create tables by themselves - they need instructions."
+
+  message <<-MARKDOWN
+    One of the files the scaffold command created will be named something like
+    `db/migrate/20140515115208_create_topics.rb`. The numbers in the name are
+    the date and time the file was made, so yours will be named differently.
+
+    The file contains Ruby code that describes what the table will look like.
+    This is called a migration file.  It tells the database how to transform
+    itself into the new configuration.
+
+    ```ruby
+    class CreateTopics < ActiveRecord::Migration
+      def change
+        create_table :topics do |t|
+          t.string :title
+          t.text :description
+
+          t.timestamps
+        end
+      end
+    end
+    ```
+
+    See how this lines up with the scaffold command?
+
+    ```
+    rails generate scaffold topic title:string description:text
+    ```
+
+    The migration says to create a table named topics, with a title that's a
+    string, and a description that's text. Rails automatically adds a timestamp,
+    and will use it to automatically record when the data was updated.
+  MARKDOWN
 
   h2 "Rake"
   message <<-MARKDOWN
