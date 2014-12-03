@@ -24,11 +24,9 @@ steps {
   end
 
   step "Confirm your changes" do
-
     message "Now save your file and try reloading in your browser to see the changes."
   end
 }
-
 
 explanation {
   message <<-MARKDOWN
