@@ -142,4 +142,4 @@ pluralize("kiwi")
   end
 end
 
-next_step "getting_started"
+next_step "creating_a_rails_application"
