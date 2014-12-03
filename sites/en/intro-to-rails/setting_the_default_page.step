@@ -16,17 +16,13 @@ steps {
   step "Add a root route" do
     message "Open the file `config/routes.rb` in an editor."
 
-    message "Search the file for **root**, it should be near the top if you are using Rails 4."
+    message "Search the file for the line that says `# 'welcome#index'`. It will be near the top."
 
-    message "Uncomment the line that contains the example command by removing the `#` sign in front of it, and change it to read `root 'topics#index'`. When you are done the line should look like this:"
+    message "Uncomment that line by removing the `#` sign in front of it, and change it to read `root 'topics#index'`. When you are done the line should look like this:"
 
     source_code :ruby, <<-RUBY
 root 'topics#index'
     RUBY
-
-    em do
-      message "(Rails 3.x users should add `root to: 'topics#index'` and will need to remove their `public/index.html` file)."
-    end
   end
 
   step "Confirm your changes" do
@@ -52,7 +48,7 @@ explanation {
   At the terminal type `rake routes`. You should get something that
   looks like this:
 
-  ````
+  ```
     $ rake routes
 
         Prefix Verb   URI Pattern                Controller#Action
@@ -65,14 +61,14 @@ explanation {
                PUT    /topics/:id(.:format)      topics#update
                DELETE /topics/:id(.:format)      topics#destroy
           root GET    /                          topics#index
-  ````
-  This shows all the URLs your application responds to. The code that starts with colons are variables so :id means the id number of the record. The code in parenthesis is optional.
+  ```
+  This shows all the URLs your application responds to. The code that starts with colons are variables so :id means the id number of the record. The code in parentheses is optional.
 
-  In Rails 4, you can also get this information on your site in development. Go to <a href="http://localhost:3000/rails/info">http://localhost:3000/rails/info</a> and you'll see something like this:
+  You can also get this information on your site in development. Go to <a href="http://localhost:3000/rails/info">http://localhost:3000/rails/info</a> and you'll see something like this:
 
   <img src='img/rails4_rails_info_routing.png' alt='Screenshot of browser-based Rails routing info page'>
 
-  You'll also see that table in Rails 4 whenever you try to access an invalid route (try <a href="http://localhost:3000/sandwich">http://localhost:3000/sandwich</a>)
+  You'll also see that table at the bottom of the page whenever you try to access an invalid route, like <a href="http://localhost:3000/sandwich">http://localhost:3000/sandwich</a>.
 
 ### Exploring Routes (optional)
 
