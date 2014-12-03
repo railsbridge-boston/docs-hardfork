@@ -124,6 +124,22 @@ pluralize("kiwi")
 
     message "Methods can also return data. In this case, pluralize returns the word with an 's' added to the end of it. In Ruby, methods return whatever the last line of the method evaluates to."
   end
+
+  step do
+    message "This is an *optional* practice question if you want to brush up on your Ruby. Feel free to skip it! Or talk to your TA if you get stuck, or discuss your solution once you have completed the checkpoint."
+
+    message "Write some Ruby that prints out the names of the people in your group."
+
+    message <<-MARKDOWN
+      Hints:
+
+      1. Start by opening up `irb`.
+      1. Create the names as strings in an array.
+      1. Store that array to a variable.
+      1. Then use the `.each` method on the stored array to loop through each of the names.
+      1. Use the `puts` method to print out the names.
+    MARKDOWN
+  end
 end
 
 next_step "getting_started"
