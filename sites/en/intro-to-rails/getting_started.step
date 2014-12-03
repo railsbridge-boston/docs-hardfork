@@ -12,7 +12,7 @@ steps do
   step do
     insert 'switch_to_home_directory'
   end
-  
+
   step do
     console "mkdir railsbridge"
     message "This command creates a new directory for us to store our project in."
@@ -49,9 +49,13 @@ steps do
 
   step do
     message <<-MARKDOWN
-Open the suggestotron folder as a project in your text editor.
+Let's look at the structure of the whole project.
 
-In **Sublime Text 2**, you can use the `Project > Add Folder to Project...` menu option:
+You can see the project directory when you're using Sublime Text. This is
+convenient when you're going to edit several files and want to navigate quickly.
+
+Open the suggestotron folder as a project in Sublime Text by clicking the
+Project menu and selecting "Add Folder to Project":
 
 ![Sublime Text Project menu screenshot](img/sublime_add_folder_to_project.png)
 
@@ -62,7 +66,7 @@ Select your `suggestotron` folder from the file picker that opens. If everything
   end
 
   message <<-MARKDOWN
-  You can see that <code>rails new</code> created a lot directories and
+  You can see that <code>rails new</code> created a lot of directories and
   files. The ones we want to focus on today are:
   MARKDOWN
 
