@@ -26,6 +26,42 @@ steps {
   step "Confirm your changes" do
     message "Now save your file and try reloading in your browser to see the changes."
   end
+
+  step "Extra Credit!" do
+    message <<-MARKDOWN
+      Give your new website a personal touch by styling it and adding an image.
+
+      Your Rails application loads a CSS stylesheet from the file `assets/stylesheets/scaffolds.css.scss`. Open this file in your text editor.
+
+      If you have web design skills already, you can go to town. If not, let's make a simple font change.
+
+      Change the body's `font-family` on line 4 to serif:
+
+      ```
+      font family: serif;
+      ```
+
+      Reload your browser to see your web pages styled in a different font.
+
+      Let's add an image to the layout. Open `app/views/layouts/application.html.erb` in your text editor.
+
+      Right after the opening `<body>` tag, let's add an image:
+
+      ```
+      <img src="http://i.imgur.com/MQHYB.jpg"/>
+      ```
+
+      Reload your browser. You should see an image!
+
+      You can choose another image from the web and change the src attribute value. If the image is too big, you can resize it like this
+
+      ```
+      <img src="http://i.imgur.com/MQHYB.jpg" height="100" />
+      ```
+
+      The `height="100"` ensures that the image is 100 pixels tall, and no more.
+    MARKDOWN
+  end
 }
 
 explanation {
