@@ -4,9 +4,9 @@ goals {
 
   message "Let's clean up the topics list page by doing the following:"
 
-  goal "Remove the 'show' link"
-  goal "Remove the 'edit' link"
-  goal "Change 'destroy' to 'delete'"
+  goal 'Removing the "show" link'
+  goal 'Removing the "edit" link'
+  goal 'Changing "destroy" to "delete"'
 }
 
 steps {
