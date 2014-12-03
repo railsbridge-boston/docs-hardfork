@@ -40,10 +40,10 @@ end
   step "Play around with Topics and Votes in the Rails console" do
     message "First, make sure you've made at least one topic on the site."
 
-    console_with_message "Next, open a Rails console in a terminal window:", "rails c"
+    console_with_message "Next, open a Rails console in a terminal window:", "rails console"
 
     result <<-CONSOLE
-      $ rails c
+      $ rails console
       Loading development environment (Rails 4.1.0)
       1.9.3-p194 :001 >
     CONSOLE
