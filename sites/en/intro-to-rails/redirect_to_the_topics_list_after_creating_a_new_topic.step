@@ -25,7 +25,7 @@ steps {
 
     source_code :ruby, "format.html { redirect_to topics_path, notice: 'Topic was successfully created.' }"
 
-    message 'so that the file looks like this:'
+    message 'so that the method looks like this:'
 
     source_code :ruby, <<-RUBY
 def create
@@ -61,8 +61,8 @@ message "In the same file, locate the update method. "
       message "Find the `<body>` HTML tag and immediately after add the following code:"
 
       source_code :ruby, <<-RUBY
-<% flash.each do |name, msg| %>
-    <div><%= msg %></div>
+<% flash.each do |name, message| %>
+    <div><%= message %></div>
 <% end %>
       RUBY
   end
