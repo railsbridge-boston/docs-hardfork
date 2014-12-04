@@ -1,5 +1,4 @@
-goals {
-
+goals do
   message "Our app is nearly done! The main topics listing page is pretty busy. There are a lot of links that aren't necessary."
 
   message "Let's clean up the topics list page by doing the following:"
@@ -7,9 +6,9 @@ goals {
   goal 'Removing the "show" link'
   goal 'Removing the "edit" link'
   goal 'Changing "destroy" to "delete"'
-}
+end
 
-steps {
+steps do
   step 'Remove the "show" and "edit" links' do
     message "Open `app/views/topics/index.html.erb` and remove these two lines:"
     source_code :erb, <<-HTML
@@ -62,15 +61,15 @@ steps {
       The `height="100"` ensures that the image is 100 pixels tall, and no more.
     MARKDOWN
   end
-}
+end
 
-explanation {
+explanation do
   message <<-MARKDOWN
   * The two links we removed were show and edit.  We did this because the title now links to the show page and from the show page you can reach the edit page.
 
   * The second change we made was to make the link text 'Delete' instead of destroy.
   MARKDOWN
-}
+end
 
 insert 'consider_deploying'
 

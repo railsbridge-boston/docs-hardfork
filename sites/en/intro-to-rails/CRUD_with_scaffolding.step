@@ -1,5 +1,5 @@
 ---
-goals {
+goals do
 
   message <<-MARKDOWN
     At the core, most database driven web sites are the same. They need to store records and provide a way to do the following:
@@ -11,22 +11,22 @@ goals {
 
     Because these 4 actions (CRUD) are so common, Rails includes the scaffold command to make creating them easier.
   MARKDOWN
-}
+end
 
-steps {
+steps do
 
-  step {
+  step do
     console "rails server"
-  }
+  end
 
-  step {
+  step do
     message "Point your browser to [http://localhost:3000/topics](http://localhost:3000/topics)"
     message 'You should see the "Listing Topics" page with headers for title and description, and a link to add a new topic:'
 
     img src: "img/Seattle_topic_list_page.png", alt: "Screenshot of topic list page"
-  }
+  end
 
-  step {
+  step do
     message <<-MARKDOWN
   * Click on "New Topic"
   * Fill in the form and click "Create Topic"
@@ -34,9 +34,9 @@ steps {
     MARKDOWN
 
     img alt: "Screenshot of topic detail page with confirmation message", src: "img/Seattle_topic_created.png"
-  }
+  end
 
-  step {
+  step do
     message <<-MARKDOWN
       * Click on "Back"
       * You should see the topic list again, this time with your new topic listed:
@@ -46,10 +46,10 @@ steps {
       * Try the "show", "edit", and "destroy" links to see what they do
       * You've created a basic database-driven web site. Congratulations!
     MARKDOWN
-  }
-}
+  end
+end
 
-explanation {
+explanation do
 
   message <<-MARKDOWN
   How did all those pages get created and hooked together? `rails scaffold` did it for you.
@@ -102,6 +102,6 @@ explanation {
       <code>def</code>) for each of the views listed above (except
       _form.html.erb)
     MARKDOWN
-}
+end
 
 next_step "setting_the_default_page"

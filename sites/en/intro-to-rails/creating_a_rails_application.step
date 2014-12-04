@@ -72,30 +72,35 @@ Select your `suggestotron` folder from the file picker that opens. If everything
   MARKDOWN
 
   table border: "1", cellspacing: "0", cellpadding: "3", align: "center" do
-    tr {
+    tr do
       th "File/Folder"
       th "Purpose"
-    }
-    tr {
+    end
+
+    tr do
       td "app/"
       td "Contains the controllers, models, and views for your application.  You will do most of your work here."
-    }
-    tr {
+    end
+
+    tr do
       td "config/"
       td "Configure your application's runtime rules, routes, database, and more."
-    }
-    tr {
+    end
+
+    tr do
       td "db/"
       td "Shows your current database schema, as well as the database migrations."
-    }
-    tr {
+    end
+
+    tr do
       td "public/"
       td "The only folder seen to the world as-is. If you put files in here, they will be served directly without any processing by Rails."
-    }
-    tr {
+    end
+
+    tr do
       td "app/assets/"
       td "This is where your images, JavaScript, stylesheets (CSS), and other static files should go. Modern rails apps use something called the Assets Pipeline, which combines all the JavaScript and CSS files in this directory into a single file for speediness."
-    }
+    end
   end
 
   message "There is a lot more that `rails new` created. Probably enough to fill a book, so we're going to ignore them for now."

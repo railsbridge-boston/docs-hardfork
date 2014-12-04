@@ -1,5 +1,4 @@
-goals {
-
+goals do
   div(style: 'margin: 0 auto; width: 250px; height: 120px;') do
     model_diagram header: 'Topics', fields: %w(id title description), style: "float: left;"
     div(style: 'float: left; position: relative; width: 60px; height: 100px;') do
@@ -14,10 +13,9 @@ goals {
   message "Because there is an explicit relationship between a topic and its
   votes, we need to specify that. In this step, we'll explicitly
   declare the relationship between votes and topics."
-}
+end
 
-steps {
-
+steps do
   step "Teach the Topic model about Votes" do
     message "Edit `app/models/topic.rb` so that it looks like this:"
 
@@ -100,9 +98,9 @@ end
       An exhaustive list of things you can do to models and associations can be found in the <a href="http://guides.rubyonrails.org/active_record_querying.html">Active Record Query Interface RailsGuide</a>.
     TEXT
   end
-}
+end
 
-explanation {
+explanation do
 
   message <<-MARKDOWN
 
@@ -124,6 +122,6 @@ It can still be important to clean up after yourself! `dependent: :destroy`
   the **votes** that correspond to it will be destroyed, too. Without
   `dependent :destroy`, those votes would live on the database forever.
   MARKDOWN
-}
+end
 
 next_step "allow_people_to_vote"

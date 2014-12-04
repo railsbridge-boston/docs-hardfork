@@ -1,9 +1,8 @@
-goals {
+goals do
   message "Now we're going to add a button people can click to cast a vote."
-}
+end
 
-steps {
-
+steps do
   step "Add a new controller action for voting" do
     message "Edit `app/controllers/topics_controller.rb` and add this method at the end of the controller, above the `private` keyword:"
 
@@ -77,7 +76,7 @@ steps {
   step "Confirm your changes in the browser" do
     message "Go back to <http://localhost:3000/topics> and play."
   end
-}
+end
 
 insert 'consider_deploying'
 
