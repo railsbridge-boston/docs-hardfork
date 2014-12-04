@@ -17,7 +17,7 @@ steps do
   end
 
   step do
-    message "When at the terminal with your running Rails server, type **Control-C** to stop rails server. You can do this now."
+    message "When at the terminal where Rails server is running, you can always type **Control-C** to stop it. You can do this now."
     result <<-STOPPING_RAILS_SERVER
 ^C[2012-03-31 08:33:11] INFO  going to shutdown ...
 [2012-03-31 08:33:11] INFO  WEBrick::HTTPServer#start done.
