@@ -18,6 +18,30 @@ situation "First-time setup" do
     message "`heroku create` registers a new application on Heroku's system. You should see some output including your new app's URL, which will look like http://sushi-island-6128.herokuapp.com/ ."
   end
 
+  step "Create a Heroku key" do
+    message "Creating a Heroku key will let Heroku know who is creating the app."
+    console "heroku keys:add"
+    message <<-MARKDOWN
+      The output will look like this:
+
+      ```
+      Could not find an existing public key.
+      Would you like to generate one? [Yn]
+      ```
+
+      Type "Y" for "Yes" and hit "Enter".
+
+      The output will look like this:
+
+      ```
+      Generating new SSH public key.
+      Uploading SSH public key /home/vagrant/.ssh/id_rsa.pub... done
+      ```
+
+      Great, now you have a Heroku key!
+    MARKDOWN
+  end
+
   step "Edit the Gemfile" do
     important "Each application has its own `Gemfile`. Be sure you're opening the one inside your app's folder."
 
