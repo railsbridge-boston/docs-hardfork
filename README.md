@@ -18,12 +18,17 @@ These files can be in any of these formats:
 
 (If multiple files exist with the same base name, `.step` is preferred over `.md`, and `.md` over `.mw`.)
 
-## Usage
+## Getting started
 
-    bundle install
+To set up your environment, run:
+
+    bin/setup
+
+To run the server:
+
     rake run
 
-If the above fails (say, because `rerun` doesn't work on your system), try
+If `rake run` fails (say, because `rerun` doesn't work on your system), try:
 
     rackup
 
@@ -65,11 +70,7 @@ Note that in this mode, links are not rewritten, so if they fail you will have t
 
 Only organizers and invited collaborators are allowed to deploy the app.
 
-To deploy, you must first add the Heroku remote:
-
-    git remote add heroku git@heroku.com:railsbridgeboston-docs.git
-
-Then, you can push:
+To do so, run:
 
     git push heroku master
 
