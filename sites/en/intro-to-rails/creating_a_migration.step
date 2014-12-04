@@ -60,9 +60,10 @@ explanation {
     rails generate scaffold topic title:string description:text
     ```
 
-    The migration says to create a table named topics, with a title that's a
-    string, and a description that's text. Rails automatically adds a timestamp,
-    and will use it to automatically record when the data was updated.
+    The migration says to create a table named "topics", with a title column
+    that's a string, and a description column that's text. Rails automatically
+    adds timestamps, and will use it to automatically record when the data was
+    created and updated.
   MARKDOWN
 
   h2 "Rake"
