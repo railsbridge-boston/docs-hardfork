@@ -1,13 +1,11 @@
-goals {
+goals do
   message "Your friends recommended two changes for the site:"
   goal "Don't show the description on the list page"
   goal "Make the title a link and when it's clicked show the description"
-}
+end
 
-steps {
-
-
-  step("Remove the description") {
+steps do
+  step("Remove the description") do
 
     message "Let's start by removing the description. Open `app/views/topics/index.html.erb` and delete the line that looks like this:"
 
@@ -17,10 +15,9 @@ steps {
   source_code :erb, "<th>Description</th>"
 
     message "If you save and try to load it in the browser you should see that the description no longer appears."
+  end
 
-  }
-
-  step("Make the title a link") {
+  step("Make the title a link") do
 
     message "Now make the title a link by editing `app/views/topics/index.html.erb` (again) and replacing this line:"
 
@@ -29,10 +26,10 @@ steps {
     message "with this:"
 
     source_code :erb, "<td><%= link_to topic.title, topic_path(topic) %></td>"
-  }
-}
+  end
+end
 
-explanation {
+explanation do
 
   source_code :erb, "<td><%= topic.description %></td>"
 
@@ -54,6 +51,6 @@ explanation {
   Here's another use of `link_to` to create a link on the page. This
   `link_to` creates a link using the text from the topic title and goes
   to the topics#show page."
-}
+end
 
 next_step "clean_up_links_on_the_topics_list"

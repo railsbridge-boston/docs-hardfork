@@ -1,4 +1,4 @@
-goals {
+goals do
 
   message <<-MARKDOWN
   Now that the structure is complete, let's make the flow work smoothly.
@@ -9,9 +9,9 @@ goals {
 
   In this step we'll make that happen and learn a bit about routes in Rails.
   MARKDOWN
-}
+end
 
-steps {
+steps do
 
   step "Add a root route" do
     message "Open the file `config/routes.rb` in an editor."
@@ -28,10 +28,9 @@ root 'topics#index'
   step "Confirm your changes" do
     message "Go back to <http://localhost:3000/>. You should be taken to the topics list automatically."
   end
-}
+end
 
-explanation {
-
+explanation do
  message <<-MARKDOWN
   * `root 'topics#index'` is a Rails route that says the default
     address for your site is `topics#index`. `topics#index` is the topics
@@ -88,7 +87,7 @@ explanation {
   `get` or `post` (and lots more).
 
   MARKDOWN
-}
+end
 
 insert 'consider_deploying'
 
