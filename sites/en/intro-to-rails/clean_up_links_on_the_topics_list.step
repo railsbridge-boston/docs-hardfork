@@ -35,7 +35,7 @@ steps {
 
       If you have web design skills already, you can go to town. If not, let's make a simple font change.
 
-      Change the body's `font-family` on line 4 to serif:
+      Change the body's `font-family` on line 4 to `serif`:
 
       ```
       font family: serif;
@@ -53,7 +53,7 @@ steps {
 
       Reload your browser. You should see an image!
 
-      You can choose another image from the web and change the src attribute value. If the image is too big, you can resize it like this
+      You can choose another image from the web and change the `src` attribute value. If the image is too big, you can resize it like this:
 
       ```
       <img src="http://i.imgur.com/MQHYB.jpg" height="100" />

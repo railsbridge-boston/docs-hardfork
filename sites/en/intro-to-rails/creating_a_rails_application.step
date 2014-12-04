@@ -38,7 +38,7 @@ steps do
 
   step do
     console "cd suggestotron"
-    message "`cd` stands for change directory."
+    message '`cd` stands for "change directory".'
     message "`cd suggestotron` makes suggestotron our current directory."
   end
 
@@ -67,7 +67,7 @@ Select your `suggestotron` folder from the file picker that opens. If everything
   end
 
   message <<-MARKDOWN
-  You can see that <code>rails new</code> created a lot of directories and
+  You can see that `rails new` created a lot of directories and
   files. The ones we want to focus on today are:
   MARKDOWN
 
