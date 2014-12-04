@@ -61,6 +61,18 @@ Use a `locale` or `l` parameter: `http://docs.railsbridge.org/?l=es`.
 
 Note that in this mode, links are not rewritten, so if they fail you will have to manually add the parameter again.
 
+## Deploying
+
+Only organizers and invited collaborators are allowed to deploy the app.
+
+To deploy, you must first add the Heroku remote:
+
+    git remote add heroku git@heroku.com:railsbridgeboston-docs.git
+
+Then, you can push:
+
+    git push heroku master
+
 ## Contributing
 
 Check out [CONTRIBUTING.md](CONTRIBUTING.md) to see how to join our
