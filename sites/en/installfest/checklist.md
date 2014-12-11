@@ -21,7 +21,7 @@
 
 1. From Finder or the Start menu, start Sublime Text or your text editor application.
 
-1. Get a setup confirmation sticker from a staff member and stick it on
+1. Get a setup confirmation sticker from a TA and stick it on
    your laptop where it will be visible when you return tomorrow.
 
 ### You're Done!
@@ -30,5 +30,5 @@ Congratulations, you're done with the Friday session. We'll see you at 9:30am
 tomorrow. Please bring the same laptop you used tonight.
 
 If you have any questions, comments, or feedback on tonight's material,
-don't hesitate to let a staff member know. We also have a feedback form
+don't hesitate to let a TA know. We also have a feedback form
 that you can use early and often to provide feedback about the workshop.

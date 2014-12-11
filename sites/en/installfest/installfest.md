@@ -10,7 +10,7 @@ At the end of this tutorial, you will have all the tools you need to write and
 run Ruby code. Work through these sections in order, and ask questions if you
 get stuck! That's what the TAs and instructors are here for.
 
-When you are done with all the steps, find a staff member to go through the
+When you are done with all the steps, find a TA to go through the
 checklist with you.
 
 ### 1. Set Up Your Programming Environment
@@ -65,5 +65,5 @@ suggestions for using it more effectively: [Text Editor](install_a_text_editor)
 
 ### 4. Setup Checklist
 
-Find a staff member and run through the
+Find a TA and run through the
 [Installfest Completion Checklist](checklist).
