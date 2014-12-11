@@ -9,11 +9,11 @@
 
 1. Start the virtual machine: type `vagrant up`
 
-1. Connect to the virtual machine: type  `vagrant ssh`
+1. Connect to the virtual machine: type `vagrant ssh`
 
-1. Start the Ruby interactive editor:  type  `irb`
+1. Start the Ruby interactive editor: type `irb`
 
-1. Exit the Ruby interactive editor:  type  `exit`
+1. Exit the Ruby interactive editor: type `exit`
 
 1. Disconnect from the virtual machine by typing `exit`
 
