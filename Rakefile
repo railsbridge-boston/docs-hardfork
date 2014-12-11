@@ -1,3 +1,6 @@
+require "bundler/setup"
+Bundler.require
+
 def windows?
   Rake::Win32.windows?
 end
