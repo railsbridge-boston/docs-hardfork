@@ -3,7 +3,8 @@
 </div>
 
 ### Goal
-Install Ruby, Install a Text Editor, and Start Coding
+
+**Install Ruby, Install a Text Editor, and Start Coding**
 
 At the end of this tutorial, you will have all the tools you need to write and
 run Ruby code. Work through these sections in order, and ask questions if you
