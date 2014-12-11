@@ -9,7 +9,7 @@
 
 1. Start the virtual machine: type `vagrant up`
 
-1. Connect to the virtual machine: type  `vagrant ssh`  (this is the command line for the Virtual Machine)
+1. Connect to the virtual machine: type  `vagrant ssh`
 
 1. Start the Ruby interactive editor:  type  `irb`
 
