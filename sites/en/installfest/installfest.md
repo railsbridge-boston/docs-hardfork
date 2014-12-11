@@ -19,8 +19,8 @@ First, make sure you have downloaded the files for your operating system from
 the <a href="/downloads">Downloads page</a>. If you don't have them, you can get them
 from a TA with a USB drive.
 
-Choose the instructions below for your operating system. This will take you to
-a new page. Use your browser's back button to return here. Most students will
+Choose the instructions below for your operating system. _This will take you to
+a new page_. Use your browser's back button to return here. Most students will
 have one of the operating systems in this row.
 
 <table class="downloads-files">
