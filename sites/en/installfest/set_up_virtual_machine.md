@@ -111,7 +111,7 @@ Let's set up Git, a way to track the code that you write tomorrow.
 
 Type this, replacing `"Your Name"` with your full name in quotes:
 
-    git config user.name "Your Name"
+    git config --global user.name "Your Name"
 
 The `--global` option tells Git to set your name system-wide, instead of in only
 one place.
