@@ -24,10 +24,6 @@ Answer the following questions using irb:
 
 Q: What is 1 plus 2 times 3?
 
-# Order of operations
-
-Q: What is 1 plus 2 times 3?
-
 A: *It depends!*
 
   * `(1 + 2) * 3` is 9
