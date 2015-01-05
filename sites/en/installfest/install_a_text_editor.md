@@ -26,7 +26,7 @@ Type this in the Terminal to start Sublime:
 ```text
 /usr/bin/sublime-text
 ```
-Or, you can use your GUIs menus, as an icon has most likely been installed.
+Or, you can use your GUI's menus, as an icon has most likely been installed.
 
 ## 2. Set some basic preferences
 
