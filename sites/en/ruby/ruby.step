@@ -25,7 +25,7 @@ ensure you have everything working _before_ you show up for the workshop.
 
 You can verify that you have everything working by following steps 1 through 4 of the <au href="/installfest/checklist">Installfest Completion Checklist</a>, which is copied and pasted below; and trying these steps out in your terminal:
 
-NOTE: When writing a command after the $ sign in your terminal, just press enter or return to execute it,
+NOTE: When writing a command after the $ sign in your terminal, or in IRB, just press Enter or Return to execute it.
 
 1. To go to the workspace folder: type `cd ~/workspace`
 
@@ -36,13 +36,10 @@ NOTE: When writing a command after the $ sign in your terminal, just press enter
 1. To start the Ruby interactive editor:  type  `irb`
 
 <div class="console"><pre>
-$ irb  [Enter] or  [Return] 
->> 1 + 2  [Enter] or  [Return] 
+$ irb
+>> 1 + 2
 => 3
-$
-
-1. To exit the Ruby interactive editor:  type  `exit`
-
+>> exit
 </pre>
 </div>
 
