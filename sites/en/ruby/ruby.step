@@ -31,15 +31,15 @@ NOTE: When writing a command after the $ sign in your terminal, or in IRB, just 
 
 1. To start the virtual machine: type `vagrant up`
 
-1. To connect to the virtual machine: type  `vagrant ssh`  (this is the command line for the Virtual Machine)
+1. To connect to the virtual machine: type  `vagrant ssh`
 
-1. To start the Ruby interactive editor:  type  `irb`
+1. To start the Ruby interactive editor: type  `irb`
 
 <div class="console"><pre>
 $ irb
->> 1 + 2
+irb(main)> 1 + 2
 => 3
->> exit
+irb(main)> exit
 </pre>
 </div>
 
