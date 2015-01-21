@@ -36,14 +36,14 @@ Find the column for your OS, and download each file.
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2014-09.box">September 2014 VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-OSX.dmg">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-Win.exe">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96996-OSX.dmg">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96997-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96997-Win.exe">VirtualBox 4.3 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.3.dmg">Vagrant 1.6 Installer</a></td>
-  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.3.msi">Vagrant 1.6 Installer</a></td>
+  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.dmg>Vagrant 1.7 Installer</a></td>
+  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.msi">Vagrant 1.6 Installer</a></td>
   <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
   <td><a href="http://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
@@ -56,7 +56,7 @@ Find the column for your OS, and download each file.
 <tr>
   <td></td>
   <td><a href="http://windows.github.com/">SSH (from GitHub)</a></td>
-  <td><a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.2-preview20140411/Git-1.9.2-preview20140411.exe">SSH (from Git)</a></td>
+  <td><a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe">SSH (from Git)</a></td>
   <td></td>
 </tr>
 </table>
