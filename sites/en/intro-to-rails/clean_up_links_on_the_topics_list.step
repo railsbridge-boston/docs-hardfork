@@ -37,7 +37,7 @@ steps do
       Change the body's `font-family` on line 4 to `serif`:
 
       ```
-      font family: serif;
+      font-family: serif;
       ```
 
       Reload your browser to see your web pages styled in a different font.
