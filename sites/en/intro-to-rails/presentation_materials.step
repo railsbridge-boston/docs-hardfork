@@ -1,7 +1,13 @@
-h2 do
-  a 'Intro to Ruby for the non-programmer', href: 'https://speakerdeck.com/jboursiquot/intro-to-ruby-for-the-non-programmer'
-  
-  a 'Introduction to MVC', href: 'https://docs.google.com/presentation/d/1av4QSS2wA4lq7OuwO6kH3Y9jMOuRUhELGurS1wbpjgI/edit'
+ul do
+  li do
+    a 'Intro to Ruby for the non-programmer', href: 'https://speakerdeck.com/jboursiquot/intro-to-ruby-for-the-non-programmer'
+  end
 
-  a 'Rails navigation, links & routes', href: 'https://drive.google.com/file/d/0B5uT4W_pFua2bl90Z1QyeURBSEU/view'
+  li do
+    a 'Introduction to MVC', href: 'https://docs.google.com/presentation/d/1av4QSS2wA4lq7OuwO6kH3Y9jMOuRUhELGurS1wbpjgI/edit'
+  end
+
+  li do
+    a 'Rails navigation, links & routes', href: 'https://drive.google.com/file/d/0B5uT4W_pFua2bl90Z1QyeURBSEU/view'
+  end
 end
