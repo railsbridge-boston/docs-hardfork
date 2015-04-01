@@ -2,7 +2,7 @@
 
 1. Open a command line on your computer.
   - **On Macs:** In Finder, start Applications > Utilities > Terminal, or find the Terminal application through Spotlight (click the magnifying glass in the top right of the screen and start typing 'Terminal')
-  - **On Windows:** open up **Git Shell** from your desktop or All Programs menu. Do not use Power Shell! It doesn\'t support the ssh command that we need.
+  - **On Windows:** open up **Git Bash** from your desktop or All Programs menu. Do not use Power Shell or Command Prompt! It doesn't support the ssh command that we need.
   - **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
 
 1. Go to the workspace folder: type `cd ~/workspace`

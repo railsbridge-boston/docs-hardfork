@@ -12,9 +12,11 @@ magnifying glass in the top right of the screen and start typing
 
 ### Windows
 
-Launch the Git Shell. You can find a shortcut on your Desktop (grey
-circle with a cat), or locate **Git Shell** in All Programs under
-GitHub. A new (mostly black) window will open.
+Launch Git Bash via the shortcut on your Desktop, or locate **Git Bash**
+in All Programs under Git. A new (mostly black) window will open.
+Tip: Hit the Insert key to paste text into Git Bash. You will not be able
+to copy and paste text into Git Bash when you are interacting with the
+virtual machine.
 
 ### Linux
 

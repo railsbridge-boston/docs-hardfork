@@ -47,7 +47,7 @@ steps do
     console "git commit -m \"Added a brand-new Rails app\""
     message "`git commit` tells git to actually _do_ all things you've said you wanted to do."
     message "This is done in two steps so you can group multiple changes together."
-    message "`-m \"Added a brand-new Rails app\"`  is just a shortcut to say what your commit message is. You can skip that part and git will bring up an editor to fill out a more detailed message."
+    message "`-m \"Added a brand-new Rails app\"`  is just a shortcut to say what your commit message is. If you skip that part git will bring up an editor to fill out a more detailed message."
   end
 end
 

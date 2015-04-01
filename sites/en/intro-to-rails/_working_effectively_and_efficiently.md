@@ -2,9 +2,10 @@
 
 We highly recommend you do the following:
 
-* Bring up your terminal and open 2 tabs:
+* Bring up your terminal and open 2 tabs (Windows users, open two instances of Git Bash):
+  * Connect to your virtual machine in both of them.
   * One is for regular terminal stuffs
-  * One will be for irb (a.k.a. Rails console). We'll explain later.
+  * One will be for the Rails console. We'll explain later.
 * Open your browser fresh or hide any windows you already have open.
   * Bring up one window with two tabs
     * One for this content

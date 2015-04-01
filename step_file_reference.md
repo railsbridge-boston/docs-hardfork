@@ -4,6 +4,8 @@ A StepFile is a [DSL](http://en.wikipedia.org/wiki/domain+specific+language) for
 
 Here Docs are especially useful with `message`s since you can just dump in markdown between `<<-MARKDOWN` and `MARKDOWN` declarations.
 
+Definitions for these functions can be found in docs/lib/step.rb
+
 ## steps
 
 * steps support nested content via `do` and `end`

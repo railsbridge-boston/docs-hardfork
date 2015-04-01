@@ -55,8 +55,8 @@ Find the column for your OS, and download each file.
 </tr>
 <tr>
   <td></td>
-  <td><a href="http://windows.github.com/">SSH (from GitHub)</a></td>
-  <td><a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe">SSH (from Git)</a></td>
+  <td><a href="https://msysgit.github.io/">Git Bash</a></td>
+  <td><a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe">Git Bash</a></td>
   <td></td>
 </tr>
 </table>

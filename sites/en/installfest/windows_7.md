@@ -17,7 +17,13 @@ Don't have these files yet? Go back to the <a href="/downloads">Downloads page</
 
  3. **Install Sublime Text**
 
-    On double-click the .exe or .msi file. If you are prompted with a
+    Double-click the .exe or .msi file. If you are prompted with a
     security warning, click "Run" to allow the installer to run.
+
+ 4. **Install Git Bash**
+
+    Double-click the .exe file. If you are prompted with a
+    security warning, click "Run" to allow the installer to run.
+    Accept all default setup options.
 
 [« Back to Installfest](/installfest)
