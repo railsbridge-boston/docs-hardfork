@@ -30,15 +30,15 @@ Find the column for your OS, and download each file.
   <th>Linux (Ubuntu/Fedora)</th>
 </tr>
 <tr>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-01.box">January 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-01.box">January 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-01.box">January 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-01.box">January 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-04.box">April 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-04.box">April 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-04.box">April 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-04.box">April 2015 VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96996-OSX.dmg">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96997-Win.exe">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.20/VirtualBox-4.3.20-96997-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-OSX.dmg">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-Win.exe">VirtualBox 4.3 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
