@@ -107,8 +107,8 @@ git commit -m "Some helpful message for your future self"
   end
 
   step "Visit your application" do
-    console "heroku apps:info"
-    message "This lists all the information for your app. Copy the "Web URL" and open it in your browser."
+    console "heroku open"
+    message "This displays the URL of your application to open in your browser."
   end
 end
 
