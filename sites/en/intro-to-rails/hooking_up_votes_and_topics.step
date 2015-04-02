@@ -120,7 +120,7 @@ explanation do
 It can still be important to clean up after yourself! `dependent: :destroy`
   on `has_many :votes` means when a **Topic** gets destroyed, all
   the **votes** that correspond to it will be destroyed, too. Without
-  `dependent :destroy`, those votes would live on the database forever.
+  `dependent: :destroy`, those votes would live on the database forever.
   MARKDOWN
 end
 

@@ -16,7 +16,7 @@ that this may have been updated since our last workshop.
 
 In File Explorer or Finder, drag and drop "railsbridgevm-2015-01.box" from your downloads folder to your new workspace folder.
 
-Open your computer's command line. See the [Command Line page](command_line) for instructions on how to open it.
+Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
 <!-- INSTRUCTORS: please remember to update all occurrences of the box -->
 <!-- name below when the VM version changes. -->
