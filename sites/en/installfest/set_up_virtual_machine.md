@@ -31,15 +31,15 @@ Move into your workspace directory:
 
 Type this:
 
-    vagrant box add railsbridge201501 ./railsbridgevm-2015-04.box
+    vagrant box add railsbridge201504 ./railsbridgevm-2015-04.box
 
 Then type:
 
-    vagrant init railsbridge201501
+    vagrant init railsbridge201504
 
 Here is what you should see (approximately):
 
-    [~/workspace]$ vagrant init railsbridge201501
+    [~/workspace]$ vagrant init railsbridge201504
     A `Vagrantfile` has been placed in this directory. You are now
     ready to `vagrant up` your first virtual environment! Please read
     the comments in the Vagrantfile as well as documentation on
@@ -73,7 +73,7 @@ It will do something like this:
 
     [~/workspace]$ vagrant up
     Bringing machine 'default' up with 'virtualbox' provider...
-    [default] Importing base box 'railsbridge201501'...
+    [default] Importing base box 'railsbridge201504'...
     [default] Matching MAC address for NAT networking...
     [default] Setting the name of the VM...
     [default] Clearing any previously set forwarded ports...
