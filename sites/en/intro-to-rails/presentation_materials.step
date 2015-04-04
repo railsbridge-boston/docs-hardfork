@@ -9,10 +9,14 @@ ul do
   end
 
   li do
-    a 'Introduction to MVC', href: 'https://docs.google.com/presentation/d/1av4QSS2wA4lq7OuwO6kH3Y9jMOuRUhELGurS1wbpjgI/edit'
+    a 'Rails Migrations!', href: 'https://docs.google.com/presentation/d/1NmKUwmKEN-rrNAyZzdPNSc58SW6esJlfDp0QwBvU2O8/edit?usp=sharing'
   end
 
   li do
-    a 'Rails navigation, links & routes', href: 'https://drive.google.com/file/d/0B5uT4W_pFua2bl90Z1QyeURBSEU/view'
+    a 'Exploring Model View Controller (MVC)', href: 'https://docs.google.com/presentation/d/1rTbpKUzmVe9A0OX65e_Sehr4mXUvXYV8J1FzXkYwgbE/edit?usp=sharing'
+  end
+
+  li do
+    a 'Rails Navigation, Links & Routes', href: 'https://drive.google.com/file/d/0B5uT4W_pFua2bl90Z1QyeURBSEU/view'
   end
 end
