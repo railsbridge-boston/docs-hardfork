@@ -1,6 +1,11 @@
 ul do
+
   li do
     a 'Intro to Ruby for the non-programmer', href: 'https://speakerdeck.com/jboursiquot/intro-to-ruby-for-the-non-programmer'
+  end
+
+  li do
+    a 'Starting a Rails Application', href: 'http://railsbridge-boston.github.io/starting_a_rails_application'
   end
 
   li do
