@@ -17,6 +17,6 @@ ul do
   end
 
   li do
-    a 'Rails Navigation, Links & Routes', href: 'https://drive.google.com/file/d/0B5uT4W_pFua2bl90Z1QyeURBSEU/view'
+    a 'Rails Navigation, Links & Routes', href: 'https://docs.google.com/presentation/d/1myaS08e3ojRr25FjwUipit0aCnxVGKZiuMDoncnoEKs/edit?usp=sharing'
   end
 end
