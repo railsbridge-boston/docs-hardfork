@@ -1,5 +1,7 @@
 h2 do
-  span "If you haven't yet deployed to heroku, start at "
+  span "Begin by saving your code in a version control system called git: "
+  a 'Add the Project to a Git Repo', href: 'http://docs.railsbridgeboston.org/intro-to-rails/add_the_project_to_a_git_repo'
+  span "Then, if you haven't yet deployed to heroku, start at "
   a 'First-time setup', href: '#first-time'
   span ". Otherwise, start at "
   a 'Every time', href: '#every-time'
