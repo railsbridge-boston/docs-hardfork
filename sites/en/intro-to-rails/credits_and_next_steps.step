@@ -7,6 +7,7 @@ Guess what?  _**You're done!!!**_ Congratulations, you just \"finished\" your fi
 
 If you got all the way through Suggestotron with some time to spare, here's some extra stuff you can try:
 
+* Put your web application online by [deploying to heroku](http://docs.railsbridgeboston.org/intro-to-rails/deploying_to_heroku).
 * Add a downvote button that does the opposite of what the upvote button does
 * Sort topics by their number of votes
 * Add an 'about' page, linked from the bottom of the Suggestotron topics list. Link back to the Topics list from the About page so users don't get stranded.
