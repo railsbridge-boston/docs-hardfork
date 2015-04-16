@@ -1,5 +1,5 @@
 <div class="alert alert-info">
-<strong>Note to attendees</strong>: This is material that we expect you to read during the workshop, not before it. The contents are subject to change beforehand.
+<strong>Hey, read this</strong>: You don't need to read this before the workshop. We'll go over it during Railsbridge.
 </div>
 
 ### Goal
@@ -11,7 +11,9 @@ run Ruby code. Work through these sections in order, and ask questions if you
 get stuck! That's what the TAs and instructors are here for.
 
 When you are done with all the steps, find a TA to go through the
-checklist with you.
+[checklist] with you.
+
+[checklist]: /installfest/checklist
 
 ### 1. Set Up Your Programming Environment
 
@@ -60,8 +62,8 @@ Follow the instructions in the [VM Setup page](set_up_virtual_machine).
 
 ### 3. Try your Text Editor
 
-You've installed a text editor that is designed for coding. Here are some
-suggestions for using it more effectively: [Text Editor](install_a_text_editor)
+You've installed Sublime Text, a text editor that is designed for coding. We have some suggestions
+for using it more effectively on [this page](install_a_text_editor).
 
 ### 4. Setup Checklist
 

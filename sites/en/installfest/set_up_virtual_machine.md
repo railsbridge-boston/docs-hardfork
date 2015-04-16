@@ -147,3 +147,5 @@ on the virtual machine, open another command line window, then type:
 
     cd ~/workspace
     vagrant ssh
+
+[« Back to Installfest](/installfest)
