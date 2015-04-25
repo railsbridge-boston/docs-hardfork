@@ -9,55 +9,49 @@ goal "Know what nil is for"
 end
 
 step do
-message <<-CONTENT
-How do you set a variable to empty?
+  message <<-CONTENT
+    How do you set a variable to empty?
 
-Some of the values we could use can be legitimate values, like:
+    Some of the values we could use can be legitimate values, like:
 
-`temperature = 0`
+    `temperature = 0`
 
-`today_is_friday = false`
+    `today_is_friday = false`
 
-`empty_phrase = ""`
+    `empty_phrase = ""`
 
-Nil to the rescue.  Nil means 'nothing'.  It's used to show that a variable hasn't been assigned anything yet, or that a function didn't return a value.
+    Nil to the rescue.  Nil means 'nothing'.  It's used to show that a variable hasn't been assigned anything yet, or that a function didn't return a value.
+  CONTENT
 
+  irb <<-IRB
+    # Where is the letter "a" in apple?
+    "apple".index("a")
 
-CONTENT
-
-irb <<-IRB
-# Where is the letter "a" in apple?
-"apple".index("a")
-
-# Where is the letter "z"?
-"apple".index("z")
-IRB
+    # Where is the letter "z"?
+    "apple".index("z")
+  IRB
 end
 
 step do
     message "You may have noticed this already:"
     irb 'puts "What does puts evaluate to?"'
     message "Ruby returns what an expression evaluated to.  `puts` puts a string on the screen, but always evaluates to nil."
-
 end
-
-
 
 step do
     message "Here's an error message you will see often."
-irb <<-IRB
-     word = "hello"
-     word.upcase
-     word = nil
-     word.upcase
-IRB
+    irb <<-IRB
+      word = "hello"
+      word.upcase
+      word = nil
+      word.upcase
+    IRB
     result "NoMethodError: undefined method 'upcase' for nil:NilClass"
     message "What happened?"
     irb "word.class"
     message "`word` was set to nil. Let's look at the alphabetized list of methods the Nil class has."
     irb "word.methods.sort"
     message "The error message told us Nil doesn't have a method called upcase."
-
 end
 
 step do
@@ -76,11 +70,11 @@ IRB
     source_code <<-CONTENT
     name = nil
     if name.nil?
-        puts "The name hasn't been set yet."
+      puts "The name hasn't been set yet."
     else
-        puts "Your name is \#{name}"
+      puts "Your name is \#{name}"
     end
-CONTENT
+  CONTENT
 end
 
 

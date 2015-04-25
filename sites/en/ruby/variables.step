@@ -35,10 +35,10 @@ end
 
 step do
   irb <<-IRB
-apples = 5
-bananas = 10 + 5
-fruits = 2 + apples + bananas
-bananas = fruits - apples
+    apples = 5
+    bananas = 10 + 5
+    fruits = 2 + apples + bananas
+    bananas = fruits - apples
   IRB
   message "Variables are assigned a value using a single equals sign (=)."
   message "The right side of the equals sign is evaluated, and the result is
@@ -60,9 +60,9 @@ step do
   Check out what happens if you assign a value to a constant."
   CONTENT
   irb <<-IRB
-  true == false
-  1 == 1
-  "a" == 1
+    true == false
+    1 == 1
+    "a" == 1
   IRB
   message "(Notice in the last example we put the a in quotation marks to make it a string.)"
 end

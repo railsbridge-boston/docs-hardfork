@@ -66,7 +66,7 @@ class Step < Erector::Widget
   ## steps
 
   %w[
-    steps explanation overview discussion hints challenge 
+    steps explanation overview discussion hints challenge
     tools_and_references requirements
   ].each do |type|
     define_method type.to_sym do |&block|
@@ -275,7 +275,7 @@ class Step < Erector::Widget
   def irb msg
     div :class => "console" do
       span I18n.t("captions.irb")
-      pre msg
+      pre msg.strip_heredoc
     end
   end
 

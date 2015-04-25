@@ -4,58 +4,56 @@ goals do
 end
 
 step do
-  irb <<IRB
-fruits = ["kiwi", "strawberry", "plum"]
-IRB
+  irb <<-IRB
+    fruits = ["kiwi", "strawberry", "plum"]
+  IRB
   message 'An array is a list of things in square brackets, separated by commas.'
   message 'We generally call the individual things in an array **elements**.'
   irb <<-IRB
-things = [5, 'tree', 19.5]
-things.length
+    things = [5, 'tree', 19.5]
+    things.length
   IRB
   message 'An array can contain all sorts of things, not just strings.'
   message '`length` is a method that tells you how many **elements** are in an array.'
   irb <<-IRB
-  empty_array = []
-  empty_array.length
+    empty_array = []
+    empty_array.length
   IRB
   message 'The simplest kind of array is the empty array.'
 end
 
 step do
-  irb <<IRB
-fruits[0]
-fruits[1]
-fruits[2]
-IRB
+  irb <<-IRB
+    fruits[0]
+    fruits[1]
+    fruits[2]
+  IRB
   message 'Array elements are stored in order. You can retrieve them by using the square brackets to access them by their **index**.'
   message 'Arrays are ordered: elements remain in the same order they started in.'
   message 'Ruby starts counting at zero: the first element is `fruits[0]`.'
-  irb <<IRB
-fruits.first
-fruits.last
-IRB
+  irb <<-IRB
+    fruits.first
+    fruits.last
+  IRB
   message 'Ruby gives us some helpful ways to get the first and last element from an array.'
 end
 
 step do
-	irb <<IRB
-['salt'] + ['pepper']
-IRB
+  irb "['salt'] + ['pepper']"
   message 'Arrays can be added together with the plus operator.'
-  irb <<IRB
-fruits + ['mango']
-fruits
-IRB
+  irb <<-IRB
+    fruits + ['mango']
+    fruits
+  IRB
   message 'The plus operator doesn\'t modify the existing array, it makes a new one. How could you write that last piece of code to also modify the fruits array?'
 end
 
 step do
-  irb <<IRB
-fruits = ["kiwi", "strawberry", "plum"]
-fruits.push('apple')
-fruits.pop()
-IRB
+  irb <<-IRB
+    fruits = ["kiwi", "strawberry", "plum"]
+    fruits.push('apple')
+    fruits.pop()
+  IRB
   message 'Ruby has many methods for modifying arrays. What did these two methods do?'
 end
 
@@ -87,10 +85,10 @@ explanation do
 
   message "We are learning that different types of objects in ruby have different sets of methods. We can call `pop` on object of type `Array`, but we can't call it on an object of type `Float`."
 
-  irb <<IRB
-[].pop
-3.0.pop
-IRB
+  irb <<-IRB
+    [].pop
+    3.0.pop
+  IRB
 
   message "In object oriented programming, each type of object shares a common list of methods. This list of methods is different for every type of object. When you attempt to call a method that is not available for the object's type, you get a `NoMethodError` and the interpreter stops running the program."
 end

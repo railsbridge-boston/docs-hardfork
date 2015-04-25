@@ -5,36 +5,36 @@ goals do
 end
 
 step do
-  irb <<IRB
-'a string in single quotes'
-"a string in double quotes"
-IRB
+  irb <<-IRB
+    'a string in single quotes'
+    "a string in double quotes"
+  IRB
   message 'A string is a series of characters. Strings can be created using either single or double quotes.'
   message 'These strings weren\'t saved into a variable. What happens to data not saved into a variable?'
   message 'What happens if you start a string with one kind of quote and end with another? How can you fix it?'
 end
 
 step do
-  irb <<IRB
-'Hello, ' + 'Jane'
-'apples' * 3
-IRB
+  irb <<-IRB
+    'Hello, ' + 'Jane'
+    'apples' * 3
+  IRB
   message 'Strings can be added to each other or multipled by numbers. What does this do?'
 end
 
 step do
-  irb <<'IRB'
-name = 'Jane'
-"Hello #{name}"
-IRB
+  # Putting the marker in single quotes prevents interpolation
+  irb <<-'IRB'
+    name = 'Jane'
+    "Hello #{name}"
+  IRB
   message '(the `{}` characters are generally called **curly braces**)'
   message 'This is called string interpolation. String interpolation lets you embed a Ruby statement in another string. It only works with double quotes: what happens when you try the same thing with single quotes?'
-    irb <<'IRB'
-"Two plus two is #{2 + 2}"
-IRB
+  irb '"Two plus two is #{2 + 2}"'
   message 'The code in the curly braces can be any valid Ruby statement. Try putting various things in the curly brackets to see what works and what doesn\'t.'
 end
 
+# Putting the marker in single quotes prevents interpolation
 tip <<-'MD'
 # Concatenation vs. Interpolation
 
@@ -53,10 +53,10 @@ MD
 step do
   message "Try out some of these String methods."
   irb <<-IRB
-'I have many characters'.length
-'forwards'.reverse
-'jane smith'.upcase
-'a plain old sentence'.delete('aeiou')
+    'I have many characters'.length
+    'forwards'.reverse
+    'jane smith'.upcase
+    'a plain old sentence'.delete('aeiou')
   IRB
   message "<a href='/ruby/datatypes'>Recall</a> that you can see what methods
   are available for an object by calling `.methods` on it."

@@ -6,16 +6,14 @@ end
 message ''
 
 step do
-  irb <<-IRB
-puts 'Hello World'
-  IRB
+  irb "puts 'Hello World'"
   message '`puts` (**put** **s**tring) is a way of printing information to the user of your program.'
   message 'Take some time to contemplate the output of `puts` in irb:'
   result <<-RESULT
-irb :006 > puts 'Hello World'
-Hello World
- => nil
-irb :007 >
+    irb :006 > puts 'Hello World'
+    Hello World
+    => nil
+    irb :007 >
   RESULT
   message 'The method `puts` always has the **return value** of `nil`, which is what we see after the `=>` in the output. Printing \'Hello World\' to the screen is just a side-effect.'
 end

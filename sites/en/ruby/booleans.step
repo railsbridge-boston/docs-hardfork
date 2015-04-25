@@ -17,10 +17,10 @@ end
 step do
   message 'Here are some expressions that return `true` or `false`:'
   irb <<-IRB
-15 < 5
-15 > 5
-15 >= 5
-10 == 12
+    15 < 5
+    15 > 5
+    15 >= 5
+    10 == 12
   IRB
 end
 
@@ -28,29 +28,29 @@ end
 step do
   message 'Notice we use a double equals sign to check if things are equal.  It\'s a common mistake to use a single equals sign.'
   irb <<-IRB
-a = 'apple'
-b = 'banana'
-a == b
-puts a + b
-a = b
-puts a + b
-IRB
-   message "Surprise!"
+    a = 'apple'
+    b = 'banana'
+    a == b
+    puts a + b
+    a = b
+    puts a + b
+  IRB
+  message "Surprise!"
 end
 
 step do
   message "For 'not equals', try these:"
   irb <<-IRB
-a = 'apple'
-b = 'banana'
-a != b
-IRB
+    a = 'apple'
+    b = 'banana'
+    a != b
+  IRB
   message "The exclamation point means **the opposite of**"
   irb <<-IRB
-!true
-!false
-!(a == b)
-IRB
+    !true
+    !false
+    !(a == b)
+  IRB
   message "In `!(a == b)`,  Ruby first evaluated `a == b`, then gave the opposite."
   message "It also means **not true** .  In conditionals, we'll see things like
 
@@ -69,43 +69,43 @@ end
 step do
     message "We can check more than one condition with `and` and `or` . `&&` and `||` (two pipes) is another notation for `and` and `or`."
     message "We do something like this when we Google for 'microsoft and cambridge and not seattle'"
-irb <<-IRB
-# First let's define variables:
-yes = true
-no = false
-# Now experiment.  Boolean rule 1:  AND means everything must be true. 
-# true and true are true
-yes and yes
-yes && yes
-# true and false fail the test - AND means everything must be true
-yes and no
-no and yes
-no and no
-# Boolean rule 2: OR says at least one must be true. 
-yes or no
-yes || no
-yes or yes
-IRB
+    irb <<-IRB
+      # First let's define variables:
+      yes = true
+      no = false
+      # Now experiment.  Boolean rule 1:  AND means everything must be true.
+      # true and true are true
+      yes and yes
+      yes && yes
+      # true and false fail the test - AND means everything must be true
+      yes and no
+      no and yes
+      no and no
+      # Boolean rule 2: OR says at least one must be true.
+      yes or no
+      yes || no
+      yes or yes
+    IRB
 end
 
 
 step do
   message 'By convention, methods in Ruby that return booleans end with a question mark.'
   irb <<-IRB
-'sandwich'.end_with?('h')
-'sandwich'.end_with?('z')
-[1,2,3].include?(2)
-[1,2,3].include?(9)
-'is my string'.empty?
-''.empty?
-'is this nil'.nil?
-nil.nil?
+    'sandwich'.end_with?('h')
+    'sandwich'.end_with?('z')
+    [1,2,3].include?(2)
+    [1,2,3].include?(9)
+    'is my string'.empty?
+    ''.empty?
+    'is this nil'.nil?
+    nil.nil?
   IRB
 end
 
 
 explanation do
-    message "In code we ask a lot of questions. Boolean logic gives us tools to express the questions. "
+  message "In code we ask a lot of questions. Boolean logic gives us tools to express the questions."
 end
 
 further_reading do

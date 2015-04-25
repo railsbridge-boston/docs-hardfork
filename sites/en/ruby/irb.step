@@ -56,10 +56,10 @@ end
 step do
   message "In irb, you can experiment with short pieces of code to figure out what they do."
   irb <<-IRB
-5 + 9
-109 / 17
-2 ** 8
-5 > 6
+    5 + 9
+    109 / 17
+    2 ** 8
+    5 > 6
   IRB
   message "What happened after each line? What do you think these statements do?"
 end

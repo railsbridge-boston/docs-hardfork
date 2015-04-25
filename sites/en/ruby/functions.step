@@ -31,16 +31,14 @@ end
 step do
   message "We can write functions in IRB too."
 
-  irb <<-CONTENTS
-
-  def backwards( phrase )
-    phrase.reverse
-  end
-CONTENTS
-
+  irb <<-IRB
+    def backwards(phrase)
+      phrase.reverse
+    end
+  IRB
 
  message <<-CONTENTS
-A function begins with `def`.  It's followed by the name of the function, and then a list of what you plan to send in.  
+A function begins with `def`.  It's followed by the name of the function, and then a list of what you plan to send in.
 
 Inside the function is the code that does the work.  The function ends with a statement that evaluates to a function. What does it mean to evaluate a statement?  When we type `puts "Two plus two is \#{2 + 2}", Ruby evaluates the statement inside the curly brackets.  2 + 2 evaluates to 4, and 3 < 9 evaluates to true.  "Hello".reverse evaluates to "olleH". The function hands the value back by saying it.
 
