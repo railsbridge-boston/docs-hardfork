@@ -25,8 +25,8 @@ step do
     message '`each` takes the first element in the array and sends it to the block, which temporarily stores it in the **block variable** and then runs the code after the pipes. It then goes back and does this again for each of the remaining items in the array.'
     irb <<-IRB
       ducks = ['Huey', 'Dewey', 'Louie']
-      ducks.each { |duck| puts "#{duck} quacks!" }
-      ducks.each { |zombie| puts "#{zombie} quacks!" }
+      ducks.each { |duck| puts "\#{duck} quacks!" }
+      ducks.each { |zombie| puts "\#{zombie} quacks!" }
     IRB
     message 'It doesn\'t matter what you call your block variable: the previous two statements are exactly equivalent to Ruby. But you should try to name your variables something useful so the code makes sense to you later!'
 end
@@ -46,10 +46,10 @@ step do
       total = 99
       colors = ['red', 'blue', 'green']
       colors.each do |color|
-        puts "#{total} colors of paint on the wall..."
-        puts "Take #{color} down, pass it around..."
+        puts "\#{total} colors of paint on the wall..."
+        puts "Take \#{color} down, pass it around..."
         total = total - 1
-        puts "#{total} colors of paint on the wall!"
+        puts "\#{total} colors of paint on the wall!"
       end
     IRB
     message " The `do ... end` syntax is typically used when a block needs to span multiple lines, while the `{ ... }` syntax is for a single line block."
@@ -60,12 +60,12 @@ challenge do
 
   message 'Here is a sample of how the program might run.'
 
-  source_code <<-'CONTENTS'
-Oh, hello, Sally Samsonite!
-Oh, hello, Johnny Jameson!
-Oh, hello, Beth Benitsky!
-Oh, hello, Corinne Camelia!
-CONTENTS
+  source_code <<-CONTENTS
+    Oh, hello, Sally Samsonite!
+    Oh, hello, Johnny Jameson!
+    Oh, hello, Beth Benitsky!
+    Oh, hello, Corinne Camelia!
+  CONTENTS
 
   message 'Your program should be written in a way that group members can be removed and added to your array without requiring a change to the rest of your program. Use what you now know about loops so that only one `puts` statement is in your program.'
 
