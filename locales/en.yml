@@ -1,7 +1,7 @@
 en:
   captions:
     terminal: "Type this in the terminal:"
-    irb: "Type this in irb:"
+    irb: "Type this in irb, hitting Enter after each line:"
     result: "Expected result:"
     fuzzy_result: "Approximate expected result:"
     link: "Go on to"
