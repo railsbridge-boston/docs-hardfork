@@ -27,6 +27,9 @@ step do
   message "Start your text editor."
   message "In your text editor, create a new file called **my_program.rb**"
   type_in_file "my_program.rb", <<-CONTENTS
+# This is a comment line.
+# Comment lines start with a pound sign, and the computer ignores them.
+# Since the computer ignores them you can use them for notes to yourself.
 puts 'This code is in a file!'
 some_variable = 19
 puts "I stored a variable with the value #\{some_variable\}!"
