@@ -55,24 +55,27 @@ step do
 end
 
 step do
-    message "How can we avoid these errors?  There are a few ways to tell if something is nil."
+  message "How can we avoid these errors?  There are a few ways to tell if something is nil. Let's try them!"
 
-irb <<-IRB
-word = "something"
-word.nil?
-word = nil
-word.nil?
-# Remember, two equals signs asks if something is equal
-word == nil
-IRB
+  irb <<-IRB
+    word = "something"
+    word.nil?
+    word = nil
+    word.nil?
+  IRB
 
-    message "What's going on here?"
-    source_code <<-CONTENT
+  message "Remember, two equals signs asks if something is equal:"
+  irb "word == nil"
+
+  message "What's going on here?"
+
+  # Putting the marker in single quotes prevents interpolation
+  source_code <<-'CONTENT'
     name = nil
     if name.nil?
       puts "The name hasn't been set yet."
     else
-      puts "Your name is \#{name}"
+      puts "Your name is #{name}"
     end
   CONTENT
 end

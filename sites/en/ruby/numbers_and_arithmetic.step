@@ -57,11 +57,9 @@ step do
 end
 
 step do
-  irb <<-TRYME
-
-4 / 0
-TRYME
-  message "Uh oh! Notice how we did not get a result here. The ruby interpreter raised an error. These errors tell the programmer that they tried to do something that the interpreter does not like or cannot use. Each error has a classification and a message. In this case, we get a `ZeroDivisionError` with the message: divided by 0"
+  message "Let's try the following, which will intentionally not work:"
+  irb "4 / 0"
+  message "Uh oh! Notice how we did not get a result here. Ruby raised an error. These errors tell the programmer that they tried to do something that the interpreter does not like or cannot use. Each error has a classification and a message. In this case, we get a `ZeroDivisionError` with the message: divided by 0"
 end
 
 challenge do

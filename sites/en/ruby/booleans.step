@@ -69,19 +69,30 @@ end
 step do
     message "We can check more than one condition with `and` and `or` . `&&` and `||` (two pipes) is another notation for `and` and `or`."
     message "We do something like this when we Google for 'microsoft and cambridge and not seattle'"
+    message "Let's type some code into IRB. First, let's define variables:"
     irb <<-IRB
-      # First let's define variables:
       yes = true
       no = false
-      # Now experiment.  Boolean rule 1:  AND means everything must be true.
-      # true and true are true
+    IRB
+
+    message <<-CONTENT
+      Now experiment. Boolean rule 1:  AND means everything must be true. For example, `true`
+      combined with `true` is `true`:
+    CONTENT
+    irb <<-IRB
       yes and yes
       yes && yes
-      # true and false fail the test - AND means everything must be true
+    IRB
+
+    message "`true` combined with `false` fails the test because `and` means everything must be true:"
+    irb <<-IRB
       yes and no
       no and yes
       no and no
-      # Boolean rule 2: OR says at least one must be true.
+    IRB
+
+    message "Boolean rule 2: `or` says at least one must be true:"
+    irb <<-IRB
       yes or no
       yes || no
       yes or yes
