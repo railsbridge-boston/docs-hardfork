@@ -33,10 +33,11 @@ NOTE: When writing a command after the $ sign in your terminal, or in IRB, just 
 
 1. To connect to the virtual machine: type  `vagrant ssh`
 
-1. To start the Ruby interactive editor: type  `irb`
+1. To start the Ruby interactive editor, type `irb`
+
+1. Now try the following in IRB. The `irb(main)>` is the prompt and you don't need to type it:
 
 <div class="console"><pre>
-$ irb
 irb(main)> 1 + 2
 => 3
 irb(main)> exit
@@ -76,7 +77,7 @@ end</pre>
   </div>
   <div class="explanation">
     <h1>Explanation</h1>
-    <p>Details of what the steps actually did... spell out the cause and effect.
+    <p>Details of what the steps actually did. Spell out the cause and effect.
     <p>Green because we can tie everything together now.
   </div>
 </div>

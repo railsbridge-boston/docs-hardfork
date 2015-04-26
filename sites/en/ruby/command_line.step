@@ -7,8 +7,8 @@ or pick a command from a dropdown menu.</P>
 <P>In the command line, we type commands to run programs and navigate through files and folders. We will need to do this to run
   Ruby progams from files that contain our code.  This lesson covers the commands we need for the workshop.</P>"
 
-message "It\'s helpful to keep Finder (OS X), File Explorer (Windows), or
-Nautilus (Ubuntu) open during this topic.  We\'ll make files and move between
+message "It\'s helpful to keep Finder (on OS X), File Explorer (on Windows), or
+Nautilus (on Ubuntu) open during this topic.  We'll make files and move between
 directories. A graphical file browser will help you see the results more
 clearly."
 
