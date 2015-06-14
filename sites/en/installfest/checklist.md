@@ -15,10 +15,6 @@
 
 1. Exit the Ruby interactive editor: type `exit`
 
-1. Check that your Git name is set: `git config --global user.name`
-
-1. Check that your Git email is set: `git config --global user.email`
-
 1. Disconnect from the virtual machine by typing `exit`
 
 1. Stop the virtual machine for the night:  type `vagrant halt`.

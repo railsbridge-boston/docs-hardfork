@@ -105,22 +105,6 @@ You will see a welcome message something like this:
 
     RailsBridge-VM:~/workspace$
 
-## Set up git
-
-Let's set up Git, a way to track the code that you write tomorrow.
-
-Type this, replacing `"Your Name"` with your full name in quotes:
-
-    git config --global user.name "Your Name"
-
-The `--global` option tells Git to set your name system-wide, instead of in only
-one place.
-
-Now let's tell Git what your email is. Type the following, replacing `"Your
-Email"` with your email in quotes:
-
-    git config --global user.email "Your Email"
-
 ## Disconnect from the virtual machine (turning it on and off)
 
 When you're done working in the virtual machine, type `exit` to disconnect from the virtual machine.

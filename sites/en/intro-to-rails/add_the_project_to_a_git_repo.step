@@ -7,6 +7,26 @@ goals do
 end
 
 steps do
+  step do
+    message <<-MARKDOWN
+      Let's set up Git, a way to track the code that you write tomorrow.
+    MARKDOWN
+
+    console_with_message "Type this, but with your full name in the quotes:",
+      'git config --global user.name "First Name Last Name"'
+
+    message <<-MARKDOWN
+      The `--global` option tells Git to set your name system-wide, instead of in only
+      one place.
+
+      Now let's tell Git what your email is.
+    MARKDOWN
+
+    console_with_message(
+      "Type the following, replacing the email with your email in the quotes:",
+      'git config --global user.email "your_name@your_email.com"'
+    )
+  end
 
   step do
     console "git init"
