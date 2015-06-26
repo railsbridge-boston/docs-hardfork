@@ -16,7 +16,8 @@ end
 steps do
 
   step do
-    console "rails server"
+    console "rails server -b0.0.0.0"
+    message "We need the `-b0.0.0.0` part so that Vagrant can connect to your server."
   end
 
   step do
