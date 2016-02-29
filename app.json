@@ -1,0 +1,14 @@
+{
+  "name": "docs",
+  "description": "Add app.json for auto deploys",
+  "scripts": {
+  },
+  "env": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
