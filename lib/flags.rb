@@ -26,7 +26,7 @@ class Flags < Erector::Widget
       ul class: 'flags dropdown-menu' do
         @locales.each do |locale|
           li {
-            a(href:"http://#{subdomain_for_locale(locale)}.railsbridgeboston.org") {
+            a(href:"http://#{subdomain_for_locale(locale)}.railsbridgenyc.org") {
               img src: image_for_locale(locale)
             }
           }

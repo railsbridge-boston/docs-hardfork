@@ -10,4 +10,4 @@ if git config --local remote.heroku.fetch; then
   git remote remove heroku
 fi
 
-git remote add heroku git@heroku.com:railsbridgeboston-docs.git
+git remote add heroku git@github.com:railsbridge-nyc/docs.git

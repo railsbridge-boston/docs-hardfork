@@ -21,9 +21,9 @@ It's probably a little different from how you're used to using your computer, bu
 
 Open this web page:
 
-[http://docs.railsbridgeboston.org/ruby/command_line](/ruby/command_line)
+[http://docs.=>railsbridgenyc.org/ruby/command_line](/ruby/command_line)
 
-.notes TODO: This is is a link to railsbridge.org! We should probably merge and deploy the updated docs to railsbridgeboston.org, then change the link.
+.notes TODO: This is is a link to railsbridge.org! We should probably merge and deploy the updated docs to =>railsbridgenyc.org, then change the link.
 
 # Getting started
 
