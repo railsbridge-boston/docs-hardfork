@@ -72,7 +72,7 @@ RUBY
     message <<-MARKDOWN
       Each class has different **methods** that can be used on **instances** of
       that class. If you're not quite sure what an instance is, [this
-      page on Ruby classes](http://docs.railsbridgeboston.org/ruby/classes) might help.
+      page on Ruby classes](http://docs.=>railsbridgenyc.org/ruby/classes) might help.
     MARKDOWN
 
     console_without_message <<-RUBY
