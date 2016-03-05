@@ -1,5 +1,5 @@
 message <<MARKDOWN
-This site is maintained by RailsBridge volunteers. If you find something that could be improved, please make a [pull request](https://github.com/=>railsbridge-nyc/docs) or [drop us a note](https://github.com/=>railsbridge-nyc/docs/issues/new) via GitHub Issues (no technical knowledge required).
+This site is maintained by RailsBridge volunteers. If you find something that could be improved, please make a [pull request](https://github.com/railsbridge-nyc/docs) or [drop us a note](https://github.com/railsbridge-nyc/docs/issues/new) via GitHub Issues (no technical knowledge required).
 MARKDOWN
 
 h1 'Setup'
@@ -71,13 +71,13 @@ If you're not doing those two things, you can totally still use the site, we jus
 ### I want to help, but I don't know how.
 
 First, [make a GitHub account](https://github.com/). Then,
-[create an issue](https://github.com/=>railsbridge-nyc/docs/issues) with the
+[create an issue](https://github.com/railsbridge-nyc/docs/issues) with the
 idea you have. We'll help you turn it into reality (assuming it's in line with
 our lofty goals :D).
 
 Don't know what you could work on? Browse the
-[issues list](https://github.com/=>railsbridge-nyc/docs/issues) and the
-[To Do list](https://github.com/=>railsbridge-nyc/docs/wiki/RailsBridge-To-Do-List).
+[issues list](https://github.com/railsbridge-nyc/docs/issues) and the
+[To Do list](https://github.com/railsbridge-nyc/docs/wiki/RailsBridge-To-Do-List).
 Those have lots of ideas.
 
 

@@ -1,7 +1,7 @@
 # The RailsBridge Documentation Project
 
 [![Build
-Status](https://travis-ci.org/=>railsbridge-nyc/docs.png)](https://travis-ci.org/=>railsbridge-nyc/docs)
+Status](https://travis-ci.org/=>railsbridge-nyc/docs.png)](https://travis-ci.org/railsbridge-nyc/docs)
 
 ## Overview
 
