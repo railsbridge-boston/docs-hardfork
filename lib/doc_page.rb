@@ -41,7 +41,7 @@ class DocPage < Html5Page
   end
 
   def git_url
-    "https://github.com/=>railsbridge-nyc/docs/blob/master/sites/#{@locale}/#{@site_name}/#{file_name}"
+    "https://github.com/railsbridge-nyc/docs/blob/master/sites/#{@locale}/#{@site_name}/#{file_name}"
   end
 
   def src_url

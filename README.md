@@ -1,8 +1,5 @@
 # The RailsBridge Documentation Project
 
-[![Build
-Status](https://travis-ci.org/=>railsbridge-nyc/docs.png)](https://travis-ci.org/railsbridge-nyc/docs)
-
 ## Overview
 
 This is a Sinatra app, deployed at <http://docs.railsbridgenyc.org>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop "Suggestotron" curriculum.

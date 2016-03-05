@@ -83,7 +83,7 @@ Guides are very easy to understand tutorials.
 
 You'll want to read about [forking](https://help.github.com/articles/fork-a-repo)
 and then make your own fork of
-[=>railsbridge-nyc/docs](https://github.com/railsbridge-nyc/docs).  Once
+[railsbridge-nyc/docs](https://github.com/railsbridge-nyc/docs).  Once
 you've done so, you can clone it and get started by reading up on
 [what to do when submitting a pull request](#when-submitting-a-pull-request),
 read up on [pull requests](https://help.github.com/articles/using-pull-requests)
