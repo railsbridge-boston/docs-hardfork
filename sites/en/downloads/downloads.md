@@ -42,10 +42,10 @@ Find the column for your OS, and download each file.
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.dmg">Vagrant 1.7 Installer</a></td>
-  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.msi">Vagrant 1.7 Installer</a></td>
-  <td><a href="https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
-  <td><a href="http://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.5.4/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
+  <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
 <tr>
   <td><a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.dmg">Sublime Text 2 Installer</a></td>
