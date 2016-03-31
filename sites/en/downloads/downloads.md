@@ -30,10 +30,10 @@ Find the column for your OS, and download each file.
   <th>Linux (Ubuntu/Fedora)</th>
 </tr>
 <tr>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-04.box">April 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-04.box">April 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-04.box">April 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-04.box">April 2016 VM Image</a></td>
 </tr>
 <tr>
   <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-OSX.dmg">VirtualBox 4.3 Installer</a></td>
