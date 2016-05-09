@@ -60,14 +60,14 @@ Follow the instructions in the [VM Setup page](set_up_virtual_machine).
 You've installed Sublime Text, a text editor that is designed for coding. We have some suggestions
 for using it more effectively on [this page](install_a_text_editor).
 
-### 4. Add The Project To A Git Repo
-
-We need to configure your machine for version control. Let's walk through the steps here: <a href="/installfest/add_the_project_to_a_git_repo">Get Set up for Git</a>
-
-### 5. Create a Sample Application
+### 4. Create a Sample Application
 
 Let's make a test application to verify that your Virtual Machine set up was successful.
 <a href="/installfest/create_a_rails_app">Create A Test Application</a>
+
+### 5. Add The Project To A Git Repo
+
+We need to configure your machine for version control. Let's walk through the steps here: <a href="/installfest/add_the_project_to_a_git_repo">Get Set up for Git</a>
 
 ### 6. Deploy your App to Heroku
 

@@ -32,6 +32,9 @@ your Downloads folder to your new `railsbridge` folder.
 
 Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
+**Windows Users:**  It is very important that you use Git Bash instead of Power Shell or Command Prompt! They do not support the ssh command that we need.
+Open up Git Bash from your desktop or All Programs menu.
+
 <!-- INSTRUCTORS: please remember to update all occurrences of the box -->
 <!-- filename everywhere when the VM version changes. -->
 
