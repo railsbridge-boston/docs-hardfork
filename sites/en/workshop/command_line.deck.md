@@ -86,22 +86,22 @@ You can navigate down (into a directory) or up (to the containing, or "parent" d
 
 # Try it!
 
-When you ran `ls`, you probably saw `workspace`. That's a directory. (If you didn't, ask a TA!).
+When you ran `ls`, you probably saw `Desktop`. That's a directory. (If you didn't, ask a TA!).
 
 Type this and press **Return** or **Enter**:
 
-    cd workspace
+    cd Desktop
 
-# In the workspace
+# In the desktop folder
 
 From now on, I'll just say "run" for new commands.
 
 Run:
 
-    mkdir railsbridge_ruby
+    mkdir example_folder
     ls
 
-You should see the `railsbridge_ruby` both on your computer's desktop and in the output of `ls`.
+You should see the `example_folder` both on your computer's desktop and in the output of `ls`.
 
 # Errors
 
@@ -116,7 +116,7 @@ I'll show you what happens if the directory already exists.
 
 Run:
 
-    cd railsbridge_ruby
+    cd example_folder
     ls
 
 Nothing there yet!
@@ -136,7 +136,7 @@ Run:
 
     cd ..
 
-`..` goes "up" one directory. Now we're back in `workspace`.
+`..` goes "up" one directory. Now we're back in `Desktop`.
 
 # Going back up again
 
@@ -172,7 +172,7 @@ To get back to your home directory. This works from anywhere. `~` is the tilde k
 
 Try it! Run:
 
-    cd workspace/railsbridge_ruby
+    cd Desktop/example_folder
     ls
     cd ~
 
@@ -182,15 +182,15 @@ That's a forward slash. It separates directories.
 
 The command line relies heavily on locating files via their names. This is called a *path*.
 
-We used a path from your home directory to `railsbridge_ruby`: (this is not a command)
+We used a path from your home directory to `example_folder`: (this is not a command)
 
-    workspace/railsbridge_ruby
+    Desktop/example_folder
 
 # Files and Paths (continued)
 
 We can also give this path to other commands. Run:
 
-    ls workspace/railsbridge_ruby
+    ls Desktop/example_folder
 
 A **path** allows you to give the command a file or directory without `cd`ing to it first.
 
@@ -198,7 +198,7 @@ A **path** allows you to give the command a file or directory without `cd`ing to
 
 In this command:
 
-    ls workspace/railsbridge_ruby
+    ls Desktop/example_folder
 
 The first word, `ls` is the command. The computer finds the `ls` program and runs it.
 
@@ -244,12 +244,12 @@ If you're feeling confident, try answering this. The command `rm` (short for **r
 
 This will work:
 
-    rm workspace/railsbridge_ruby/testing_the_command_line.txt
+    rm Desktop/example_folder/testing_the_command_line.txt
 
 So will this:
 
-    cd workspace
-    cd railsbridge_ruby
+    cd Desktop
+    cd example_folder
     rm testing_the_command_line.txt
 
 There are always lots of ways to do things.
@@ -258,11 +258,11 @@ There are always lots of ways to do things.
 
 What if I want a command to work from anywhere? A path to a file can also be *absolute*. Run:
 
-    ls ~/workspace/railsbridge_ruby
+    ls ~/Desktop/example_folder
 
 What does `ls` actually see here? We can use `echo`, which is a command that just outputs ("echoes") its arguments:
 
-    echo ~/workspace/railsbridge_ruby
+    echo ~/Desktop/example_folder
 
 You will see the full path, starting with `/home` or `/Users`. A path starting with a `/` works from anywhere. The shell expanded it for you before running `echo`.
 

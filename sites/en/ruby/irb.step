@@ -10,11 +10,12 @@ step do
     that runs Ruby code as you type it in."
   message "Start irb on the **virtual machine**. Any time we ask you to use irb, it should be on the Virtual Machine"
   console <<-LINES
-    cd ~/workspace
+    cd Desktop
+    cd railsbridge
     vagrant up
     vagrant ssh
   LINES
-  result "RailsBridge-VM:~/workspace$"
+  result "RailsBridge-VM:/vagrant$"
   console "irb"
   result "irb(main): 001 >"
   message "The prompt changed.  This is irb's way of reminding you that it's

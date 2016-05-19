@@ -1,5 +1,5 @@
 <div class="alert alert-info">
-<strong>Hey, read this</strong>: You don't need to read this before the workshop. We'll go over it during Railsbridge.
+<strong>Students! If you've gotten this far</strong>: You don't need to read this before the workshop. We'll go over it when everyone is there.
 </div>
 
 ### Goal

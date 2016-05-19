@@ -5,7 +5,7 @@
   - **On Windows:** open up **Git Bash** from your desktop or All Programs menu. Do not use Power Shell or Command Prompt! It doesn't support the ssh command that we need.
   - **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
 
-1. Go to the workspace folder: type `cd ~/workspace`
+1. Go to the RailsBridge folder: type `cd Desktop` then `cd railsbridge`
 
 1. Start the virtual machine: type `vagrant up`
 

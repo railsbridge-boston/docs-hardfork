@@ -44,7 +44,7 @@ Now you can generate some ASCII art. Try this command:
 
 You should see output like this:
 
-    vagrant@precise32:~/workspace$ curl 'http://artii.herokuapp.com/make?text=I+love+ruby'
+    RailsBridge-VM:/vagrant$ curl 'http://artii.herokuapp.com/make?text=I+love+ruby'
       _____   _                             _
      |_   _| | |                           | |
        | |   | | _____   _____   _ __ _   _| |__  _   _
@@ -52,7 +52,7 @@ You should see output like this:
       _| |_  | | (_) \ V /  __/ | |  | |_| | |_) | |_| |
      |_____| |_|\___/ \_/ \___| |_|   \__,_|_.__/ \__, |
                                                    __/ |
-                                                  |___/ vagrant@precise32:~/workspace$
+                                                  |___/ RailsBridge-VM:/vagrant$
 
 Change the end of the command string to generate your own message.
 
@@ -70,7 +70,7 @@ Now you can check the weather with this command:
 
 Example output:
 
-    vagrant@precise32:~/workspace$ weather BOS
+    RailsBridge-VM:/vagrant$ weather BOS
     Current conditions at Boston Logan International, MA (KBOS)
     Last updated Oct 04, 2013 - 09:54 AM EDT / 2013.10.04 1354 UTC
     Temperature: 66.0 F (18.9 C)

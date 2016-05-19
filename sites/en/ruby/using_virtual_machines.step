@@ -9,7 +9,7 @@ end
 
 goals do
   goal "Define virtual machine, Vagrant, and VirtualBox"
-  goal "Find your workspace directory"
+  goal "Find your shared directory"
   goal "Start and halt Vagrant"
   goal "Connect to and exit Vagrant"
 end
@@ -58,7 +58,7 @@ step do
 Vagrant is a tool for running a virtual machine. It will start and stop the
 VM, and let you connect to it so you can use it.
 
-During the Installfest you made a folder called "workspace" and ran some vagrant
+During the Installfest you made a folder called "railsbridge" and ran some vagrant
 commands to set up the RailsBridge image.
 
 It created a configuration file named Vagrantfile. Vagrant needs the config
@@ -108,7 +108,7 @@ end
 step do
   message 'In some cases you will now want to connect to your Virtual Machine.'
   console 'vagrant ssh'
-  result 'RailsBridge-VM:~/workspace$'
+  result 'RailsBridge-VM:/vagrant$'
 end
 
 further_reading do
