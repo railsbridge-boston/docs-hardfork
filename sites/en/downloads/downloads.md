@@ -36,14 +36,14 @@ Find the column for your OS, and download each file.
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-04.box">April 2016 VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.36/VirtualBox-4.3.36-105129-OSX.dmg">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.36/VirtualBox-4.3.36-105129-Win.exe">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.36/VirtualBox-4.3.36-105129-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-OSX.dmg">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-Win.exe">VirtualBox 4.3 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg">Vagrant 1.8 Installer</a></td>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.4/vagrant_1.8.4.dmg">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.4/vagrant_1.8.4.msi">Vagrant 1.8 Installer</a></td>
   <td><a href="https://releases.hashicorp.com/vagrant/1.5.4/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
@@ -55,8 +55,8 @@ Find the column for your OS, and download each file.
 </tr>
 <tr>
   <td></td>
-  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.8.0.windows.1/Git-2.8.0-32-bit.exe">Git for Windows</a></td>
-  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.8.0.windows.1/Git-2.8.0-32-bit.exe">Git for Windows</a></td>
+  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.9.0.windows.1/Git-2.9.0-32-bit.exe">Git for Windows</a></td>
+  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.9.0.windows.1/Git-2.9.0-32-bit.exe">Git for Windows</a></td>
   <td></td>
 </tr>
 </table>
