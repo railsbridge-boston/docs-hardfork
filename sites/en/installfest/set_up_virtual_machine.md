@@ -17,7 +17,7 @@ Folder". Name it `railsbridge`.
 
 *Note that the name `railsbridge` should be lowercase.*
 
-In File Explorer or Finder, drag and drop "railsbridgevm-2016-04.box" from
+In File Explorer or Finder, drag and drop "railsbridgevm-2016-06.box" from
 your Downloads folder to your new `railsbridge` folder.
 
 ### If You're Using a USB Drive at the Workshop
@@ -31,7 +31,7 @@ Drag the `railsbridge` folder from the USB drive to your desktop.
 Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
 <!-- INSTRUCTORS: please remember to update all occurrences of the box -->
-<!-- name below when the VM version changes. -->
+<!-- filename everywhere when the VM version changes. -->
 
 Go to your new `railsbridge` directory:
 
@@ -41,15 +41,15 @@ Go to your new `railsbridge` directory:
 
 Type this:
 
-    vagrant box add railsbridge201604 ./railsbridgevm-2016-04.box
+    vagrant box add railsbridge ./railsbridgevm-2016-06.box
 
 Then type:
 
-    vagrant init railsbridge201604
+    vagrant init railsbridge
 
 Here is what you should see (approximately):
 
-    Your-Computer:railsbridge$ vagrant init railsbridge201604
+    Your-Computer:railsbridge$ vagrant init railsbridge
     A `Vagrantfile` has been placed in this directory. You are now
     ready to `vagrant up` your first virtual environment! Please read
     the comments in the Vagrantfile as well as documentation on
@@ -87,7 +87,7 @@ It will do something like this:
 
     Your-Computer:railsbridge$ vagrant up
     Bringing machine 'default' up with 'virtualbox' provider...
-    [default] Importing base box 'railsbridge201604'...
+    [default] Importing base box 'railsbridge'...
     [default] Matching MAC address for NAT networking...
     [default] Setting the name of the VM...
     [default] Clearing any previously set forwarded ports...
