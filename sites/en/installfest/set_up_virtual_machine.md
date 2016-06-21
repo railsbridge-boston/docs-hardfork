@@ -19,21 +19,17 @@ that this may have been updated since our last workshop.
 
 *If you were unable to download the VM ahead of time, we have copies on USB drives.*
 
-In File Explorer or Finder, drag and drop "railsbridgevm-2016-04.box" from your downloads folder to your new RailsBridge folder.
+In File Explorer or Finder, drag and drop "railsbridgevm-2016-04.box" from
+your Downloads folder to your new `railsbridge` folder.
 
 Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
 <!-- INSTRUCTORS: please remember to update all occurrences of the box -->
 <!-- name below when the VM version changes. -->
 
-Go to your home directory:
+Go to your new `railsbridge` directory:
 
-    cd
-
-Move into your desktop, then into the RailsBridge folder:
-
-    cd Desktop
-    cd railsbridge
+    cd ~/Desktop/railsbridge
 
 Type this:
 
@@ -141,5 +137,12 @@ on the virtual machine, open another command line window, then type:
 
     cd ~/Desktop/railsbridge
     vagrant ssh
+
+Note: you can also get to your `railsbridge` directory this way, if `~` is
+inconvenient to get to on your keyboard:
+
+    cd
+    cd Desktop
+    cd railsbridge
 
 [« Back to Installfest](/installfest)

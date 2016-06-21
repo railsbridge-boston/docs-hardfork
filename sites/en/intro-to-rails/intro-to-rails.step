@@ -51,9 +51,7 @@ show up for RailsBridge on Saturday.
 You can verify that you have everything working by trying this out in your terminal:
 
 <div class="console"><pre>
-$ cd
-$ cd Desktop
-$ cd railsbridge
+$ cd ~/Desktop/railsbridge
 $ vagrant up
 $ vagrant ssh
 $ irb

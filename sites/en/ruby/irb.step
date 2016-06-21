@@ -10,8 +10,7 @@ step do
     that runs Ruby code as you type it in."
   message "Start irb on the **virtual machine**. Any time we ask you to use irb, it should be on the Virtual Machine"
   console <<-LINES
-    cd Desktop
-    cd railsbridge
+    cd ~/Desktop/railsbridge
     vagrant up
     vagrant ssh
   LINES
