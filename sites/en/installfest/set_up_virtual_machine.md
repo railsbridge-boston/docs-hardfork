@@ -153,4 +153,7 @@ inconvenient to get to on your keyboard:
     cd Desktop
     cd railsbridge
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+Now that you've got your VM, it's time to [Try Your Text
+Editor](/installfest/install_a_text_editor).

@@ -22,4 +22,7 @@ Don't have these files yet? Go back to the <a href="/downloads">Downloads page</
     Sublime Text app to your Applications folder. Then eject the disk
     image.
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+Once you've installed these programs, continue to [Setting Up Your Virtual
+Machine](/installfest/set_up_virtual_machine).
