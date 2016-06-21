@@ -1,26 +1,32 @@
-## Setting up a folder to work in
+## Creating a folder to work in
 
-Go to your desktop. If you're downloading the files, right-click to create a
-new, empty folder and call it `railsbridge`. If you're installing files from
-one of the USB drives at the workshop, copy the `railsbridge` folder to your
-computer by dragging it to your desktop.
+Your first task is to create a folder that will hold everything you create
+during the workshop.
 
-*Note that the name `railsbridge` should be lowercase.*
+This folder will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both your computer and the virtual machine can see. Save all your work in the hands-on exercises here so they can be run in the virtual machine.
 
-This directory will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both your computer and the virtual machine can see. Save all your work in the hands-on exercises here so they can be run in the virtual machine.
-
-## Set up the virtual machine
-
-This is a one-time step to create the virtual machine for the workshop.
-
-Before the workshop, you might have <a href="/downloads">downloaded</a> the
-RailsBridge virtual machine image, and saved it in the Downloads folder.  Note
-that this may have been updated since our last workshop.
+How you will create this folder will depend on whether or not you downloaded
+the Installfest files before the workshop.
 
 *If you were unable to download the VM ahead of time, we have copies on USB drives.*
 
+### If You Downloaded the Files Already
+
+Create a new folder on your desktop by right-clicking and selecting "New
+Folder". Name it `railsbridge`.
+
+*Note that the name `railsbridge` should be lowercase.*
+
 In File Explorer or Finder, drag and drop "railsbridgevm-2016-04.box" from
 your Downloads folder to your new `railsbridge` folder.
+
+### If You're Using a USB Drive at the Workshop
+
+Drag the `railsbridge` folder from the USB drive to your desktop.
+
+## Set up the virtual machine
+
+*This is a one-time step to create the virtual machine for the workshop.*
 
 Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
@@ -30,6 +36,8 @@ Open your computer's command line. (Windows users, open Git Bash.) See the [Comm
 Go to your new `railsbridge` directory:
 
     cd ~/Desktop/railsbridge
+
+*If you've been to a workshop before, please ask a TA for help removing your old VM image before proceeding.*
 
 Type this:
 
@@ -63,13 +71,13 @@ Leave this Finder or File Explorer window open for the next step.
 
 The virtual machine has to be running in order to use it.  There are two ways to start it.
 
-
 ### Start and Connect Through The Commandline
+
+*This is how you will start up and shut down your VM every time you use it.*
 
 If you closed your command line, open it again and type `cd Desktop; cd
 railsbridge` to return to your folder.  This folder contains the file
 Vagrantfile, which has the configuration settings needed to start the vm.
-
 
 From the command line type:
 
