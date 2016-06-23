@@ -27,7 +27,7 @@ You can verify that you have everything working by following steps 1 through 4 o
 
 NOTE: When writing a command after the $ sign in your terminal, or in IRB, just press Enter or Return to execute it.
 
-1. To go to the workspace folder: type `cd ~/workspace`
+1. To go to the RailsBridge folder: type `cd ~/Desktop/railsbridge`
 
 1. To start the virtual machine: type `vagrant up`
 

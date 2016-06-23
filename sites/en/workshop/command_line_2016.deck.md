@@ -77,28 +77,29 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 # I Like to Move It, Move, It
 
 1. `pwd` *print working directory == where are we?*
-  * `/home/vagrant/workspace`
-1. `cd` *change directory (no arguments) == go home*
+  * `/vagrant`
+1. `cd ..` *change directory to .. == go up one level*
+1. `cd bin` *change directory to "bin"*
 1. `pwd` *We've moved! (unless you are **not** in a VM)*
-  * `/home/vagrant`
+  * `/bin`
 1. `ls` *list contents == see what's here*
-  * `workspace`
-1. `cd workspace` *change directory (with an argument) == go there*
+  * `vm.rb`
+1. `cd /vagrant` *change directory (with an argument) == go there*
    1. `cd <some directory>` *directories are often a different color or bolded on a modern terminal*
 1. `pwd` *We've moved again!*
-  * `/home/vagrant/workspace`
+  * `/vagrant`
 
 **Who did it perfectly?**
 
 
 # Whoa
 
-* Note the difference: `cd` versus `cd workspace`
-* Relative Path: relates to where we currently are
-  * `cd workspace` uses an *relative* path.  "change to the workshop directory from here"
-* Absolute Page: fully specified from the top (apex) on down
-  * `/home/vagrant/workspace` is an *absolute* path.
-  * It starts at root (`/`) and descends through `home`, `vagrant`, and into `workspace`
+* Note the difference: `cd bin` versus `cd /vagrant`
+# Relative Path: relates to where we currently are
+  * `cd ..` and `cd bin` use *relative* paths.  "change to the bin directory from here"
+* Absolute Path: fully specified from the top (apex) on down
+  * `/vagrant` is an *absolute* path.
+  * It starts at root (`/`) and descends into `vagrant`.
 
 # More Key Ideas
 
@@ -144,7 +145,7 @@ We've created some structure with which we can now play
 * How do you know you're there?
 * How do you see what is in the current directory?
 * How do you go **up** one directory?
-* Test: find the directory that has `dir_1`, `dir_2`, and `workspace` directories in it
+* Test: find the directory that has `dir_1`, `dir_2`, and `suggestotron` (if you've created the app) directories in it
 * Test: find the directory that has `file_2` in it
 
 # Answers
@@ -155,7 +156,7 @@ We've created some structure with which we can now play
   * `pwd`
 * How do you see what is in the current directory?
   * `ls` or `ls -l`
-* Test: find the directory that has `dir_1`, `dir_2`, and `workspace` directories in it
+* Test: find the directory that has `dir_1`, `dir_2`, and `suggestotron` (if you've created the app) directories in it
   * `cd`
   * `ls -l`
 * Test: find the directory that has `file_2` in it
@@ -167,16 +168,16 @@ We've created some structure with which we can now play
 
 # A bit about what we see
 
-     RailsBridge-VM:~/workspace$
+     RailsBridge-VM:/vagrant$
 
 * This is the **command line prompt**.
   * It can be customized (advanced topic), but you should know that you are in control of the computer.
 * The first part, "RailsBrige-VM" is the name of the machine
   * Remember, a Virtual Machine, VM, thinks it's a real computer and acts like one
 * The `:` is simply a spacer
-* The `~` is a shortcut that refers to your home directory
 * The `/` (or `\` if you're on Windows) is a directory separator
 * The `$` is the prompt -- the final character after which you can type
+* You also might see `~`, which is a shortcut that refers to your home directory
 
 # A bit about file listings
 
@@ -186,7 +187,6 @@ We've created some structure with which we can now play
     total 8
     drwxrwxr-x 3 vagrant vagrant 4096 Apr  1 00:31 dir_1
     drwxrwxr-x 2 vagrant vagrant 4096 Apr  1 00:31 dir_2
-    lrwxrwxrwx 1 vagrant vagrant    8 Jun 23  2015 workspace -> /vagrant
 
 * `d` is a **directory**
 * `l` is a **link** (advanced topic)

@@ -50,17 +50,17 @@ step do
 end
 
 step do
-  console 'cd workspace'
+  console 'cd Desktop'
   message '`cd` means **c**hange **d**irectory. You use `cd` when you want to move from the current directory into some other directory.'
   console 'pwd'
-  message "Notice how it changed? The working directory ends in '/workspace'."
+  message "Notice how it changed? The working directory now ends in 'Desktop'."
 end
 
 step do
-  console 'mkdir railsbridge_ruby'
+  console 'mkdir example_folder'
   message '`mkdir` means **m**ake **d**irectory. You use `mkdir` when you want to create a new directory.'
   console 'ls'
-  message 'Now the directory "railsbridge_ruby" shows up in the list.'
+  message 'Now the directory "example_folder" shows up in the list.'
   message 'The command line is just one way of manipulating the files on your computer. Try to find the new directory you created in Finder or Windows Explorer.'
   message 'If you get an error saying the directory already exists, maybe someone did these steps on your computer before. Don\'t fret.'
 end
@@ -76,7 +76,7 @@ step do
 
 What\'s your home directory?"
   console 'pwd'
-  message "Remember that you can always get back to your home with `cd ~`."
+  message "Remember that you can always get back to your home with `cd ~` or just `cd`."
 end
 
 step do
@@ -85,7 +85,7 @@ step do
     console 'cd -'
     message 'What command shows you your current directory?'
     console 'pwd'
-    message 'You should be back in your workspace. This will match the output from `pwd` from step 4'
+    message 'You should be back in your desktop. This will match the output from `pwd` from step 4'
 end
 
 
@@ -107,11 +107,11 @@ cd rai
     message '... and hit `TAB`.'
     result 'cd railsbridge'
     message 'Hit `TAB` twice'
-    result 'railsbridge_ruby/ railsbridgevm-2016-04.box'
+    result 'railsbridge/railsbridgevm-2016-04.box'
     message 'When there are multiple matches, it will show you the options. Type `_`'
-    result 'cd railsbridge_'
+    result 'cd example_'
     message '... and hit `TAB` again.'
-    result 'railsbridge_ruby/'
+    result 'example_folder/'
     message <<-LINES
 Autocomplete will be as smart as it can.  If you started with `cd`, it will list directories.
      If it could be a command, it will suggest commands.
