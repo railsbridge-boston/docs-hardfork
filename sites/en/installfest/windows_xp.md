@@ -33,4 +33,7 @@ Don't have these files yet? Go back to the <a href="/downloads">Downloads page</
     circle with a cat), or locate **Git Shell** in All Programs under
     GitHub. A new (mostly black) window will open.
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+Once you've installed these programs, continue to [Setting Up Your Virtual
+Machine](/installfest/set_up_virtual_machine).
