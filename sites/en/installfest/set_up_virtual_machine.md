@@ -104,6 +104,9 @@ It will do something like this:
     [default] Mounting shared folders...
     [default] -- /vagrant
 
+*If you're using Windows and the system firewall asks you about allowing
+connections here, tell it to allow connections on private or local networks,
+but not on public networks.*
 
 To use the virtual machine, you must connect to it.  From the command line, type
 `vagrant ssh` to connect to the virtual machine.
