@@ -71,15 +71,13 @@ Leave this Finder or File Explorer window open for the next step.
 
 ## Starting the Virtual Machine
 
-The virtual machine has to be running in order to use it.  There are two ways to start it.
-
-### Start and Connect Through The Commandline
+The virtual machine has to be "powered up" in order to use it.
 
 *This is how you will start up and shut down your VM every time you use it.*
 
-If you closed your command line, open it again and type `cd Desktop; cd
-railsbridge` to return to your folder.  This folder contains the file
-Vagrantfile, which has the configuration settings needed to start the vm.
+If you closed your command line, open it again and type `cd
+~/Desktop/railsbridge` to return to your folder.  This folder contains the
+file Vagrantfile, which has the configuration settings needed to start the vm.
 
 From the command line type:
 
