@@ -10,7 +10,13 @@ the Installfest files before the workshop.
 
 *If you were unable to download the VM ahead of time, we have copies on USB drives.*
 
-### If You Downloaded the Files Already
+*Please choose the one of the next two sections that applies to you!*
+
+#### If You're Using a USB Drive at the Workshop
+
+Drag the `railsbridge` folder from the USB drive to your desktop.
+
+#### If You Downloaded the Files Already
 
 Create a new folder on your desktop by right-clicking and selecting "New
 Folder". Name it `railsbridge`.
@@ -19,10 +25,6 @@ Folder". Name it `railsbridge`.
 
 In File Explorer or Finder, drag and drop "railsbridgevm-2016-06.box" from
 your Downloads folder to your new `railsbridge` folder.
-
-### If You're Using a USB Drive at the Workshop
-
-Drag the `railsbridge` folder from the USB drive to your desktop.
 
 ## Set up the virtual machine
 
