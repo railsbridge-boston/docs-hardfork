@@ -1,8 +1,8 @@
-# Introduction to the command line
+# Introduction to the Command Line
 
 Peter Degen-Portnoy<br>
 RailsBridge Boston<br>
-April 1, 2016
+June 24, 2016
 
 # Foundation Skills
 
@@ -18,10 +18,11 @@ This *hidden structure* is the **skeletal system** of the computer
 
 **Folders and files** : *It's turtles all the way down!*
 
+<img src='/img/gui_tree.png' style="float:right; margin-right: 80px;" />
+
 * Really, really deep nesting possible
 * Store files
 * Store folders
-![Lotso' nested folders](https://upload.wikimedia.org/wikipedia/commons/e/e1/Organisation_of_wikis_incorrect.png)
 
 **Top Folder == Apex**
 
@@ -31,7 +32,7 @@ This *hidden structure* is the **skeletal system** of the computer
 
 What if we looked at this in a slightly different way?
 
-![Ugh, Characters!](https://upload.wikimedia.org/wikipedia/commons/5/5e/Fm-screenshot.png)
+<img src='/img/text_tree.png' style="float:right; margin-right: 80px;" />
 
 Same idea, but no pretty pictures
 
@@ -44,7 +45,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
 * **On Windows:** open up Git Shell from your desktop or All Programs menu.
 * **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
 * **On Chromebook:** From the [boxes page](https://www.nitrous.io/app#/boxes), click the "IDE" button. The command line window should appear at the bottom of the screen under the "Console" tab.
-* If you want to follow along, please go to: http://docs.railsbridgeboston.org/ruby/command_line
+* If you want to follow along, please go to: http://docs.railsbridgeboston.org/ruby/command_line_2016
 
 # Different Terminals
 
@@ -52,7 +53,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
 
 Get thee to a terminal. *(Hint: don't type the "$")*
 
-     $ cd workshop
+     $ cd workspace
      $ vagrant up
      $ vagrant ssh
 
@@ -79,7 +80,7 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 1. `pwd` *print working directory == where are we?*
   * `/home/vagrant/workspace`
 1. `cd` *change directory (no arguments) == go home*
-1. `pwd` *We've moved! (unless you are **not** in a VM)*
+1. `pwd` *We've moved! (unless you are not in a VM)*
   * `/home/vagrant`
 1. `ls` *list contents == see what's here*
   * `workspace`
@@ -95,7 +96,7 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 
 * Note the difference: `cd` versus `cd workspace`
 * Relative Path: relates to where we currently are
-  * `cd workspace` uses an *relative* path.  "change to the workshop directory from here"
+  * `cd workspace` uses an *relative* path.  "change to the workspace directory from here"
 * Absolute Page: fully specified from the top (apex) on down
   * `/home/vagrant/workspace` is an *absolute* path.  
   * It starts at root (`/`) and descends through `home`, `vagrant`, and into `workspace`
