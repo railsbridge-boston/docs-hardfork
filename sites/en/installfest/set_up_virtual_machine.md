@@ -10,7 +10,13 @@ the Installfest files before the workshop.
 
 *If you were unable to download the VM ahead of time, we have copies on USB drives.*
 
-### If You Downloaded the Files Already
+*Please choose the one of the next two sections that applies to you!*
+
+#### If You're Using a USB Drive at the Workshop
+
+Drag the `railsbridge` folder from the USB drive to your desktop.
+
+#### If You Downloaded the Files Already
 
 Create a new folder on your desktop by right-clicking and selecting "New
 Folder". Name it `railsbridge`.
@@ -19,10 +25,6 @@ Folder". Name it `railsbridge`.
 
 In File Explorer or Finder, drag and drop "railsbridgevm-2016-06.box" from
 your Downloads folder to your new `railsbridge` folder.
-
-### If You're Using a USB Drive at the Workshop
-
-Drag the `railsbridge` folder from the USB drive to your desktop.
 
 ## Set up the virtual machine
 
@@ -69,15 +71,13 @@ Leave this Finder or File Explorer window open for the next step.
 
 ## Starting the Virtual Machine
 
-The virtual machine has to be running in order to use it.  There are two ways to start it.
-
-### Start and Connect Through The Commandline
+The virtual machine has to be "powered up" in order to use it.
 
 *This is how you will start up and shut down your VM every time you use it.*
 
-If you closed your command line, open it again and type `cd Desktop; cd
-railsbridge` to return to your folder.  This folder contains the file
-Vagrantfile, which has the configuration settings needed to start the vm.
+If you closed your command line, open it again and type `cd
+~/Desktop/railsbridge` to return to your folder.  This folder contains the
+file Vagrantfile, which has the configuration settings needed to start the vm.
 
 From the command line type:
 
@@ -109,7 +109,10 @@ connections here, tell it to allow connections on private or local networks,
 but not on public networks.*
 
 To use the virtual machine, you must connect to it.  From the command line, type
-`vagrant ssh` to connect to the virtual machine.
+
+    vagrant ssh
+
+to connect to the virtual machine.
 
 You will see a welcome message something like this:
 
@@ -124,9 +127,15 @@ You will see a welcome message something like this:
 
 ## Disconnect from the virtual machine (turning it on and off)
 
-When you're done working in the virtual machine, type `exit` to disconnect from the virtual machine.
+When you're done working in the virtual machine, type
 
-To stop the virtual machine, type `vagrant halt` from the command line.
+    exit
+
+to disconnect from the virtual machine. To stop the virtual machine, type
+
+    vagrant halt
+
+from the command line.
 
 And close the command line window.
 
