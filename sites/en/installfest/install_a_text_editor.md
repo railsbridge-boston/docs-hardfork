@@ -53,4 +53,6 @@ Save the User Settings file (`File > Save`). Your new preferences are now in eff
 
 Now you have an editor that you can use to open any text file, including Ruby programs.
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+You've got everything! Proceed to the [Checklist](/installfest/checklist).

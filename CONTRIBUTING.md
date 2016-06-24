@@ -103,6 +103,6 @@ Also, [Pro Git](http://git-scm.com/book) is a great (and free!) book about Git.
 We apologize for how long this document is! Hopefully it addressed
 most of your concerns about git, contributing, and GitHub. Feel free
 to ask more questions on the
-[railsbridge-workshops](http://groups.google.com/group/railsbridge-workshops)
+[railsbridge-workshops](https://groups.google.com/d/forum/railsbridge-boston-alumni)
 mailing list. And we're open to any suggestions about improvements,
 including to this document.

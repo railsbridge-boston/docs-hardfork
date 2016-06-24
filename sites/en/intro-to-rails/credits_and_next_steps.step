@@ -35,6 +35,6 @@ ul do
   li "After that, start a project, tutorial, and come back again!"
   li do 
     span "All our favorite resources can be found on the RailsBridge site: " 
-    a "http://railsbridge.org/learn/resources", href: "http://railsbridge.org/learn/resources"
+    a "http://www.railsbridgeboston.org/pages/resources", href: "http://www.railsbridgeboston.org/pages/resources"
   end
 end

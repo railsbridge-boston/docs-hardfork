@@ -79,4 +79,7 @@ rbenv rehash
 
 Congratulations, you now have the Ruby development environment up and running. Now go forth and do something awesome with it!
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+Once you've installed these programs, continue to [Setting Up Your Virtual
+Machine](/installfest/set_up_virtual_machine).

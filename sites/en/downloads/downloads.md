@@ -30,20 +30,20 @@ Find the column for your OS, and download each file.
   <th>Linux (Ubuntu/Fedora)</th>
 </tr>
 <tr>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2015-06.box">June 2015 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-06.box">June 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-06.box">June 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-06.box">June 2016 VM Image</a></td>
+  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2016-06.box">June 2016 VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-OSX.dmg">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-Win.exe">VirtualBox 4.3 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-OSX.dmg">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-Win.exe">VirtualBox 4.3 Installer</a></td>
+  <td><a href="http://download.virtualbox.org/virtualbox/4.3.38/VirtualBox-4.3.38-106717-Win.exe">VirtualBox 4.3 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg">Vagrant 1.8 Installer</a></td>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.4/vagrant_1.8.4.dmg">Vagrant 1.8 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/1.8.4/vagrant_1.8.4.msi">Vagrant 1.8 Installer</a></td>
   <td><a href="https://releases.hashicorp.com/vagrant/1.5.4/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
@@ -55,8 +55,8 @@ Find the column for your OS, and download each file.
 </tr>
 <tr>
   <td></td>
-  <td><a href="https://msysgit.github.io/">Git Bash</a></td>
-  <td><a href="https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe">Git Bash</a></td>
+  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.9.0.windows.1/Git-2.9.0-32-bit.exe">Git for Windows</a></td>
+  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.9.0.windows.1/Git-2.9.0-32-bit.exe">Git for Windows</a></td>
   <td></td>
 </tr>
 </table>

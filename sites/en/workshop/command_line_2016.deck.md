@@ -145,7 +145,7 @@ We've created some structure with which we can now play
 * How do you know you're there?
 * How do you see what is in the current directory?
 * How do you go **up** one directory?
-* Test: find the directory that has `dir_1`, `dir_2`, and `workspace` directories in it
+* Test: find the directory that has `dir_1`, `dir_2`, and `suggestotron` (if you've created the app) directories in it
 * Test: find the directory that has `file_2` in it
 
 # Answers
@@ -156,7 +156,7 @@ We've created some structure with which we can now play
   * `pwd`
 * How do you see what is in the current directory?
   * `ls` or `ls -l`
-* Test: find the directory that has `dir_1`, `dir_2`, and `workspace` directories in it
+* Test: find the directory that has `dir_1`, `dir_2`, and `suggestotron` (if you've created the app) directories in it
   * `cd`
   * `ls -l`
 * Test: find the directory that has `file_2` in it

@@ -1,45 +1,55 @@
-## Setting up a workspace
+## Creating a folder to work in
 
-Open Finder or File Explorer.  By default, they open to your home directory.  Create a folder named "workspace".  If you've attended our Ruby workshop before, you already have this folder.
+Your first task is to create a folder that will hold everything you create
+during the workshop.
 
-This directory will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both your computer and the virtual machine can see. Save all your work in the hands-on exercises here so they can be run in the virtual machine.
+This folder will be shared between the virtual machine and your computer. Like sharing files between two real computers with Dropbox or Google Docs, files need to be saved in a place that both your computer and the virtual machine can see. Save all your work in the hands-on exercises here so they can be run in the virtual machine.
+
+How you will create this folder will depend on whether or not you downloaded
+the Installfest files before the workshop.
+
+*If you were unable to download the VM ahead of time, we have copies on USB drives.*
+
+### If You Downloaded the Files Already
+
+Create a new folder on your desktop by right-clicking and selecting "New
+Folder". Name it `railsbridge`.
+
+*Note that the name `railsbridge` should be lowercase.*
+
+In File Explorer or Finder, drag and drop "railsbridgevm-2016-06.box" from
+your Downloads folder to your new `railsbridge` folder.
+
+### If You're Using a USB Drive at the Workshop
+
+Drag the `railsbridge` folder from the USB drive to your desktop.
 
 ## Set up the virtual machine
 
-This is a one-time step to create the virtual machine for the workshop.
-
-Before the workshop, you might have <a href="/downloads">downloaded</a> the
-RailsBridge virtual machine image, and saved it in the Downloads folder.  Note
-that this may have been updated since our last workshop.
-
-*If you were unable to download the vm ahead of time, we have copies on USB drives.*
-
-In File Explorer or Finder, drag and drop "railsbridgevm-2015-06.box" from your downloads folder to your new workspace folder.
+*This is a one-time step to create the virtual machine for the workshop.*
 
 Open your computer's command line. (Windows users, open Git Bash.) See the [Command Line page](command_line) for instructions on how to open it.
 
 <!-- INSTRUCTORS: please remember to update all occurrences of the box -->
-<!-- name below when the VM version changes. -->
+<!-- filename everywhere when the VM version changes. -->
 
-Go to your home directory:
+Go to your new `railsbridge` directory:
 
-    cd
+    cd ~/Desktop/railsbridge
 
-Move into your workspace directory:
-
-    cd workspace
+*If you've been to a workshop before, please ask a TA for help removing your old VM image before proceeding.*
 
 Type this:
 
-    vagrant box add railsbridge201506 ./railsbridgevm-2015-06.box
+    vagrant box add railsbridge ./railsbridgevm-2016-06.box
 
 Then type:
 
-    vagrant init railsbridge201506
+    vagrant init railsbridge
 
 Here is what you should see (approximately):
 
-    [~/workspace]$ vagrant init railsbridge201506
+    Your-Computer:railsbridge$ vagrant init railsbridge
     A `Vagrantfile` has been placed in this directory. You are now
     ready to `vagrant up` your first virtual environment! Please read
     the comments in the Vagrantfile as well as documentation on
@@ -49,7 +59,11 @@ Type this to list all the files you've made:
 
     ls
 
-Look at the "workspace" folder in Finder or File Explorer. You'll notice it now contains a file called Vagrantfile.  This contains configuration information that Vagrant needs to start and connect to the new virtual machine.  We have to have a command line open and be in this folder when we start or connect to the vm so Vagrant can read the configuration information.
+Look at the `railsbridge` folder in Finder or File Explorer. You'll notice it
+now contains a file called `Vagrantfile`.  This contains configuration
+information that Vagrant needs to start and connect to the new virtual
+machine.  We have to have a command line open and be in this folder when we
+start or connect to the vm so Vagrant can read the configuration information.
 
 Leave this Finder or File Explorer window open for the next step.
 
@@ -57,13 +71,13 @@ Leave this Finder or File Explorer window open for the next step.
 
 The virtual machine has to be running in order to use it.  There are two ways to start it.
 
-
 ### Start and Connect Through The Commandline
 
-If you closed your command line, open it again and type `cd workspace` to return
-to the workspace folder.  This folder contains the file Vagrantfile, which has
-the configuration settings needed to start the vm.
+*This is how you will start up and shut down your VM every time you use it.*
 
+If you closed your command line, open it again and type `cd Desktop; cd
+railsbridge` to return to your folder.  This folder contains the file
+Vagrantfile, which has the configuration settings needed to start the vm.
 
 From the command line type:
 
@@ -71,9 +85,9 @@ From the command line type:
 
 It will do something like this:
 
-    [~/workspace]$ vagrant up
+    Your-Computer:railsbridge$ vagrant up
     Bringing machine 'default' up with 'virtualbox' provider...
-    [default] Importing base box 'railsbridge201506'...
+    [default] Importing base box 'railsbridge'...
     [default] Matching MAC address for NAT networking...
     [default] Setting the name of the VM...
     [default] Clearing any previously set forwarded ports...
@@ -96,14 +110,14 @@ To use the virtual machine, you must connect to it.  From the command line, type
 
 You will see a welcome message something like this:
 
-    [~/workspace]$ vagrant ssh
+    Your-Computer:railsbridge$ vagrant ssh
     Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic i686)
     * Documentation:  https://help.ubuntu.com/
 
     Welcome to the RailsBridge Boston virtual machine!
     ...
 
-    RailsBridge-VM:~/workspace$
+    RailsBridge-VM:/vagrant$
 
 ## Disconnect from the virtual machine (turning it on and off)
 
@@ -116,7 +130,7 @@ And close the command line window.
 When you want to use the virtual machine (tomorrow morning, for instance),
 start your machine. Open the command line, then:
 
-    cd ~/workspace
+    cd ~/Desktop/railsbridge
     vagrant up
     vagrant ssh
 
@@ -129,7 +143,17 @@ start your machine. Open the command line, then:
 To open an extra command line
 on the virtual machine, open another command line window, then type:
 
-    cd ~/workspace
+    cd ~/Desktop/railsbridge
     vagrant ssh
 
-[« Back to Installfest](/installfest)
+Note: you can also get to your `railsbridge` directory this way, if `~` is
+inconvenient to get to on your keyboard:
+
+    cd
+    cd Desktop
+    cd railsbridge
+
+## Next Step
+
+Now that you've got your VM, it's time to [Try Your Text
+Editor](/installfest/install_a_text_editor).

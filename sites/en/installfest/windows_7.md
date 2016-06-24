@@ -26,4 +26,7 @@ Don't have these files yet? Go back to the <a href="/downloads">Downloads page</
     security warning, click "Run" to allow the installer to run.
     Accept all default setup options.
 
-[« Back to Installfest](/installfest)
+## Next Step
+
+Once you've installed these programs, continue to [Setting Up Your Virtual
+Machine](/installfest/set_up_virtual_machine).
