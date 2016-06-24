@@ -1,8 +1,8 @@
-# Introduction to the command line
+# Introduction to the Command Line
 
 Peter Degen-Portnoy<br>
 RailsBridge Boston<br>
-April 1, 2016
+June 24, 2016
 
 # Foundation Skills
 
@@ -18,10 +18,11 @@ This *hidden structure* is the **skeletal system** of the computer
 
 **Folders and files** : *It's turtles all the way down!*
 
+<img src='/img/gui_tree.png' style="float:right; margin-right: 80px;" />
+
 * Really, really deep nesting possible
 * Store files
 * Store folders
-![Lotso' nested folders](https://upload.wikimedia.org/wikipedia/commons/e/e1/Organisation_of_wikis_incorrect.png)
 
 **Top Folder == Apex**
 
@@ -31,7 +32,7 @@ This *hidden structure* is the **skeletal system** of the computer
 
 What if we looked at this in a slightly different way?
 
-![Ugh, Characters!](https://upload.wikimedia.org/wikipedia/commons/5/5e/Fm-screenshot.png)
+<img src='/img/text_tree.png' style="float:right; margin-right: 80px;" />
 
 Same idea, but no pretty pictures
 
@@ -44,7 +45,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
 * **On Windows:** open up Git Shell from your desktop or All Programs menu.
 * **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
 * **On Chromebook:** From the [boxes page](https://www.nitrous.io/app#/boxes), click the "IDE" button. The command line window should appear at the bottom of the screen under the "Console" tab.
-* If you want to follow along, please go to: http://docs.railsbridgeboston.org/ruby/command_line
+* If you want to follow along, please go to: http://docs.railsbridgeboston.org/ruby/command_line_2016
 
 # Different Terminals
 
@@ -52,7 +53,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
 
 Get thee to a terminal. *(Hint: don't type the "$")*
 
-     $ cd workshop
+     $ cd ~/Desktop/railsbridge
      $ vagrant up
      $ vagrant ssh
 
@@ -78,13 +79,12 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 
 1. `pwd` *print working directory == where are we?*
   * `/vagrant`
-1. `cd ..` *change directory to .. == go up one level*
-1. `cd bin` *change directory to "bin"*
-1. `pwd` *We've moved! (unless you are **not** in a VM)*
-  * `/bin`
 1. `ls` *list contents == see what's here*
-  * `vm.rb`
-1. `cd /vagrant` *change directory (with an argument) == go there*
+  * `railsbridgevm-2016-06.box Vagrantfile`
+1. `cd` *change directory (no arguments) == go home*
+1. `pwd` *We've moved! (unless you are not in a VM)*
+  * `/home/vagrant`
+1. `cd /vagrant` *change directory (with an argument) == go there. And please note the leading '/'*
    1. `cd <some directory>` *directories are often a different color or bolded on a modern terminal*
 1. `pwd` *We've moved again!*
   * `/vagrant`
@@ -94,13 +94,13 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 
 # Whoa
 
-* Note the difference: `cd bin` versus `cd /vagrant`
-# Relative Path: relates to where we currently are
-  * `cd ..` and `cd bin` use *relative* paths.  "change to the bin directory from here"
-* Absolute Path: fully specified from the top (apex) on down
-  * `/vagrant` is an *absolute* path.
-  * It starts at root (`/`) and descends into `vagrant`.
-
+* Note the difference: `cd` versus `cd /vagrant`
+* Relative Path: relates to where we currently are
+  * `cd workspace` uses an *relative* path.  "change to the workspace directory from here"
+* Absolute Page: fully specified from the top (apex) on down
+  * `/home/vagrant/workspace` is an *absolute* path.
+  * It starts at root (`/`) and descends through `home`, `vagrant`, and into `workspace`
+  
 # More Key Ideas
 
 * **Make a new folder** -- Make Directory: `mkdir`
@@ -127,7 +127,7 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 
 All is well.
 
-We've created some structure with which we can now play
+We've created some structure with which we can now play:
 
 ![The New Tree](/img/home_tree.png)
 
@@ -189,7 +189,6 @@ We've created some structure with which we can now play
     drwxrwxr-x 2 vagrant vagrant 4096 Apr  1 00:31 dir_2
 
 * `d` is a **directory**
-* `l` is a **link** (advanced topic)
 * Permissions are specified for Read, Write, and Execute
 * The first _3_ letters are the **owners** permissions
 * The next _3_ letters are the **group** permissions
@@ -203,7 +202,7 @@ _If you step into a directory with a file, what does the `ls -l` show?_
 # Clean Up
 **Kinda like The Cat In The Hat**
 
-* `cd ~/dir_2` *This is actually **absolute** because `~` is our home*
+* `cd ~/dir_2` *This is actually absolute because `~` is our home*
 * `rm file_2` *Remove the file*
 * `cd ..` *Change to the parent directory*
 * `rmdir dir_2` *Remove dir_2*
