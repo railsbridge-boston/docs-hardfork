@@ -107,7 +107,7 @@ cd rai
     message '... and hit `TAB`.'
     result 'cd railsbridge'
     message 'Hit `TAB` twice'
-    result 'railsbridge/railsbridgevm-2016-04.box'
+    result 'railsbridge_ruby/ railsbridgevm-2016-06.box'
     message 'When there are multiple matches, it will show you the options. Type `_`'
     result 'cd example_'
     message '... and hit `TAB` again.'
