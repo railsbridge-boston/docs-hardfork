@@ -109,7 +109,10 @@ connections here, tell it to allow connections on private or local networks,
 but not on public networks.*
 
 To use the virtual machine, you must connect to it.  From the command line, type
-`vagrant ssh` to connect to the virtual machine.
+
+    vagrant ssh
+
+to connect to the virtual machine.
 
 You will see a welcome message something like this:
 
@@ -124,9 +127,15 @@ You will see a welcome message something like this:
 
 ## Disconnect from the virtual machine (turning it on and off)
 
-When you're done working in the virtual machine, type `exit` to disconnect from the virtual machine.
+When you're done working in the virtual machine, type
 
-To stop the virtual machine, type `vagrant halt` from the command line.
+    exit
+
+to disconnect from the virtual machine. To stop the virtual machine, type
+
+    vagrant halt
+
+from the command line.
 
 And close the command line window.
 
