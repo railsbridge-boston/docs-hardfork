@@ -53,7 +53,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
 
 Get thee to a terminal. *(Hint: don't type the "$")*
 
-     $ cd workspace
+     $ cd ~/Desktop/railsbridge
      $ vagrant up
      $ vagrant ssh
 
@@ -78,27 +78,27 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 # I Like to Move It, Move, It
 
 1. `pwd` *print working directory == where are we?*
-  * `/home/vagrant/workspace`
+  * `/vagrant`
+1. `ls` *list contents == see what's here*
+  * `railsbridgevm-2016-06.box Vagrantfile`
 1. `cd` *change directory (no arguments) == go home*
 1. `pwd` *We've moved! (unless you are not in a VM)*
   * `/home/vagrant`
-1. `ls` *list contents == see what's here*
-  * `workspace`
-1. `cd workspace` *change directory (with an argument) == go there*
+1. `cd /vagrant` *change directory (with an argument) == go there. And please note the leading '/'*
    1. `cd <some directory>` *directories are often a different color or bolded on a modern terminal*
 1. `pwd` *We've moved again!*
-  * `/home/vagrant/workspace`
+  * `/vagrant`
 
 **Who did it perfectly?**
 
 
 # Whoa
 
-* Note the difference: `cd` versus `cd workspace`
+* Note the difference: `cd` versus `cd /vagrant`
 * Relative Path: relates to where we currently are
   * `cd workspace` uses an *relative* path.  "change to the workspace directory from here"
 * Absolute Page: fully specified from the top (apex) on down
-  * `/home/vagrant/workspace` is an *absolute* path.  
+  * `/home/vagrant/workspace` is an *absolute* path.
   * It starts at root (`/`) and descends through `home`, `vagrant`, and into `workspace`
   
 # More Key Ideas
@@ -125,9 +125,9 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 
 # Breath.  Slowly and steadily
 
-All is well.  
+All is well.
 
-We've created some structure with which we can now play
+We've created some structure with which we can now play:
 
 ![The New Tree](/img/home_tree.png)
 
@@ -168,16 +168,16 @@ We've created some structure with which we can now play
 
 # A bit about what we see
 
-     RailsBridge-VM:~/workspace$
+     RailsBridge-VM:/vagrant$
 
-* This is the **command line prompt**. 
+* This is the **command line prompt**.
   * It can be customized (advanced topic), but you should know that you are in control of the computer.
 * The first part, "RailsBrige-VM" is the name of the machine
   * Remember, a Virtual Machine, VM, thinks it's a real computer and acts like one
 * The `:` is simply a spacer
-* The `~` is a shortcut that refers to your home directory
 * The `/` (or `\` if you're on Windows) is a directory separator
 * The `$` is the prompt -- the final character after which you can type
+* You also might see `~`, which is a shortcut that refers to your home directory
 
 # A bit about file listings
 
@@ -187,10 +187,8 @@ We've created some structure with which we can now play
     total 8
     drwxrwxr-x 3 vagrant vagrant 4096 Apr  1 00:31 dir_1
     drwxrwxr-x 2 vagrant vagrant 4096 Apr  1 00:31 dir_2
-    lrwxrwxrwx 1 vagrant vagrant    8 Jun 23  2015 workspace -> /vagrant
 
 * `d` is a **directory**
-* `l` is a **link** (advanced topic)
 * Permissions are specified for Read, Write, and Execute
 * The first _3_ letters are the **owners** permissions
 * The next _3_ letters are the **group** permissions
@@ -204,7 +202,7 @@ _If you step into a directory with a file, what does the `ls -l` show?_
 # Clean Up
 **Kinda like The Cat In The Hat**
 
-* `cd ~/dir_2` *This is actually **absolute** because `~` is our home*
+* `cd ~/dir_2` *This is actually absolute because `~` is our home*
 * `rm file_2` *Remove the file*
 * `cd ..` *Change to the parent directory*
 * `rmdir dir_2` *Remove dir_2*
