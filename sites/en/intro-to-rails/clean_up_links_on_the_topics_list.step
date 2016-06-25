@@ -30,7 +30,7 @@ steps do
     message <<-MARKDOWN
       Give your new website a personal touch by styling it and adding an image.
 
-      Your Rails application loads a CSS stylesheet from the file `assets/stylesheets/scaffolds.css.scss`. Open this file in your text editor.
+      Your Rails application loads a CSS stylesheet from the file `app/assets/stylesheets/scaffolds.css.scss`. Open this file in your text editor.
 
       If you have web design skills already, you can go to town. If not, let's make a simple font change.
 
