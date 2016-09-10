@@ -10,10 +10,6 @@ steps do
   tip "If you have _any_ problems, contact a TA immediately."
 
   step do
-    message "If you are still in irb, type exit to get back to your virtual machine's command line prompt."
-  end
-
-  step do
     console "cd ~/workspace"
     message "This command sets our workspace directory as our current directory."
   end
@@ -110,4 +106,4 @@ Select your `suggestotron` folder from the file picker that opens. If everything
   message "There is a lot more that `rails new` created. Probably enough to fill a book, so we're going to ignore them for now."
 end
 
-next_step "deploying_to_heroku"
+next_step "add_the_project_to_a_git_repo"

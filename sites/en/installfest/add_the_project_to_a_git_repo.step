@@ -77,4 +77,4 @@ By checking your application into git now, you're creating a record of this as y
   MARKDOWN
 end
 
-next_step "create_a_rails_app"
+next_step "deploying_to_heroku"
