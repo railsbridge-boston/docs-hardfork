@@ -70,6 +70,10 @@ information that Vagrant needs to start and connect to the new virtual
 machine.  We have to have a command line open and be in this folder when we
 start or connect to the vm so Vagrant can read the configuration information.
 
+Note: if you are on Windows and this doesn't work, make sure you're using <span class="woohoo-great">Git Bash</span> and NOT <span class="danger-danger">"Git CMD", "Powershell", Command Prompt, or anything else.</span> Read more on the [Command Line page](command_line) page.
+
+Look at the "workspace" folder in Finder or File Explorer. You'll notice it now contains a file called Vagrantfile.  This contains configuration information that Vagrant needs to start and connect to the new virtual machine.  We have to have a command line open and be in this folder when we start or connect to the vm so Vagrant can read the configuration information.
+
 Leave this Finder or File Explorer window open for the next step.
 
 ## Starting the Virtual Machine
