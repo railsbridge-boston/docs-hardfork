@@ -50,3 +50,9 @@ Time to get our app up on the internet! Get started with Heroku: <a href="/insta
 
 Find a TA and run through the
 [Installfest Completion Checklist](checklist).
+
+### Helpful Tips
+
+See helpful tips for troubleshooting common issues here: [Helpful Tips](helpful_tips)
+
+
