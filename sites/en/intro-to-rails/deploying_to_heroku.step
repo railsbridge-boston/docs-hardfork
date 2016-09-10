@@ -109,8 +109,8 @@ git commit -m "Some helpful message for your future self"
   end
 
   step "Visit your application" do
-    console "heroku open"
-    message "This displays the URL of your application to open in your browser."
+    console "heroku info"
+    message "This displays info about your heroku app, including the URL where you can visit it. Look for 'Web URL'. If you try to visit it in your browser now, don't worry if you see what looks like an error page. If it says 'The page you were looking for doesn't exist', that means you did it right!"
   end
 end
 
