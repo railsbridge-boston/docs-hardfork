@@ -57,6 +57,22 @@ fruits = fruits - ["kiwi"]
   end
 
   step do
+    A **hash** is a dictionary-like collection of unique keys and their values.
+    console_without_message 'fruit_dictionary = { strawberry: "a sweet soft red...", plum: "an oval, purple fruit...", orange: "a round juicy citrus fruit..." }'
+
+    message "We're creating a hash which associates the name of a fruit (key) with the definition of the fruit (value)."
+  end
+
+  step do
+    console <<-RUBY
+fruits_dictonary[:strawberry]
+fruits_dictionary[:orange]
+    RUBY
+
+    message "Here we're using a key (:strawberry and :orange) to look up the associated value (the definition) in the fruit dictionary."
+  end
+
+  step do
     message "Everything in Ruby has a **class**. Type this into IRB:"
 
     console_without_message <<-RUBY
@@ -65,7 +81,7 @@ fruits = fruits - ["kiwi"]
 fruits.class
 RUBY
 
-    message "These are the three data types introduced so far: **Fixnum** (numbers), **String** (text), and **Array** (lists)."
+    message "These are the three data types introduced so far: **Fixnum** (numbers), **String** (text), **Array** (lists), and **Hash** (dictionaries)."
   end
 
   step do

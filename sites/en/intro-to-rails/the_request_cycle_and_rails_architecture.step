@@ -1,0 +1,72 @@
+goals do
+
+  message "In this step we'll learn a bit about Rails architecture, and how the files created by scaffold work together. By the end of this step you should understand the following concepts:"
+
+  ul do
+    li "Request Cycle"
+    li "Model View Controller (MVC) Architecture"
+  end
+end
+
+explanation do
+
+  h2 "Request Cycle"
+
+  message "<img src='img/request-cycle.jpg'>"
+
+  discussion_box "What is this diagram?", <<-MARKDOWN
+    Talk through this diagram of the request cycle!
+  MARKDOWN
+
+  h2 "Model View Controller (MVC) Architecture"
+
+  message "Rails implements a very specific notion of the **Model/View/Controller** pattern, which guides how you structure your web applications."
+
+  h3 "Model"
+  message <<-MARKDOWN
+  * The Model is a bridge between the database and your application's code.
+  * For all the Models we create in RailsBridge, Model objects have a corresponding record in the the database. The name of the table in the database is the plural version of the Model's class name.
+
+  **Let's take a look at the Topic Model in suggestotron:**
+    * `app/models/topic.rb`
+  MARKDOWN
+
+  h3 "View"
+  message <<-MARKDOWN
+  * The View generates the HTML that will be displayed in the browser.
+  * View files are written in ERB, a templating language. It contains HTML with Ruby code embedded in it. The ruby variables in the view stand as placeholders for content that will be filled in when a user requests the page.
+  **Let's take a look at the View files in suggestotron, and match each View file with the corresponding page in the browser:**
+    * `app/views/topics/index.html.erb`
+    * `app/views/topics/show.html.erb`
+    * `app/views/topics/new.html.erb`
+    * `app/views/topics/edit.html.erb`
+    * `app/views/topics/_form.html.erb`
+
+  You may have noticed that the page for new topics and the page to edit topics looked similar. That's because they both use the
+  code from this file to show a form. This file is called a
+  partial since it only contains code for part of a page. Partials
+  always have filenames starting with an underscore character.
+
+  **Challenge question:** Can you find the line of code in `new.html.erb`
+    and `edit.html.erb` that makes the form partial appear?
+  MARKDOWN
+
+  h3 "Controller"
+  message <<-MARKDOWN
+  * Controllers pass Ruby objects between the Models and the Views.
+  * When you visit any page in your application, that request will be handled by a method in a Controller.
+
+  **Let's take a look at the Controller file in suggestotron:**
+    * `app/controllers/topics_controller.rb`
+
+  You'll see a method (a line beginning with
+      <code>def</code>) for each of the views listed above (except
+      _form.html.erb).
+  MARKDOWN
+
+  discussion_box "Model View Controller Example", <<-MARKDOWN
+    Walk through the process of creating a new topic in your browser.  At each step, identify how the topic model, topic controller, and topic views are working together.
+  MARKDOWN
+end
+
+next_step "setting_the_default_page"
