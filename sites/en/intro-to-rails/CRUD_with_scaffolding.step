@@ -50,7 +50,10 @@ steps do
   end
 end
 
-explanation
-  How did all those pages get created and hooked together? rails scaffold did it for you.
+explanation do
+  message <<-MARKDOWN
+  How did all those pages get created and hooked together? `rails scaffold` did it for you.
+  MARKDOWN
+end
 
 next_step "the_request_cycle_and_rails_architecture"
