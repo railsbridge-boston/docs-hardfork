@@ -44,7 +44,7 @@ This is what is inside.  Inside the Explorer or the Finder. Under the pretty GUI
   or find the Terminal application through Spotlight (click the magnifying glass in the top right of the screen and start typing 'Terminal')"
 * **On Windows:** open up Git Shell from your desktop or All Programs menu.
 * **On Linux:** press Ctrl + Alt + T or Find Terminal under the Accessories category of your applications menu.
-* **On Chromebook:** From the [boxes page](https://www.nitrous.io/app#/boxes), click the "IDE" button. The command line window should appear at the bottom of the screen under the "Console" tab.
+* **On Chromebook:** From the Cloud9 [Workspaces](https://c9.io/dashboard.html) page, choose an existing workspace, or create a new one. The command line window should appear at the bottom of the screen under the "bash" tab. If it's not there you can access it by clicking the "+" button next to any tab and choose "New Terminal".
 * If you want to follow along, please go to: http://docs.railsbridgeboston.org/ruby/command_line_2016
 
 # Different Terminals
@@ -100,7 +100,7 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 * Absolute Page: fully specified from the top (apex) on down
   * `/home/vagrant/workspace` is an *absolute* path.
   * It starts at root (`/`) and descends through `home`, `vagrant`, and into `workspace`
-  
+
 # More Key Ideas
 
 * **Make a new folder** -- Make Directory: `mkdir`

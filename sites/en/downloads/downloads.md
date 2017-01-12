@@ -79,7 +79,7 @@ you get up and running. Do these steps before coming to the workshop.
 <tr>
   <td>Follow <a href="/downloads/xcode">these instructions to install XCode</a>.</td>
   <td>Read the <a href="/downloads/linux">instructions for Linux</a> and install the equivalent packages for your distribution.</a>
-  <td>Create an account on <a href="https://www.nitrous.io/">Nitrous.io</a>.</td>
+  <td>Create an account on <a href="https://c9.io">Cloud9</a>.</td>
 </tr>
 </table>
 
