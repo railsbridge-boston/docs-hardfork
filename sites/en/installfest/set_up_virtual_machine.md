@@ -23,7 +23,7 @@ Folder". Name it `railsbridge`.
 
 *Note that the name `railsbridge` should be lowercase.*
 
-In File Explorer or Finder, drag and drop "railsbridgevm-2016-09.box" from
+In File Explorer or Finder, drag and drop "railsbridgevm-2017-01.box" from
 your Downloads folder to your new `railsbridge` folder.
 
 ## Set up the virtual machine
@@ -43,7 +43,7 @@ Go to your new `railsbridge` directory:
 
 Type this:
 
-    vagrant box add railsbridge ./railsbridgevm-2016-09.box
+    vagrant box add railsbridge ./railsbridgevm-2017-01.box
 
 Then type:
 
