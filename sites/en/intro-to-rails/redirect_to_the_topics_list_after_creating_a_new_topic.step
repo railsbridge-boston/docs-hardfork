@@ -64,6 +64,11 @@ message "In the same file, locate the update method. "
     <div><%= message %></div>
 <% end %>
       RUBY
+
+      message "Open `app/views/topics/index.html.erb`."
+
+      message "Find the line starting with `<p id=...` at the top of the file and remove it. Otherwise you will see two identical messages when you create each new topic."
+
   end
 
   step "Confirm your changes" do
