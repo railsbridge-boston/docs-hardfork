@@ -10,7 +10,7 @@ end
 
 explanation do
 
-  h2 "Request Cycle"
+  h1 "Request Cycle"
 
   message "<img src='img/request-cycle.jpg'>"
 
@@ -18,7 +18,7 @@ explanation do
     Talk through this diagram of the request cycle!
   MARKDOWN
 
-  h2 "Model View Controller (MVC) Architecture"
+  h1 "Model View Controller (MVC) Architecture"
 
   message "Rails implements a very specific notion of the **Model/View/Controller** pattern, which guides how you structure your web applications."
 
@@ -74,8 +74,106 @@ explanation do
       <code>def</code>) for each of the views listed above (except
       _form.html.erb)."
 
-  discussion_box "Model View Controller", <<-MARKDOWN
-    Walk through the process of creating a new topic in your browser.  At each step, identify how the topic model, topic controller, and topic views are working together.
+  h1 "Behind the Scenes:  Request Flow in the Server Log (optional)"
+
+  message <<-MARKDOWN
+  Let's take a look at the server log to see how a request is handled with Model View Controller architecture.  The server log is a list of activities performed by an application.
+
+  To view the server log, look at the terminal tab currently running:
+
+  ```
+    $ rails server -b0.0.0.0
+  ```
+
+  In this section, we'll be looking at both the **browser** and the server log in the **terminal**.
+  MARKDOWN
+
+  h2 "Viewing the New Topic Form"
+
+  message <<-MARKDOWN
+  **User Action:** In the browser, view the New Topic form: <a href="http://localhost:3000/topics/new">http://localhost:3000/topics/new</a>
+
+  Now, let's look at the output from this request in the server log.  Starting at the bottom of the server log, look for:
+
+  ```
+    Started GET "/topics/new" for ::1 at 2017-02-04 11:47:53 -0500
+    Processing by TopicsController#new as HTML
+    Rendered topics/_form.html.erb (29.7ms)
+    Rendered topics/new.html.erb within layouts/application (33.8ms)
+    Completed 200 OK in 73ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+  ```
+
+  Let's break it down, line by line.
+
+  A request is recieved:
+
+  ```
+    Started GET "/topics/new" for ::1 at 2017-02-04 11:47:53 -0500
+  ```
+
+  The Topics Controller identifies the relevant action:
+
+  ```
+    Processing by TopicsController#new as HTML
+  ```
+
+  The relevant Topics Views are rendered:
+
+  ```
+    Rendered topics/_form.html.erb (29.7ms)
+    Rendered topics/new.html.erb within layouts/application (33.8ms)
+  ```
+
+  The request has been completed successfully:
+
+  ```
+    Completed 200 OK in 73ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+  ```
+  MARKDOWN
+
+  h2 "Creating a New Topic"
+
+  message <<-MARKDOWN
+  **User Action**:  In the browser, fill out the form for a New Topic and click 'Create Topic'.
+
+  You should see output like this in your server log:
+
+  ```
+    Started POST "/topics" for ::1 at 2017-02-04 12:33:42 -0500
+    Processing by TopicsController#create as HTML
+    Parameters: {"utf8"=>"✓", "authenticity_token"=>"1H8ocUOxIXsaH9AS5UDIrLnl1WKmefongphudyBvZF++kz+Xudk9Xhx9Fx232e4ooMiXEy/6f7L7q+TzI1ApwA==", "topic"=>{"title"=>"Cats", "description"=>"Playful, aloof, cuddly, smart."}, "commit"=>"Create Topic"}
+    (0.1ms)  begin transaction
+    SQL (0.6ms)  INSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Cats"], ["description", "Playful, aloof, cuddly, smart."], ["created_at", "2017-02-04 17:33:42.913402"], ["updated_at", "2017-02-04 17:33:42.913402"]]
+    (0.6ms)  commit transaction
+  ```
+
+  Let's walk through this output, line by line.
+
+  A request has been recieved:
+
+  ```
+    Started POST "/topics" for ::1 at 2017-02-04 12:33:42 -0500
+  ```
+
+  The Topics Controller identifies the relevant action:
+
+  ```
+    Processing by TopicsController#create as HTML
+  ```
+
+  The Topics Controller is passed paramaters:
+
+  ```
+    Parameters: {"utf8"=>"✓", "authenticity_token"=>"1H8ocUOxIXsaH9AS5UDIrLnl1WKmefongphudyBvZF++kz+Xudk9Xhx9Fx232e4ooMiXEy/6f7L7q+TzI1ApwA==", "topic"=>{"title"=>"Cats", "description"=>"Playful, aloof, cuddly, smart."}, "commit"=>"Create Topic"}
+  ```
+
+  The Topic Model makes a request to add a new Topic to the database:
+
+  ```
+    (0.1ms)  begin transaction
+    SQL (0.6ms)  INSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Cats"], ["description", "Playful, aloof, cuddly, smart."], ["created_at", "2017-02-04 17:33:42.913402"], ["updated_at", "2017-02-04 17:33:42.913402"]]
+    (0.6ms)  commit transaction
+  ```
   MARKDOWN
 end
 
