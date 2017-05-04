@@ -5,9 +5,6 @@ you attend the workshop. There will be an internet connection there
 (provided by our wonderful location sponsor!), but it's not fast enough
 for everyone to download large files at the same time.
 
-If you can't download the files ahead of time, we will also have the
-files available on USB drives at the Installfest.
-
 ## Common Operating Systems
 
 Almost everyone will have one of these operating systems. If you're not

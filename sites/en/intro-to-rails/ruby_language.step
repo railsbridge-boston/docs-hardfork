@@ -57,6 +57,24 @@ fruits = fruits - ["kiwi"]
   end
 
   step do
+    message "A **hash** is a dictionary-like collection of unique **keys** and their **values**."
+
+    console <<-RUBY
+    fruit_dictionary = { strawberry: "a sweet soft red...", plum: "an oval, purple fruit...", orange: "a round juicy citrus fruit..." }
+    RUBY
+
+    message "We're creating a hash which associates the name of a fruit (**key**) with the definition of the fruit (**value**)."
+  end
+
+  step do
+    console <<-RUBY
+fruit_dictonary[:strawberry]
+    RUBY
+
+    message "Here we're using the **key**, `:strawberry`, to look up the associated **value**, the definition of 'strawberry' in the fruit dictionary."
+  end
+
+  step do
     message "Everything in Ruby has a **class**. Type this into IRB:"
 
     console_without_message <<-RUBY
@@ -65,14 +83,14 @@ fruits = fruits - ["kiwi"]
 fruits.class
 RUBY
 
-    message "These are the three data types introduced so far: **Fixnum** (numbers), **String** (text), and **Array** (lists)."
+    message "These are the three data types introduced so far: **Fixnum** (numbers), **String** (text), **Array** (lists), and **Hash** (dictionaries)."
   end
 
   step do
     message <<-MARKDOWN
       Each class has different **methods** that can be used on **instances** of
       that class. If you're not quite sure what an instance is, [this
-      page on Ruby classes](http://docs.railsbridgeboston.org/ruby/classes) might help.
+      page on Ruby classes](http://docs.railsbridgenyc.org/ruby/classes) might help.
     MARKDOWN
 
     console_without_message <<-RUBY

@@ -20,7 +20,6 @@ steps do
 * `description:text` says that topics have a description which is a "text". A "text" is like a "string" that might be very long.
 
     MARKDOWN
-    message "If you want, take some time to poke around the files listed in this step. You can learn about them in the [Rails Architecture](rails_architecture) page."
   end
 
   step do

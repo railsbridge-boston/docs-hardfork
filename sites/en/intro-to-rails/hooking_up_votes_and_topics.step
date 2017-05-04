@@ -58,6 +58,8 @@ end
 
     console_with_message "Change the title of that topic to something else:", "my_topic.update_attributes(title: 'Edited in the console')"
 
+    message"**Challenge question:** What Ruby data type did we learn about that closely resembles the format we see here: `title: 'Edited in the console'`?"
+
     console_with_message "Add a vote to that topic:", "my_topic.votes.create"
 
     console_with_message "See how many votes that topic has:", "my_topic.votes.count"

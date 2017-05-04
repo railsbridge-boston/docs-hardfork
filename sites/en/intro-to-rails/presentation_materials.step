@@ -5,7 +5,7 @@ ul do
   end
 
   li do
-    a 'Starting a Rails Application', href: 'http://railsbridge-boston.github.io/starting_a_rails_application'
+    a 'Starting a Rails Application', href: 'http://railsbridge-nyc.github.io/starting_a_rails_application'
   end
 
   li do

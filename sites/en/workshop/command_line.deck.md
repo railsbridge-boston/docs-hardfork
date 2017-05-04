@@ -21,7 +21,7 @@ It's probably a little different from how you're used to using your computer, bu
 
 Open this web page:
 
-[http://docs.railsbridgeboston.org/ruby/command_line](/ruby/command_line)
+[http://docs.railsbridgenyc.org/ruby/command_line](/ruby/command_line)
 
 # Getting started
 

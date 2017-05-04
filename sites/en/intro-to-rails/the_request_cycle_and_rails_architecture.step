@@ -1,0 +1,180 @@
+goals do
+
+  message "In this step we'll learn about how the files created by scaffold work together. By the end of this step you should understand the following concepts:"
+
+  ul do
+    li "Request Cycle"
+    li "Model View Controller (MVC) Architecture"
+  end
+end
+
+explanation do
+
+  h1 "Request Cycle"
+
+  message "<img src='img/request-cycle.jpg'>"
+
+  discussion_box "What is this diagram?", <<-MARKDOWN
+    Talk through this diagram of the request cycle!
+  MARKDOWN
+
+  h1 "Model View Controller (MVC) Architecture"
+
+  message "Rails implements a very specific notion of the **Model/View/Controller** pattern, which guides how you structure your web applications."
+
+  h2 "Model"
+  message <<-MARKDOWN
+  * The Model is a bridge between the database and your application's code.
+  * For all the Models we create in RailsBridge, Model objects have a corresponding record in the database. The name of the table in the database is the plural version of the Model's class name.
+  MARKDOWN
+
+  message "**Let's take a look at the Topic Model in suggestotron:**"
+
+  message <<-MARKDOWN
+  * `app/models/topic.rb`
+  MARKDOWN
+
+  h2 "View"
+  message <<-MARKDOWN
+  * The View generates the HTML that will be displayed in the browser.
+  * View files are written in ERB, a templating language. It contains HTML with Ruby code embedded in it. The ruby variables in the view stand as placeholders for content that will be filled in when a user requests the page.
+  MARKDOWN
+
+  message "**Let's take a look at the Topic View files in suggestotron and match each View file with the corresponding page in the browser:**"
+
+  message <<-MARKDOWN
+    * `app/views/topics/index.html.erb`
+    * `app/views/topics/show.html.erb`
+    * `app/views/topics/new.html.erb`
+    * `app/views/topics/edit.html.erb`
+    * `app/views/topics/_form.html.erb`
+  MARKDOWN
+
+  message "You may have noticed that the page for new topics and the page to edit topics looked similar. That's because they both use the
+  code from this file to show a form. This file is called a
+  partial since it only contains code for part of a page. Partials
+  always have filenames starting with an underscore character."
+
+  message "**Challenge question:** Can you find the line of code in `new.html.erb` and `edit.html.erb` that makes the form partial appear?"
+
+
+  h2 "Controller"
+  message <<-MARKDOWN
+  * Controllers pass Ruby objects between the Models and the Views.
+  * When you visit any page in your application, that request will be handled by a method in a Controller.
+  MARKDOWN
+
+  message "**Let's take a look at the Controller file in suggestotron:**"
+
+  message <<-MARKDOWN
+    * `app/controllers/topics_controller.rb`
+  MARKDOWN
+
+  message "You'll see a method (a line beginning with
+      <code>def</code>) for each of the views listed above (except
+      _form.html.erb)."
+
+  h1 "Behind the Scenes:  Request Flow in the Server Log (optional)"
+
+  message <<-MARKDOWN
+  Let's take a look at the server log to see how a request is handled with Model View Controller architecture.  The server log is a list of activities performed by an application.
+
+  To view the server log, look at the terminal tab currently running:
+
+  ```
+    $ rails server -b0.0.0.0
+  ```
+
+  In this section, we'll be looking at both the **browser** and the server log in the **terminal**.
+  MARKDOWN
+
+  h2 "Viewing the New Topic Form"
+
+  message <<-MARKDOWN
+  **User Action:** In the browser, view the New Topic form: <a href="http://localhost:3000/topics/new">http://localhost:3000/topics/new</a>
+
+  Now, let's look at the output from this request in the server log.  Starting at the bottom of the server log, look for:
+
+  ```
+    Started GET "/topics/new" for ::1 at 2017-02-04 11:47:53 -0500
+    Processing by TopicsController#new as HTML
+    Rendered topics/_form.html.erb (29.7ms)
+    Rendered topics/new.html.erb within layouts/application (33.8ms)
+    Completed 200 OK in 73ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+  ```
+
+  Let's break it down, line by line.
+
+  A request is recieved:
+
+  ```
+    Started GET "/topics/new" for ::1 at 2017-02-04 11:47:53 -0500
+  ```
+
+  The Topics Controller identifies the relevant action:
+
+  ```
+    Processing by TopicsController#new as HTML
+  ```
+
+  The relevant Topics Views are rendered:
+
+  ```
+    Rendered topics/_form.html.erb (29.7ms)
+    Rendered topics/new.html.erb within layouts/application (33.8ms)
+  ```
+
+  The request has been completed successfully:
+
+  ```
+    Completed 200 OK in 73ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+  ```
+  MARKDOWN
+
+  h2 "Creating a New Topic"
+
+  message <<-MARKDOWN
+  **User Action**:  In the browser, fill out the form for a New Topic and click 'Create Topic'.
+
+  You should see output like this in your server log:
+
+  ```
+    Started POST "/topics" for ::1 at 2017-02-04 12:33:42 -0500
+    Processing by TopicsController#create as HTML
+    Parameters: {"utf8"=>"✓", "authenticity_token"=>"1H8ocUOxIXsaH9AS5UDIrLnl1WKmefongphudyBvZF++kz+Xudk9Xhx9Fx232e4ooMiXEy/6f7L7q+TzI1ApwA==", "topic"=>{"title"=>"Cats", "description"=>"Playful, aloof, cuddly, smart."}, "commit"=>"Create Topic"}
+    (0.1ms)  begin transaction
+    SQL (0.6ms)  INSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Cats"], ["description", "Playful, aloof, cuddly, smart."], ["created_at", "2017-02-04 17:33:42.913402"], ["updated_at", "2017-02-04 17:33:42.913402"]]
+    (0.6ms)  commit transaction
+  ```
+
+  Let's walk through this output, line by line.
+
+  A request has been recieved:
+
+  ```
+    Started POST "/topics" for ::1 at 2017-02-04 12:33:42 -0500
+  ```
+
+  The Topics Controller identifies the relevant action:
+
+  ```
+    Processing by TopicsController#create as HTML
+  ```
+
+  The Topics Controller is passed paramaters:
+
+  ```
+    Parameters: {"utf8"=>"✓", "authenticity_token"=>"1H8ocUOxIXsaH9AS5UDIrLnl1WKmefongphudyBvZF++kz+Xudk9Xhx9Fx232e4ooMiXEy/6f7L7q+TzI1ApwA==", "topic"=>{"title"=>"Cats", "description"=>"Playful, aloof, cuddly, smart."}, "commit"=>"Create Topic"}
+  ```
+
+  The Topic Model makes a request to add a new Topic to the database:
+
+  ```
+    (0.1ms)  begin transaction
+    SQL (0.6ms)  INSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Cats"], ["description", "Playful, aloof, cuddly, smart."], ["created_at", "2017-02-04 17:33:42.913402"], ["updated_at", "2017-02-04 17:33:42.913402"]]
+    (0.6ms)  commit transaction
+  ```
+  MARKDOWN
+end
+
+next_step "setting_the_default_page"
