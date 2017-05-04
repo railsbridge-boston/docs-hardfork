@@ -257,9 +257,12 @@ class Step < Erector::Widget
   end
 
   def console_with_message(message, commands)
-    div :class => "console" do
+    div :class => "console terminal" do
       span message
-      pre commands.strip_heredoc
+      div class: "wrapper" do
+        span "Terminal", class: "label"
+        pre commands.strip_heredoc
+      end
     end
   end
 
@@ -273,9 +276,12 @@ class Step < Erector::Widget
   end
 
   def irb msg
-    div :class => "console" do
+    div :class => "console irb" do
       span I18n.t("captions.irb")
-      pre msg.strip_heredoc
+      div class: "wrapper" do
+        span "IRB", class: "label"
+        pre msg.strip_heredoc
+      end
     end
   end
 

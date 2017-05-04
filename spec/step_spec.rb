@@ -123,14 +123,34 @@ describe Step do
   end
 
   describe 'console' do
-    it "emits a 'console' div with a 'pre' block" do
+    it "emits a 'console terminal' div with a 'pre' block" do
       html_doc(<<-RUBY)
         console "echo hi"
       RUBY
       assert_loosely_equal(@html, <<-HTML.strip_heredoc)
-        <div class="console">
+        <div class="console terminal">
           <span>#{I18n.t('captions.terminal')}</span>
-          <pre>echo hi</pre>
+          <div class="wrapper">
+            <span class="label">Terminal</span>
+            <pre>echo hi</pre>
+          </div>
+        </div>
+      HTML
+    end
+  end
+
+  describe 'irb' do
+    it "emits a 'console irb' div with a 'pre' block" do
+      html_doc(<<-RUBY)
+        irb "1 + 1"
+      RUBY
+      assert_loosely_equal(@html, <<-HTML.strip_heredoc)
+        <div class="console irb">
+          <span>#{I18n.t('captions.irb')}</span>
+          <div class="wrapper">
+            <span class="label">IRB</span>
+            <pre>1 + 1</pre>
+          </div>
         </div>
       HTML
     end
