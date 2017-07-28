@@ -38,8 +38,8 @@ day... unless I really screwed something up. :D
 
 We're going to be working with:
 
-* ruby 2.2.1
-* rails 4.0.13
+* ruby 2.3.3
+* rails 5.1.2
 * bundler
 * sqlite
 * sublime text 2 or the text editor of your choice
@@ -62,6 +62,7 @@ $ irb
 >> exit
 $
 </pre>
+  </div>
 </div>
 
 If you can do that, you are probably good to go.
@@ -89,8 +90,9 @@ Each lesson will look like this:
 def code_to_write
   1 + 1
 end</pre>
+      </div>
     </div>
-    <p>Yellow because we've gotten it done, but we have no clue what's going on.
+    <p>Yellow because we've gotten it done, but we have no clue what's going on.</p>
   </div>
   <div class="explanation">
     <h1>Explanation</h1>
@@ -101,4 +103,3 @@ end</pre>
 MARKDOWN
 
 next_step "ruby_language"
-
