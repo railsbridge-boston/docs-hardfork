@@ -140,3 +140,9 @@ DEPENDENCIES
   sprockets
   thin
   wrong (~> 0.7.0)
+
+RUBY VERSION
+   ruby 2.2.0p0
+
+BUNDLED WITH
+   1.13.6
