@@ -256,9 +256,9 @@ class Step < Erector::Widget
     console_with_message(I18n.t('captions.terminal'), commands)
   end
 
-  def console_with_message(message, commands)
-    div :class => "console terminal" do
-      span message
+  def console_with_message(msg, commands)
+    div class: "console terminal" do
+      message(msg)
       div class: "wrapper" do
         span "Terminal", class: "label"
         pre commands.strip_heredoc
@@ -271,18 +271,26 @@ class Step < Erector::Widget
   end
 
   def source_code_with_message(text, *args)
-    message text
+    message(text)
     source_code(*args)
   end
 
-  def irb msg
-    div :class => "console irb" do
-      span I18n.t("captions.irb")
+  def irb commands
+    irb_with_message(I18n.t("captions.irb"), commands)
+  end
+
+  def irb_with_message msg, commands
+    div class: "console irb" do
+      message(msg)
       div class: "wrapper" do
         span "IRB", class: "label"
-        pre msg.strip_heredoc
+        pre commands.strip_heredoc
       end
     end
+  end
+
+  def irb_without_message commands
+    irb_with_message('', commands)
   end
 
   def type_in_file filename, msg

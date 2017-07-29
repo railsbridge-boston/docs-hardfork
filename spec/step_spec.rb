@@ -129,7 +129,9 @@ describe Step do
       RUBY
       assert_loosely_equal(@html, <<-HTML.strip_heredoc)
         <div class="console terminal">
-          <span>#{I18n.t('captions.terminal')}</span>
+          <div class="message">
+            <p>#{I18n.t('captions.terminal')}</p>
+          </div>
           <div class="wrapper">
             <span class="label">Terminal</span>
             <pre>echo hi</pre>
@@ -146,7 +148,9 @@ describe Step do
       RUBY
       assert_loosely_equal(@html, <<-HTML.strip_heredoc)
         <div class="console irb">
-          <span>#{I18n.t('captions.irb')}</span>
+          <div class="message">
+            <p>#{I18n.t('captions.irb')}</p>
+          </div>
           <div class="wrapper">
             <span class="label">IRB</span>
             <pre>1 + 1</pre>
