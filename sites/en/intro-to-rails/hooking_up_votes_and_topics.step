@@ -50,19 +50,34 @@ end
 
     message "At the console, try the following things"
 
-    console_with_message "See how many topics exist:", "Topic.count"
+    irb_with_message "See how many topics exist:", "Topic.count"
 
-    console_with_message "Save the first topic into a variable:", "my_topic = Topic.first"
+    irb_with_message(
+      "Save the first topic into a variable:",
+      "my_topic = Topic.first"
+    )
 
     tip "`my_topic` here could have been any variable name, but we'll stick with `my_topic` for consistency."
 
-    console_with_message "Change the title of that topic to something else:", "my_topic.update_attributes(title: 'Edited in the console')"
+    irb_with_message(
+      "Change the title of that topic to something else:",
+      "my_topic.update_attributes(title: 'Edited in the console')"
+    )
 
-    console_with_message "Add a vote to that topic:", "my_topic.votes.create"
+    irb_with_message(
+      "Add a vote to that topic:",
+      "my_topic.votes.create"
+    )
 
-    console_with_message "See how many votes that topic has:", "my_topic.votes.count"
+    irb_with_message(
+      "See how many votes that topic has:",
+      "my_topic.votes.count"
+    )
 
-    console_with_message "Remove a vote from that topic:", "my_topic.votes.first.destroy"
+    irb_with_message(
+      "Remove a vote from that topic:",
+      "my_topic.votes.first.destroy"
+    )
 
     message "Note that the things you can do to **Model classes** (like **Topic** and **Vote**), differ from the things you can do to **Model instances** (like `my_topic`, here). `my_topic.votes` is an **association**, and here behaves mostly like a model class."
 
