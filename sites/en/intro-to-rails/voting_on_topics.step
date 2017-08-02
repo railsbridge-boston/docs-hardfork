@@ -9,7 +9,7 @@ end
 steps do
   console <<-SHELL
 rails generate model vote topic_id:integer
-rake db:migrate
+rails db:migrate
   SHELL
 end
 
