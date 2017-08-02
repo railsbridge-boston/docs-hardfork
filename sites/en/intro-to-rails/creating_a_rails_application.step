@@ -11,7 +11,7 @@ steps do
 
   step do
     message "If you are not in the virtual machine, start in and `vagrant ssh` in. Ask a TA if you need help."
-    message "If you are still in irb, type exit to get back to your virtual machine's command line prompt."
+    message "If you are still in irb, type `exit` to get back to your virtual machine's command line prompt."
   end
 
   step do
