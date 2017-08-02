@@ -50,7 +50,10 @@ show up for RailsBridge on Saturday.
 
 You can verify that you have everything working by trying this out in your terminal:
 
-<div class="console"><pre>
+<div class="console terminal">
+  <div class="wrapper">
+    <span class="label">Terminal</span>
+    <pre>
 $ cd ~/Desktop/railsbridge
 $ vagrant up
 $ vagrant ssh
@@ -85,8 +88,10 @@ Each lesson will look like this:
   <div class="steps">
     <h1>Steps:</h1>
     <pre class="term">steps to take.</pre>
-    <div class="console">
-      <pre>
+    <div class="console irb">
+      <div class="wrapper">
+        <span class="label">IRB</span>
+        <pre>
 def code_to_write
   1 + 1
 end</pre>
