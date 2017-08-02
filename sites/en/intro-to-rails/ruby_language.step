@@ -58,7 +58,7 @@ steps do
   end
 
   step do
-    irb <<-RUBY
+    irb_without_message <<-RUBY
       fruits = fruits + ["orange"]
       fruits = fruits - ["kiwi"]
     RUBY
