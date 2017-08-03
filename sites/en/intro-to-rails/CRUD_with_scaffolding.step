@@ -100,8 +100,8 @@ explanation do
   * `app/controllers/topics_controller.rb`
     * This is the controller file that Rails created as part of the scaffold
     * If you look you'll see a method (a line beginning with
-      <code>def</code>) for each of the views listed above (except
-      _form.html.erb)
+      `def`) for each of the views listed above (except
+      `_form.html.erb`)
     MARKDOWN
 end
 
