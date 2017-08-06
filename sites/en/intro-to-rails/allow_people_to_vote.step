@@ -40,8 +40,8 @@ steps do
       Verify that upvote route was added successfully by checking the output of `rails routes` or [http://localhost:3000/rails/info](http://localhost:3000/rails/info). You should see a line that looks like this:
 
       ```
-            Prefix Verb   URI Pattern                  Controller#Action
-      upvote_topic POST   /topics/:id/upvote(.:format) topics#upvote
+      Helper             HTTP Verb  URI Pattern                  Controller#Action
+      upvote_topic_path  POST       /topics/:id/upvote(.:format) topics#upvote
       ```
     MARKDOWN
   end
