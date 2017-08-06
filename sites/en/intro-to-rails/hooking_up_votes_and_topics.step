@@ -42,8 +42,9 @@ end
 
     result <<-CONSOLE
       $ rails console
-      Loading development environment (Rails 4.1.0)
-      1.9.3-p194 :001 >
+      Running via Spring preloader in process 1234
+      Loading development environment (Rails 5.1.2)
+      irb(main):001:0>
     CONSOLE
 
     tip "To get out of the console, type `exit`."
