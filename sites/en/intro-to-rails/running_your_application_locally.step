@@ -5,7 +5,7 @@ end
 
 steps do
   step do
-    console "rails server -b0.0.0.0"
+    console "rails server"
   end
 
   step do
