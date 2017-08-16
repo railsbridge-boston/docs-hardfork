@@ -78,7 +78,7 @@ edit_topic GET    /topics/:id/edit(.:format) topics#edit
 
   message <<-MARKDOWN
     This shows all the URLs your application responds to. The code that starts
-    with colons are variables so :id means the id number of the record. The
+    with colons are variables so `:id` means the id number of the record. The
     code in parentheses is optional.
 
     You can also get this information on your site in development. Go to
