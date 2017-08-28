@@ -10,8 +10,19 @@ steps do
   tip "If you have _any_ problems, contact a TA immediately."
 
   step do
-    message "If you are not in the virtual machine, start in and `vagrant ssh` in. Ask a TA if you need help."
-    message "If you are still in irb, type exit to get back to your virtual machine's command line prompt."
+    message <<-MARKDOWN
+    Make sure you have exited irb. If you haven't, your prompt will be `irb(main):001:0>`. Exit by typing `exit`.
+    Check if you are in the virtual machine. You are if your command line prompt is `RailsBridge-VM:/vagrant$`.
+
+    If you are not in the virtual machine:
+
+    * Check to see if it is running by typing `vagrant up`
+      * If it is running, you will see the message `==> default: VirtualBox VM is already running.`
+      * If it is not running, `vagrant up` will start the virtual machine
+    * Enter the virtual machine by typing `vagrant ssh`
+
+    Ask a TA if you need help.
+    MARKDOWN
   end
 
   step do
