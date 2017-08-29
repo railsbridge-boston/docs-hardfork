@@ -34,7 +34,7 @@ steps do
 
       If you have web design skills already, you can go to town. If not, let's make a simple font change.
 
-      Change the body's `font-family` on line 4 to `serif`:
+      Change the body's `font-family` on lines 5 and 11 to `serif`:
 
       ```
       font-family: serif;

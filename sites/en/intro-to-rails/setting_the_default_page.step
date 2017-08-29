@@ -3,7 +3,7 @@ goals do
   message <<-MARKDOWN
   Now that the structure is complete, let's make the flow work smoothly.
 
-  Currently when you go to <http://localhost:3000> you see the "Welcome aboard" message.
+  Currently when you go to <http://localhost:3000> you see the "Yay! You’re on Rails!" message.
 
   It would be easier to use our app if <http://localhost:3000> went directly to the topics list.
 
@@ -16,13 +16,26 @@ steps do
   step "Add a root route" do
     message "Open the file `config/routes.rb` in an editor."
 
-    message "Search the file for the line that says `# 'welcome#index'`. It will be near the top."
+    message "Search the file for the line `resources :topics`. It will be near the top."
 
-    message "Uncomment that line by removing the `#` sign in front of it, and change it to read `root 'topics#index'`. When you are done the line should look like this:"
+    message "Right above that line, add a new line: `root 'topics#index'`. When you are done the file should look like this:"
 
     source_code :ruby, <<-RUBY
-root 'topics#index'
+      Rails.application.routes.draw do
+        root 'topics#index'
+        resources :topics
+        # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+      end
     RUBY
+  end
+
+  step "Remove the comment (optional)" do
+    message <<-MARKDOWN
+      Near the bottom, there is a line that starts with a `#`. This is called a
+      comment. It is ignored by ruby and is used for reference or further
+      explanation of nearby code. If you want, you can remove it, or keep it
+      there to look at later. It's totally up to you!
+    MARKDOWN
   end
 
   step "Confirm your changes" do
@@ -32,61 +45,73 @@ end
 
 explanation do
  message <<-MARKDOWN
-  * `root 'topics#index'` is a Rails route that says the default
-    address for your site is `topics#index`. `topics#index` is the topics
-    list page (the topics controller with the index action).
-  * Rails routes control how URLs (web addresses) get matched with
-    code on the server. Similar to how addresses match with houses and
-    apartments.
-  * The file `config/routes.rb` is like an address directory listing the
-    possible addresses and which code goes with each one
-  * `routes.rb` uses some shortcuts so it doesn't always show all the
-    possible URLs. To explore the URLs in more detail we can use the
-    terminal.
+    * `root 'topics#index'` is a Rails route that says the default
+      address for your site is `topics#index`. `topics#index` is the topics
+      list page (the topics controller with the index action).
+    * Rails routes control how URLs (web addresses) get matched with
+      code on the server. Similar to how addresses match with houses and
+      apartments.
+    * The file `config/routes.rb` is like an address directory listing the
+      possible addresses and which code goes with each one.
+    * `routes.rb` uses some shortcuts so it doesn't always show all the
+      possible URLs. To explore the URLs in more detail we can use the
+      terminal.
 
-  At the terminal type `rake routes`. You should get something that
-  looks like this:
-
-  ```
-    $ rake routes
-
-        Prefix Verb   URI Pattern                Controller#Action
-        topics GET    /topics(.:format)          topics#index
-               POST   /topics(.:format)          topics#create
-     new_topic GET    /topics/new(.:format)      topics#new
-    edit_topic GET    /topics/:id/edit(.:format) topics#edit
-         topic GET    /topics/:id(.:format)      topics#show
-               PATCH  /topics/:id(.:format)      topics#update
-               PUT    /topics/:id(.:format)      topics#update
-               DELETE /topics/:id(.:format)      topics#destroy
-          root GET    /                          topics#index
-  ```
-  This shows all the URLs your application responds to. The code that starts with colons are variables so :id means the id number of the record. The code in parentheses is optional.
-
-  You can also get this information on your site in development. Go to <a href="http://localhost:3000/rails/info">http://localhost:3000/rails/info</a> and you'll see something like this:
-
-  <img src='img/rails4_rails_info_routing.png' alt='Screenshot of browser-based Rails routing info page'>
-
-  You'll also see that table at the bottom of the page whenever you try to access an invalid route, like <a href="http://localhost:3000/sandwich">http://localhost:3000/sandwich</a>.
-
-### Exploring Routes (optional)
-
-  Now you can have a look at the paths that are available in your app.
-  Let's try looking at one of the topics routes we just generated.
-  Open up your rails console and play:
-
-    $ rails console
-    >> app.topics_path
-    => "/topics"
-    >> app.topics_url
-    => "http://www.example.com/topics"
-
-  `app` is a special object that represents your entire application.
-  You can ask it about its routes (as we just did), play with its
-  database connections, or make pseudo-web requests against it with
-  `get` or `post` (and lots more).
-
+    At the terminal type `rails routes`. You should get something that
+    looks like this:
   MARKDOWN
+
+  console_without_message <<-CONSOLE
+$ rails routes
+
+    Prefix Verb   URI Pattern                Controller#Action
+      root GET    /                          topics#index
+    topics GET    /topics(.:format)          topics#index
+           POST   /topics(.:format)          topics#create
+ new_topic GET    /topics/new(.:format)      topics#new
+edit_topic GET    /topics/:id/edit(.:format) topics#edit
+     topic GET    /topics/:id(.:format)      topics#show
+           PATCH  /topics/:id(.:format)      topics#update
+           PUT    /topics/:id(.:format)      topics#update
+           DELETE /topics/:id(.:format)      topics#destroy
+  CONSOLE
+
+  message <<-MARKDOWN
+    This shows all the URLs your application responds to. The code that starts
+    with colons are variables so `:id` means the id number of the record. The
+    code in parentheses is optional.
+
+    You can also get this information on your site in development. Go to
+    <http://localhost:3000/rails/info/routes> and you'll see something like
+    this:
+
+    <img src='img/rails4_rails_info_routing.png' alt='Screenshot of browser-based Rails routing info page'>
+
+    You'll also see that table whenever you try to access an invalid route,
+    like <http://localhost:3000/sandwich>.
+  MARKDOWN
+
+  step "Exploring Routes (optional)" do
+    message <<-MESSAGE
+      Now you can have a look at the paths that are available in your app.
+      Let's try looking at one of the topics routes we just generated.
+      Open up your rails console and play:
+    MESSAGE
+
+    console_without_message "$ rails console"
+
+    irb_without_message <<-IRB
+      > app.topics_path
+      => "/topics"
+      > app.topics_url
+      => "http://www.example.com/topics"
+    IRB
+
+    message "`app` is a special object that represents your entire application.
+    You can ask it about its routes (as we just did), play with its
+    database connections, or make pseudo-web requests against it with
+    `get` or `post` (and lots more)."
+  end
 end
 
 next_step "voting_on_topics"

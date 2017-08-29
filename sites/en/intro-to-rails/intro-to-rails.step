@@ -38,8 +38,8 @@ day... unless I really screwed something up. :D
 
 We're going to be working with:
 
-* ruby 2.2.1
-* rails 4.0.13
+* ruby 2.3.3
+* rails 5.1.2
 * bundler
 * sqlite
 * sublime text 2 or the text editor of your choice
@@ -50,7 +50,10 @@ show up for RailsBridge on Saturday.
 
 You can verify that you have everything working by trying this out in your terminal:
 
-<div class="console"><pre>
+<div class="console terminal">
+  <div class="wrapper">
+    <span class="label">Terminal</span>
+    <pre>
 $ cd ~/Desktop/railsbridge
 $ vagrant up
 $ vagrant ssh
@@ -62,6 +65,7 @@ $ irb
 >> exit
 $
 </pre>
+  </div>
 </div>
 
 If you can do that, you are probably good to go.
@@ -84,13 +88,16 @@ Each lesson will look like this:
   <div class="steps">
     <h1>Steps:</h1>
     <pre class="term">steps to take.</pre>
-    <div class="console">
-      <pre>
+    <div class="console irb">
+      <div class="wrapper">
+        <span class="label">IRB</span>
+        <pre>
 def code_to_write
   1 + 1
 end</pre>
+      </div>
     </div>
-    <p>Yellow because we've gotten it done, but we have no clue what's going on.
+    <p>Yellow because we've gotten it done, but we have no clue what's going on.</p>
   </div>
   <div class="explanation">
     <h1>Explanation</h1>
@@ -101,4 +108,3 @@ end</pre>
 MARKDOWN
 
 next_step "ruby_language"
-

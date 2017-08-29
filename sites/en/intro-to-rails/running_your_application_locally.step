@@ -5,7 +5,7 @@ end
 
 steps do
   step do
-    console "rails server -b0.0.0.0"
+    console "rails server"
   end
 
   step do
@@ -19,9 +19,7 @@ steps do
   step do
     message "When at the terminal where Rails server is running, you can always type **Control-C** to stop it. You can do this now."
     result <<-STOPPING_RAILS_SERVER
-^C[2012-03-31 08:33:11] INFO  going to shutdown ...
-[2012-03-31 08:33:11] INFO  WEBrick::HTTPServer#start done.
-Exiting
+^CExiting
     STOPPING_RAILS_SERVER
   end
 end
