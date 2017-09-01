@@ -11,14 +11,11 @@ steps do
 
   step do
     message <<-MARKDOWN
-    Make sure you have exited irb. If you haven't, your prompt will be `irb(main):001:0>`. Exit by typing `exit`.
+    Make sure you have exited irb. If you haven't, your screen will say `irb(main):001:0>`. Leave irb by typing `exit`.
     Check if you are in the virtual machine. You are if your command line prompt is `RailsBridge-VM:/vagrant$`.
 
     If you are not in the virtual machine:
-
     * Check to see if it is running by typing `vagrant up`
-      * If it is running, you will see the message `==> default: VirtualBox VM is already running.`
-      * If it is not running, `vagrant up` will start the virtual machine
     * Enter the virtual machine by typing `vagrant ssh`
 
     Ask a TA if you need help.
