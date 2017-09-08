@@ -36,5 +36,6 @@ in case we need to offer extra assistance.
 
 ## Next Step
 
-Once you've installed the programs for your OS, continue to [Setting Up Your Virtual
+STOP here! It's time to learn how to use the command line. Once the presentation
+is over, continue to continue to [Setting Up Your Virtual
 Machine](/installfest/set_up_virtual_machine).
