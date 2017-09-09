@@ -80,7 +80,7 @@ Get thee to a terminal. *(Hint: don't type the "$")*
 1. `pwd` *print working directory == where are we?*
   * `/vagrant`
 1. `ls` *list contents == see what's here*
-  * `railsbridgevm-2017-09.box Vagrantfile`
+  * `railsbridgevm-2017-01.box Vagrantfile`
 1. `cd` *change directory (no arguments) == go home*
 1. `pwd` *We've moved! (unless you are not in a VM)*
   * `/home/vagrant`
