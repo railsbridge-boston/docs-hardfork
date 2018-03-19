@@ -1,5 +1,11 @@
 source "https://rubygems.org"
 
+# ensure github sources are fetched securely
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
 ruby "2.2.0"
 
 gem "activesupport"
@@ -21,7 +27,7 @@ gem "jquery-cdn"
 gem "sprockets"
 
 group :development do
-  gem "wrong", "~> 0.7.0"
+  gem "wrong", github: "sconover/wrong", ref: "9fae5b82" # remove when 0.7.2+ is released
   gem "rspec"
   gem "rerun"
   gem "rake"
