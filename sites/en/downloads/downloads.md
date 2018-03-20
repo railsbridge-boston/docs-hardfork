@@ -42,8 +42,8 @@ Find the column for your OS, and download each file.
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1.dmg">Vagrant 1.9 Installer</a></td>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1.msi">Vagrant 1.9 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.dmg">Vagrant 2.0.3 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.msi">Vagrant 2.0.3 Installer</a></td>
   <td><a href="https://releases.hashicorp.com/vagrant/1.5.4/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
