@@ -38,11 +38,11 @@ day... unless I really screwed something up. :D
 
 We're going to be working with:
 
-* ruby 2.3.3
-* rails 5.1.2
+* ruby 2.5.0
+* rails 5.1.5
 * bundler
 * sqlite
-* sublime text 2 or the text editor of your choice
+* sublime text 3 or the text editor of your choice
 
 Everything should be set up the night before during our
 install-fest. Please ensure you have everything working _before_ you
