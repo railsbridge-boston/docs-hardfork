@@ -48,10 +48,10 @@ Find the column for your OS, and download each file.
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://download.sublimetext.com/Sublime%20Text%202.0.2.dmg">Sublime Text 2 Installer</a></td>
+  <td><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203143.dmg">Sublime Text 3 Installer</a></td>
+  <td><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203143%20x64%20Setup.exe">Sublime Text 3 Installer</a></td>
   <td><a href="https://download.sublimetext.com/Sublime%20Text%202.0.2a%20Setup.exe">Sublime Text 2 Installer</a></td>
-  <td><a href="https://download.sublimetext.com/Sublime%20Text%202.0.2a%20Setup.exe">Sublime Text 2 Installer</a></td>
-  <td><a href="http://www.sublimetext.com/2">Choose your CPU here</a></td>
+  <td><a href="https://www.sublimetext.com/3">Choose your CPU here</a></td>
 </tr>
 <tr>
   <td></td>
