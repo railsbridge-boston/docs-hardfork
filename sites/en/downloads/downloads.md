@@ -36,9 +36,9 @@ Find the column for your OS, and download each file.
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="http://download.virtualbox.org/virtualbox/5.0.30/VirtualBox-5.0.30-112061-OSX.dmg">VirtualBox 5.0 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/5.0.30/VirtualBox-5.0.30-112061-Win.exe">VirtualBox 5.0 Installer</a></td>
-  <td><a href="http://download.virtualbox.org/virtualbox/5.0.30/VirtualBox-5.0.30-112061-Win.exe">VirtualBox 5.0 Installer</a></td>
+  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-OSX.dmg">VirtualBox 5.0 Installer</a></td>
+  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe">VirtualBox 5.0 Installer</a></td>
+  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe">VirtualBox 5.0 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
