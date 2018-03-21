@@ -56,7 +56,7 @@ Find the column for your OS, and download each file.
 <tr>
   <td></td>
   <td><a href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe">Git for Windows</a></td>
-  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe">Git for Windows</a></td>
+  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.11.0.windows.1/Git-2.11.0-32-bit.exe">Git for Windows</a></td>
   <td></td>
 </tr>
 </table>
