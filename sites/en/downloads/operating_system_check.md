@@ -113,9 +113,8 @@ If your computer does not meet the requirements, you can use [Amazon Cloud9](htt
 
 # Checking Virtualization on Windows
 
-This page can't automatically
-detect support for virtualization, so follow these steps to perform the check
-yourself.
+This page can't automatically detect support for virtualization, so follow
+these steps to perform the check yourself.
 
 ## Windows 8, Windows 8.1, and Windows 10
 1. Right-click on an empty area of the taskbar, then click **Task Manager**.
@@ -142,3 +141,8 @@ BIOS, or use Cloud9.
 
 ## Other versions of Windows (Windows Vista, Windows XP, ...)
 You must use Cloud9.
+
+## Need help?
+
+Ask a TA and they'll be happy to help you out! That's what they come to events
+for, after all.
