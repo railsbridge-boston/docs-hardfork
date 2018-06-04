@@ -5,9 +5,11 @@ following tips and adjustments should help you through the curriculum.
 Cloud9 doesn't use vagrant, so you can skip any commands that include `vagrant`.
 
 # Running the server
-If a terminal is running your server with `rails server`, it won't accept any
-other commands. You should open a new terminal tab to run the server, so you
-can continue to run commands in your first terminal tab.
+Normally, we run our new rails websites in a terminal window. However, if rails
+is running, we can't run other commands! If a terminal is running your server
+with `rails server`, it won't accept any other commands. You should open a new
+terminal tab to run the server, so you can continue to run commands in your
+first terminal tab.
 
 On the bottom of your editor is the console window. If you don't see the console
 window, click **View > Console** from the top menu.
