@@ -62,4 +62,8 @@ RailsBridge virtual machine.
 
 Please create an account on <a href="https://c9.io">Cloud9</a>. You will be asked for a credit card, but you won't be charged anything for using it in this workshop.
 
+**MAC AND LINUX EXPERTS:** if you prefer, you can use these methods to
+install Ruby natively on your computer, without a virtual machine,
+even on supported versions of Mac OS X or Linux.
+
 <a href="/installfest">Go to Installfest »</a>
