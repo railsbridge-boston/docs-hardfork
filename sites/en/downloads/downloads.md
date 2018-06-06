@@ -26,11 +26,9 @@ Find the column for your OS, and download each file.
 <tr>
   <th>Mac OS X (10.6+)</th>
   <th>Windows (7+)</th>
-  <th>Windows (XP-Vista)</th>
   <th>Linux (Ubuntu/Fedora)</th>
 </tr>
 <tr>
-  <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
@@ -38,25 +36,21 @@ Find the column for your OS, and download each file.
 <tr>
   <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-OSX.dmg">VirtualBox 5.0 Installer</a></td>
   <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe">VirtualBox 5.0 Installer</a></td>
-  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe">VirtualBox 5.0 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
   <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.dmg">Vagrant 2.0.3 Installer</a></td>
   <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.msi">Vagrant 2.0.3 Installer</a></td>
-  <td><a href="https://releases.hashicorp.com/vagrant/1.5.4/vagrant_1.5.4.msi">Vagrant 1.5 Installer</a></td>
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
 <tr>
   <td><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203143.dmg">Sublime Text 3 Installer</a></td>
   <td><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203143%20x64%20Setup.exe">Sublime Text 3 Installer</a></td>
-  <td><a href="https://download.sublimetext.com/Sublime%20Text%202.0.2a%20Setup.exe">Sublime Text 2 Installer</a></td>
   <td><a href="https://www.sublimetext.com/3">Choose your CPU here</a></td>
 </tr>
 <tr>
   <td></td>
   <td><a href="https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-64-bit.exe">Git for Windows</a></td>
-  <td><a href="https://github.com/git-for-windows/git/releases/download/v2.11.0.windows.1/Git-2.11.0-32-bit.exe">Git for Windows</a></td>
   <td></td>
 </tr>
 </table>
@@ -66,25 +60,6 @@ RailsBridge virtual machine.
 
 ## Other Operating Systems
 
-We can't guarantee that these operating systems will work, because they
-don't support using the virtual machine, but we'll do our best to help
-you get up and running. Do these steps before coming to the workshop.
-
-<table class="downloads-files">
-<tr>
-  <th>Mac OS X (10.4-10.5)</th>
-  <th>Linux (Other Distributions)</th>
-  <th>ChromeOS (Chromebook)</th>
-</tr>
-<tr>
-  <td>Follow <a href="/downloads/xcode">these instructions to install XCode</a>.</td>
-  <td>Read the <a href="/downloads/linux">instructions for Linux</a> and install the equivalent packages for your distribution.</a>
-  <td>Create an account on <a href="https://c9.io">Cloud9</a>.</td>
-</tr>
-</table>
-
-**MAC AND LINUX EXPERTS:** if you prefer, you can use these methods to
-install Ruby natively on your computer, without a virtual machine,
-even on supported versions of Mac OS X or Linux.
+Please create an account on <a href="https://c9.io">Cloud9</a>. You will be asked for a credit card, but you won't be charged anything for using it in this workshop.
 
 <a href="/installfest">Go to Installfest »</a>
