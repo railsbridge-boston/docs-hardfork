@@ -7,13 +7,11 @@ have one of the operating systems in this row.
   <tr>
     <th>Mac OS X (10.6+)</th>
     <th>Windows (7+)</th>
-    <th>Windows (XP-Vista)</th>
     <th>Linux (Ubuntu/Fedora)</th>
   </tr>
   <tr>
     <td>Follow the <a href="/installfest/osx">Mac OS X Setup</a> instructions</td>
     <td>Follow the <a href="/installfest/windows_7">Windows (7+) Setup</a> instructions</td>
-    <td>Follow the <a href="/installfest/windows_xp">Windows Setup</a> instructions</td>
     <td>Follow the <a href="/installfest/linux">Linux Setup</a> instructions</td>
   </tr>
 </table>
@@ -24,13 +22,12 @@ in case we need to offer extra assistance.
 <table class="downloads-files">
 <tr>
   <th>Mac OS X (10.4-10.5)</th>
-  <th>Linux (Other Distributions)</th>
+  <th>Linux</th>
+  <th>Windows XP</th>
   <th>ChromeOS (Chromebook)</th>
 </tr>
 <tr>
-  <td>Follow the <a href="/installfest/osx_novm">Mac OS X non-VM Setup</a> instructions</td>
-  <td>Follow the <a href="/installfest/linux_novm">Linux non-VM Setup</a> instructions</td>
-  <td>Ask a TA</a>
+  <td colspan="4" style="text-align:center">Use <a href="https://aws.amazon.com/cloud9/">Amazon Cloud9 instead</a>.
 </tr>
 </table>
 
