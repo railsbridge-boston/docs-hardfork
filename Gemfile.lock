@@ -48,7 +48,7 @@ GEM
     i18n (0.6.11)
     jquery-cdn (2.1.1)
       sprockets (>= 2)
-    json (1.8.1)
+    json (1.8.6)
     listen (2.8.0)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -148,7 +148,7 @@ DEPENDENCIES
   wrong!
 
 RUBY VERSION
-   ruby 2.2.0p0
+   ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.2
+   1.17.1

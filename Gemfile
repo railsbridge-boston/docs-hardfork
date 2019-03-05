@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.2.0"
+ruby "2.5.3"
 
 gem "activesupport"
 gem "erector", "~> 0.10.0"
