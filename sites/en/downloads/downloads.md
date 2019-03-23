@@ -65,8 +65,7 @@ When you come to the workshop, you will use these files to set up the
 RailsBridge virtual machine.
 
 ## Other Operating Systems
-
-Please create an account on <a href="https://c9.io">Cloud9</a>. You will be asked for a credit card, but you won't be charged anything for using it in this workshop.
+Don't see your operating system above? That's ok! Follow [these instructions](/installfest/cloud9) to get set up on Cloud9.
 
 **MAC AND LINUX EXPERTS:** if you prefer, you can use these methods to
 install Ruby natively on your computer, without a virtual machine,
