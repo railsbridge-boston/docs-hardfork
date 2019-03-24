@@ -29,7 +29,7 @@ Before you go, double check that you can complete the tasks below so we can hit 
 ### If you're using Cloud9
 
 1. Log into your Cloud9 console if you're not already there.
-    - Visit [aws.amazon.com/cloud9](https://aws.amazon.com/cloud9)
+    - Visit (aws.amazon.com/cloud9)[https://aws.amazon.com/cloud9]
     - Click "Sign In to the Console" in the top right
     - Log in with the credentials you created
     - Select Cloud9 under "services"
