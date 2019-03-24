@@ -33,7 +33,8 @@ var UA = {
     "10_10": {name: "10.10 Yosemite", bitness: "64bit", modern: true},
     "10_11": {name: "10.11 El Capitan", bitness: "64bit", modern: true},
     "10_12": {name: "10.12 Sierra", bitness: "64bit", modern: true},
-    "10_13": {name: "10.13 High Sierra", bitness: "64bit", modern: true}
+    "10_13": {name: "10.13 High Sierra", bitness: "64bit", modern: true},
+    "10_14": {name: "10.14 Mojave", bitness: "64bit", modern: true}
   },
   detect: function(userAgent) {
     UA.userAgent = userAgent.toLowerCase()
