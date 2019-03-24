@@ -1,7 +1,11 @@
-# Install your Programming Environment
+Choose the instructions from the table that match your operating system (listed below)
+<table>
+  <tr><td>Your Operating System name:</td><th id="os"></th></tr>
+  <tr><td>Your Operating System version:</td><th id="version"></th></tr>
+  <tr><td>Your Operating System bitness:</td><th id="bitness"></th></tr>
+</table>
+<script src="../downloads/getUserOs.js"></script>
 
-Choose the instructions below for your operating system. Most students will
-have one of the operating systems in this row.
 
 <table class="downloads-files">
   <tr>
@@ -27,7 +31,7 @@ in case we need to offer extra assistance.
   <th>ChromeOS (Chromebook)</th>
 </tr>
 <tr>
-  <td colspan="4" style="text-align:center">Use <a href="https://aws.amazon.com/cloud9/">Amazon Cloud9 instead</a>.
+  <td colspan="4" style="text-align:center">Use <a href="/installfest/cloud9">Amazon Cloud9</a> instead</td>.
 </tr>
 </table>
 

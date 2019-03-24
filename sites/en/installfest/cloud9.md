@@ -40,7 +40,7 @@ app that we'll be building.
 
 5. On the "Configuration Settings", click "Next Step" at the bottom. We will be using Cloud9's default configuration.
 
-6. Review your information and click "Next". Cloud9 will now set up your programming environment!
+6. Review your information and click "Create Environment". Cloud9 will now set up your programming environment!
 
 ### Using the Cloud9 Environment
 
@@ -49,3 +49,6 @@ The environment that you just created has everything you need to build your firs
 On the left-hand side of the environment, you should see a file tree, similar to browsing the files on your computer. You can view, edit, open, or add new files to your project here!
 
 The interface also allows you to open a new terminal window. Just click the plus (+) tab, and select 'New Terminal'
+
+### That's it!
+If you've made it this far, you've successfully completed Installfest! Be sure to stick around for the presentation on using the command line, and check out the [Installfest checklist](/installfest/checklist) before you go.
