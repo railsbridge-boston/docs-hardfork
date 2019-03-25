@@ -11,6 +11,12 @@ steps do
   step do
     text "Point your web browser to "
     url "http://localhost:3000"
+
+    cloud9_instruction do
+      span " Click on Preview > Preview Running application"
+    end
+
+
     p "See your web app actually running! It should look like this:"
 
     img src: "img/Start_page.png", alt: "Screenshot of a Ruby on Rails default home page"

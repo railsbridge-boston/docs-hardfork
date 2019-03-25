@@ -50,5 +50,7 @@ On the left-hand side of the environment, you should see a file tree, similar to
 
 The interface also allows you to open a new terminal window. Just click the plus (+) tab, and select 'New Terminal'
 
+When reading the instructions, look for the <i class="fa fa-cloud"></i> icon for Cloud9-specific instructions.
+
 ### That's it!
 If you've made it this far, you've successfully completed Installfest! Be sure to stick around for the presentation on using the command line, and check out the [Installfest checklist](/installfest/checklist) before you go.

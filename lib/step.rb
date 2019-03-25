@@ -250,6 +250,14 @@ class Step < Erector::Widget
     end
   end
 
+  def cloud9_instruction
+    p do
+      i :class => "fa fa-cloud"
+      span " For Cloud9:"
+      yield if block_given?
+    end
+  end
+
   ## special
 
   def console(commands)

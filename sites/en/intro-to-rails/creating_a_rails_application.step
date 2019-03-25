@@ -12,11 +12,22 @@ steps do
   step do
     message <<-MARKDOWN
     Make sure you have exited irb. If you haven't, your screen will say `irb(main):001:0>`. Leave irb by typing `exit`.
-    Check if you are in the virtual machine. You are if your command line prompt is `RailsBridge-VM:/vagrant$`.
 
-    If you are not in the virtual machine:
+    If you are using a virtual machine, make sure you are in it before continuing.
+    If you are in the virtual machine:
+
+    * Your command line prompt should be `RailsBridge-VM:/vagrant$`
+
+    If you do not see that command prompt:
+
     * Check to see if it is running by typing `vagrant up`
     * Enter the virtual machine by typing `vagrant ssh`
+    MARKDOWN
+
+    cloud9_instruction
+    
+    message <<-MARKDOWN   
+    * Your command prompt should look something like: `ec2-user:~/environment`
 
     Ask a TA if you need help.
     MARKDOWN
@@ -46,8 +57,10 @@ steps do
     message <<-MARKDOWN
 Let's look at the structure of the whole project.
 
-You can see the project directory when you're using Sublime Text. This is
+You can see the project directory when you're using Sublime Text or Cloud9. This is
 convenient when you're going to edit several files and want to navigate quickly.
+
+![Screenshot of Suggestotron project folder tree in Cloud9](img/cloud9_project_folder.png)
 
 Open the suggestotron folder as a project in Sublime Text by clicking the
 Project menu and selecting "Add Folder to Project":
