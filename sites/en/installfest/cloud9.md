@@ -30,7 +30,7 @@ app that we'll be building.
 
 1. Click on "Services" in the top left navigation menu.
 
-2. Select "Could9" under "Developer Tools", or search for and select Cloud9 in the search bar.
+2. Select "Cloud9" under "Developer Tools", or search for and select Cloud9 in the search bar.
 
 3. Click "Create Environment".
 
