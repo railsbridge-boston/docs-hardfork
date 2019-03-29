@@ -74,7 +74,11 @@ steps do
   end
 
   step "Confirm your changes in the browser" do
-    message "Go back to <http://localhost:3000/topics> and play."
+    message "Go back to <http://localhost:3000/topics>"
+    cloud9_instruction do 
+     link " https://<yourappname>.amazonaws.com/topics"
+    end
+    message "and play."
   end
 end
 

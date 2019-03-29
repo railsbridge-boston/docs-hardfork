@@ -21,6 +21,9 @@ steps do
 
   step do
     message "Point your browser to [http://localhost:3000/topics](http://localhost:3000/topics)"
+    cloud9_instruction do
+     span ' add "/topics" to the end of the url you are previewing'
+    end
     message 'You should see the "Listing Topics" page with headers for title and description, and a link to add a new topic:'
 
     img src: "img/Seattle_topic_list_page.png", alt: "Screenshot of topic list page"
