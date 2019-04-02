@@ -1,5 +1,3 @@
-# Downloads
-
 If you can, please download these files onto your laptop computer before
 you attend the workshop. There will be an internet connection there
 (provided by our wonderful location sponsor!), but it's not fast enough
@@ -9,6 +7,14 @@ If you can't download the files ahead of time, we will also have the
 files available on USB drives at the Installfest.
 
 ## Common Operating Systems
+<table>
+  <tr><td>Your Operating System name:</td><th id="os"></th></tr>
+  <tr><td>Your Operating System version:</td><th id="version"></th></tr>
+  <tr><td>Your Operating System bitness:</td><th id="bitness"></th></tr>
+</table>
+
+<script src="getUserOs.js"></script>
+
 
 Almost everyone will have one of these operating systems. If you're not
 sure what version you have, do this:
@@ -59,8 +65,7 @@ When you come to the workshop, you will use these files to set up the
 RailsBridge virtual machine.
 
 ## Other Operating Systems
-
-Please create an account on <a href="https://c9.io">Cloud9</a>. You will be asked for a credit card, but you won't be charged anything for using it in this workshop.
+Don't see your operating system above? That's ok! Follow [these instructions](/installfest/cloud9) to get set up on Cloud9.
 
 **MAC AND LINUX EXPERTS:** if you prefer, you can use these methods to
 install Ruby natively on your computer, without a virtual machine,
