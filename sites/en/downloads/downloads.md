@@ -40,13 +40,13 @@ Find the column for your OS, and download each file.
   <td><a href="http://downloads.railsbridge.org/railsbridgevm-2018-03.box">VM Image</a></td>
 </tr>
 <tr>
-  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-OSX.dmg">VirtualBox 5.0 Installer</a></td>
-  <td><a href="https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe">VirtualBox 5.0 Installer</a></td>
+  <td><a href="https://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-OSX.dmg">VirtualBox 5.2 Installer</a></td>
+  <td><a href="https://download.virtualbox.org/virtualbox/5.2.26/VirtualBox-5.2.26-128414-Win.exe">VirtualBox 5.2 Installer</a></td>
   <td><a href="https://www.virtualbox.org/wiki/Linux_Downloads">Choose your distro here</a></td>
 </tr>
 <tr>
-  <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.dmg">Vagrant 2.0.3 Installer</a></td>
-  <td><a href="https://releases.hashicorp.com/vagrant/2.0.3/vagrant_2.0.3_x86_64.msi">Vagrant 2.0.3 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.dmg">Vagrant 2.2.4 Installer</a></td>
+  <td><a href="https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi">Vagrant 2.2.4 Installer</a></td>
   <td><a href="https://www.vagrantup.com/downloads.html">Choose your distro here</a></td>
 </tr>
 <tr>
