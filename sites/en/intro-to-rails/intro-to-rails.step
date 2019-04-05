@@ -68,6 +68,23 @@ $
   </div>
 </div>
 
+<i class="fa fa-cloud"></i> On Cloud9:
+
+<div class="console terminal">
+  <div class="wrapper">
+    <span class="label">Terminal</span>
+    <pre>
+$ irb
+>> 1 + 2
+=> 3
+>> require "active_support"
+=> true
+>> exit
+$
+</pre>
+  </div>
+</div>
+
 If you can do that, you are probably good to go.
 MARKDOWN
 

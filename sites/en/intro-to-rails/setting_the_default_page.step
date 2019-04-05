@@ -40,6 +40,10 @@ steps do
 
   step "Confirm your changes" do
     message "Go back to <http://localhost:3000/>. You should be taken to the topics list automatically."
+    cloud9_instruction do
+      span " delete any text after 'amazonaws.com', or click to preview running
+application in the editor again"
+    end
   end
 end
 
@@ -82,8 +86,13 @@ edit_topic GET    /topics/:id/edit(.:format) topics#edit
     code in parentheses is optional.
 
     You can also get this information on your site in development. Go to
-    <http://localhost:3000/rails/info/routes> and you'll see something like
-    this:
+    <http://localhost:3000/rails/info/routes> 
+  MARKDOWN
+    cloud9_instruction do
+      simple_link " https://<your-preview-url>.amazonaws.com/rails/info/routes"
+    end
+  <<-MARKDOWN
+    and you'll see something like this:
 
     <img src='img/rails4_rails_info_routing.png' alt='Screenshot of browser-based Rails routing info page'>
 
