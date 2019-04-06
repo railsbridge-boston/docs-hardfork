@@ -16,7 +16,11 @@ end
 steps do
 
   step do
-    console "rails server"
+    console "rails server -b 0.0.0.0"
+    
+    cloud9_instruction do
+      console "rails server -b $IP -p $PORT"
+    end
   end
 
   step do
