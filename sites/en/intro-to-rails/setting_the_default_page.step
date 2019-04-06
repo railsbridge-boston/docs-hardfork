@@ -86,10 +86,10 @@ edit_topic GET    /topics/:id/edit(.:format) topics#edit
     code in parentheses is optional.
 
     You can also get this information on your site in development. Go to
-    <http://localhost:3000/rails/info/routes> 
+    <http://localhost:3000/rails/info/routes>
   MARKDOWN
     cloud9_instruction do
-      simple_link " https://<your-preview-url>.amazonaws.com/rails/info/routes"
+      message "Navigate to `https://<your-preview-url>.amazonaws.com/rails/info/routes`"
     end
   <<-MARKDOWN
     and you'll see something like this:
