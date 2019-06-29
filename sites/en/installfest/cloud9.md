@@ -8,7 +8,7 @@ app that we'll be building.
 
 ### Sign up for a Cloud9 account
 
-1. Visit the [Cloud9 website]("https://c9.io")
+1. Visit the [Cloud9 website](https://c9.io)
 
 2. Click "Create new AWS ccount".
 
