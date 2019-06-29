@@ -55,7 +55,7 @@ message "In the same file, locate the update method. "
   end
 
   step "Confirm your changes" do
-    message "Create some new topics at <http://localhost:3000>. Notice when you create a new topic, the application takes you back to the index page with all the topics."
+    message "Create some new topics at <http://localhost:3000/topics>. Notice when you create a new topic, the application takes you back to the index page with all the topics."
   end
 end
 
