@@ -117,7 +117,7 @@ GEM
     treetop (1.5.3)
       polyglot (~> 0.3)
     trollop (2.0)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
