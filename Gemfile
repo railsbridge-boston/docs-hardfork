@@ -6,11 +6,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.5.3"
+ruby "3.1.2"
 
 gem "activesupport"
 gem "erector", "~> 0.10.0"
-gem "sinatra", "~> 1.4.0"
+gem "sinatra", "~> 1.4.7"
 gem "nokogiri"
 gem "thin"
 gem "eventmachine", "~> 1.0.3"
