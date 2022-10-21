@@ -10,7 +10,7 @@ ruby "3.1.2"
 
 gem "activesupport"
 gem "erector", "~> 0.10.0"
-gem "sinatra", "~> 1.4.7"
+gem "sinatra", "~> 2.2.0"
 gem "nokogiri"
 gem "thin"
 gem "eventmachine", "~> 1.0.3"
