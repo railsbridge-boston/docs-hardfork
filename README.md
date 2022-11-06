@@ -68,11 +68,11 @@ Note that in this mode, links are not rewritten, so if they fail you will have t
 
 ## Deploying
 
-Only organizers and invited collaborators are allowed to deploy the app.
+The app is hosted at fly.io and collaborators with access can manage the app here: https://fly.io/apps/rbb-docs
 
-To do so, run:
+Only organizers and invited collaborators are allowed to deploy the app. To do so, run:
 
-    git push heroku master
+    fly deploy
 
 ## Contributing
 
