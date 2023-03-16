@@ -13,7 +13,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4.2)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -23,7 +23,7 @@ GEM
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     daemons (1.1.9)
     deckrb (0.5.2)
       coderay
@@ -55,7 +55,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mini_portile2 (2.8.0)
-    minitest (5.17.0)
+    minitest (5.18.0)
     multi_json (1.14.1)
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
