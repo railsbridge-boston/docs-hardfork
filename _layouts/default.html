@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo title=false %}
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="{{ "/assets/stylesheets/application.css?v=" | append: site.github.build_revision | relative_url }}">
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    <div>
+        <div id="navbar">
+            <div>
+                <h1 class="siteTitle"><a href="/">Docs</a></h1>
+            </div>
+        </div>
+
+        {{ content }}
+
+        <div class="footer">
+        </div>
+    </div>
+</body>
+
+</html>

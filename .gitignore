@@ -5,3 +5,5 @@
 .rvmrc
 .sass-cache
 Thumbs.db
+_site/*
+.jekyll-metadata
