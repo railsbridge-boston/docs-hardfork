@@ -21,6 +21,10 @@ pre {
     max-width: 50em;
 }
 
+blockquote {
+    margin: 16px 20px;
+}
+
 table {
     border-collapse: collapse;
 }
