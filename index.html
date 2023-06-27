@@ -88,7 +88,7 @@ description: Intro to rails
         <p>We highly recommend you do the following:</p>
 
         <ul>
-            <li>In your codespace you will want to open 2 tabs:
+            <li>In your codespace you will want to open 2 terminal tabs:
                 <ul>
                     <li>One is for regular terminal stuff</li>
                     <li>One will be for the Rails console. We'll explain later.</li>
@@ -190,6 +190,7 @@ end</pre>
         <h2>Steps</h2>
         <blockquote>
             <div class="step">
+                <h3>Starting interactive ruby</h3>
                 <blockquote>
                     <div class="message">
                         <p>Type this in the terminal to start the Interactive Ruby Shell, a program which lets you try out Ruby code:</p>
@@ -214,6 +215,7 @@ end</pre>
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Ruby math</h3>
                 <blockquote>
                     <div class="message">
                         <p>Next try some simple math that's built into Ruby. Type these lines into IRB:</p>
@@ -230,6 +232,7 @@ end</pre>
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Using variables</h3>
                 <blockquote>
                     <div class="console irb">
                         <div class="message">
@@ -246,6 +249,7 @@ end</pre>
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Using variables in math</h3>
                 <blockquote>
                     <div class="console irb">
                         <div class="message">
@@ -257,13 +261,17 @@ end</pre>
 my_variable * 3
 </pre>
                         </div>
+                        <div class="message">
+                            <p>Try a few math operations yourself and see if you can correctly predict the output.</p>
+                        </div>
                     </div>
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Using arrays</h3>
                 <blockquote>
                     <div class="message">
-                        <p>Variables can also hold more than one value. This is called an <strong>array</strong>.</p>
+                        <p>Variables can also hold more than one value. This is called an <strong>array</strong>. Think of an array like a list of values.</p>
                     </div>
                     <div class="console irb">
                         <div class="message"></div>
@@ -279,6 +287,7 @@ my_variable * 3
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Array operators</h3>
                 <blockquote>
                     <div class="console irb">
                         <div class="message"></div>
@@ -290,11 +299,16 @@ fruits = fruits - ["kiwi"]
                         </div>
                     </div>
                     <div class="message">
-                        <p><code>+</code> and <code>-</code> are called operators. We can use them with the array of fruits just like we can use them with numbers.</p>
+                        <p>
+                            <code>+</code> and <code>-</code> are called operators.
+                            We can use them with to <em>combine</em> or <em>difference</em> two arrays, just like we can use them to <em>add</em> or <em>subtract</em> two numbers.
+                            Try adding another fruit (like bananas?) to the array!
+                        </p>
                     </div>
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Ruby classes</h3>
                 <blockquote>
                     <div class="console irb">
                         <div class="message">
@@ -314,6 +328,7 @@ fruits.class
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Ruby methods</h3>
                 <blockquote>
                     <div class="message">
                         <p>Each class has different <strong>methods</strong> that can be used on <strong>instances</strong>
@@ -369,6 +384,7 @@ array.sort
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Iterating with each</h3>
                 <blockquote>
                     <div class="message">
                         <p>Arrays have a method called <strong>each</strong> which iterates through the list running code on each item.</p>
@@ -393,6 +409,7 @@ end
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Branching with if statements</h3>
                 <blockquote>
                     <div class="message">
                         <p>An <strong>if statement</strong> runs code only when a condition is true.</p>
@@ -408,7 +425,7 @@ end
                         </div>
                     </div>
                     <div class="message">
-                        <p>This prints <code>YAY!</code> if the value stored in <code>my_variable</code> is greater than 1.</p>
+                        <p>In this example, <code>my_variable > 1</code> is the condition being evaluated. This prints <code>YAY!</code> if the value stored in <code>my_variable</code> is greater than 1.</p>
                     </div>
                     <div class="message">
                         <p>Try changing the <code>&gt;</code> in the conditional to a <code>&lt;</code>.</p>
@@ -416,6 +433,7 @@ end
                 </blockquote>
             </div>
             <div class="step">
+                <h3>Defining methods</h3>
                 <blockquote>
                     <div class="message">
                         <p>You can also make your own methods:</p>
@@ -442,21 +460,20 @@ pluralize("kiwi")
             <div class="step">
                 <blockquote>
                     <div class="message">
-                        <p>This is an <em>optional</em> practice question if you want to brush up on your Ruby. Feel free to skip it! Or talk to your TA if you get stuck, or discuss your solution once you have completed the checkpoint.</p>
-                    </div>
-                    <div class="message">
-                        <p>Write some Ruby that prints out the names of the people in your group.</p>
-                    </div>
-                    <div class="message">
-                        <p>Hints:</p>
-
-                        <ol>
-                            <li>Start by opening up <code>irb</code>.</li>
-                            <li>Create the names as strings in an array.</li>
-                            <li>Store that array to a variable.</li>
-                            <li>Then use the <code>.each</code> method on the stored array to loop through each of the names.</li>
-                            <li>Use the <code>puts</code> method to print out the names.</li>
-                        </ol>
+                        <p>Try defining a method now: try writing a method that takes a number as a parameter and returns twice that number.<br><br>
+                            Hints:
+                        <ul>
+                            <li>You'll need to pick a name for your method so you can define it.</li>
+                            <li>To multiply a number by 2, we use the syntax <code>my_variable * 2</code></li>
+                        </ul>
+                        Now try updating the method to take a second parameter, the amount to multiply the first number by.<br><br>
+                        Hints:
+                        <ul>
+                            <li>You can define a method as taking multiple arguments by separating them with a comma.</li>
+                            <li>When you call a method, pass multiple arguments by separating them with a comma.</li>
+                        </ul>
+                        Our original method always multiplied the input by 2, but adding the second parameter made the method more flexible and useful.
+                        </p>
                     </div>
                 </blockquote>
             </div>
@@ -683,7 +700,7 @@ Exiting
             </tbody>
         </table>
         <div class="message">
-            <p>The app should have a list of topics that people can vote on. We'll store our topics in the database. In this step you'll do the following:</p>
+            <p>Our app should have a list of topics that people can vote on. We'll store our topics in the database. In this step you'll do the following:</p>
         </div>
         <ul>
             <li>
@@ -785,13 +802,12 @@ Exiting
                     adds timestamps, and will use it to automatically record when the data was
                     created and updated.</p>
             </div>
-            <h2>Rake tasks</h2>
+            <h2>Rails tasks</h2>
             <div class="message">
                 <p><strong>rake</strong> <em>(ruby make)</em> is a tool that allows you to run small Ruby programs (<strong>tasks</strong>) that you use often in your application.</p>
 
                 <p>Here, <code>rails db:migrate</code> uses a Rake task provided by the Rails framework. It uses the migration file we just created (<code>db/migrate/201xxxxxxxxxxx_create_topics.rb</code>) to change the database. Database migration files can be crucial to code collaboration.</p>
 
-                <p>In previous versions of Ruby on Rails, this command would have been run like so: <code>rake db:migrate</code>. Since many developers found it confusing to have some commands run with <code>rails</code> (<code>rails generate</code>, <code>rails server</code>) and some with <code>rake</code> (<code>rake db:migrate</code>, <code>rake -T</code>) they were consolidated. Rake still exists outside of Rails and you may see it from time to time.</p>
             </div>
             <div class="message tip vertical-centerer">
                 <i class="fa fa-info-circle fa-3x"></i>
