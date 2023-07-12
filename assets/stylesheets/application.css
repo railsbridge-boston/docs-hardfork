@@ -3,6 +3,14 @@ body {
     margin: 2em;
 }
 
+footer {
+    clear: both;
+    min-height: 60px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+}
+
 h1 {
     border-bottom: 1px solid #ccc;
 }
@@ -327,8 +335,6 @@ img.screenshot {
 .CodeRay .octal {
     color: #40E
 }
-
-.CodeRay .operator {}
 
 .CodeRay .predefined {
     color: #369;
