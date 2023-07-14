@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Hooking up votes and topics
 ---
 
 <h1 class="doc_title">Hooking Up Votes And Topics</h1>
@@ -62,10 +63,9 @@ layout: curriculum
                     <div class="message">
                         <p>Edit <code>app/models/topic.rb</code> so that it looks like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="keyword">class</span> <span class="class">Topic</span> &lt; <span class="constant">ApplicationRecord</span>
-  has_many <span class="symbol">:votes</span>, <span class="key">dependent</span>: <span class="symbol">:destroy</span>
-<span class="keyword">end</span>
-</pre>
+                    <pre><code class="language-ruby">class Topic < ApplicationRecord
+  has_many :votes, dependent: :destroy
+end</code></pre>
                 </blockquote>
             </div>
             <div class="step">
@@ -74,10 +74,9 @@ layout: curriculum
                     <div class="message">
                         <p>Edit <code>app/models/vote.rb</code> so that it looks like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="keyword">class</span> <span class="class">Vote</span> &lt; <span class="constant">ApplicationRecord</span>
-  belongs_to <span class="symbol">:topic</span>
-<span class="keyword">end</span>
-</pre>
+                    <pre><code class="language-ruby">class Vote < ApplicationRecord
+  belongs_to :topic
+end</code></pre>
                 </blockquote>
             </div>
             <div class="step">

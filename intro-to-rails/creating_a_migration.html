@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Creating A Migration
 ---
 
 <h1 class="doc_title">Creating A Migration</h1>
@@ -109,20 +110,18 @@ layout: curriculum
                 <p>The file contains Ruby code that describes what the table will look like.
                     This is called a migration file. It tells the database how to transform
                     itself into the new configuration.</p>
-                <pre class="CodeRay"><span class="keyword">class</span> <span class="class">CreateTopics</span> &lt; <span class="constant">ActiveRecord</span>::<span class="constant">Migration</span>[<span class="float">5.1</span>]
-  <span class="keyword">def</span> <span class="function">change</span>
-    create_table <span class="symbol">:topics</span> <span class="keyword">do</span> |t|
-      t.string <span class="symbol">:title</span>
-      t.text <span class="symbol">:description</span>
+                <pre><code class="language-ruby">class CreateTopics < ActiveRecord::Migration[5.1]
+  def change
+    create_table :topics do |t|
+    t.string :title
+    t.text :description
 
-      t.timestamps
-    <span class="keyword">end</span>
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre>
+    t.timestamps
+    end
+  end
+end</code></pre>
                 <p>See how this lines up with the scaffold command?</p>
-                <pre class="CodeRay">rails generate scaffold topic title:string description:text
-</pre>
+                <pre><code>rails generate scaffold topic title:string description:text</code></pre>
                 <p>The migration says to create a table named "topics", with a title column
                     that's a string, and a description column that's text. Rails automatically
                     adds timestamps, and will use it to automatically record when the data was

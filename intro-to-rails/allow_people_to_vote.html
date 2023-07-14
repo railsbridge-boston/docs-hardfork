@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Allow People To Vote
 ---
 
 <h1 class="doc_title">Allow People To Vote</h1>
@@ -19,12 +20,12 @@ layout: curriculum
                     <div class="message">
                         <p>Edit <code>app/controllers/topics_controller.rb</code> and add this method at the end of the controller, above the <code>private</code> keyword:</p>
                     </div>
-                    <pre class="CodeRay"><span class="keyword">def</span> <span class="function">upvote</span>
-  <span class="instance-variable">@topic</span> = <span class="constant">Topic</span>.find(params[<span class="symbol">:id</span>])
-  <span class="instance-variable">@topic</span>.votes.create
+                    <pre><code class="language-ruby">def upvote
+  @topic = Topic.find(params[:id])
+  @topic.votes.create
   redirect_to(topics_path)
-<span class="keyword">end</span>
-</pre>
+end
+</code></pre>
                     <div class="message">
                         <ul>
                             <li>
@@ -46,22 +47,21 @@ layout: curriculum
                     <div class="message">
                         <p>Open <code>config/routes.rb</code> and find the section that looks like this:</p>
                     </div>
-                    <pre class="CodeRay">resources <span class="symbol">:topics</span>
-</pre>
+                    <pre><code class="language-ruby">resources :topics</code></pre>
                     <div class="message">
                         <p>Replace that line so it looks like this:</p>
                     </div>
-                    <pre class="CodeRay">resources <span class="symbol">:topics</span> <span class="keyword">do</span>
-  member <span class="keyword">do</span>
-    post <span class="string"><span class="delimiter">'</span><span class="content">upvote</span><span class="delimiter">'</span></span>
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre>
+                    <pre><code class="language-ruby">resources :topics do
+  member do
+    post 'upvote'
+  end
+end
+</code></pre>
                     <div class="message">
                         <p>Verify that upvote route was added successfully by checking the output of <code>rails routes</code>. You should see a line that looks like this:</p>
-                        <pre class="CodeRay">      Prefix Verb   URI Pattern                  Controller#Action
-upvote_topic POST   /topics/:id/upvote(.:format) topics#upvote
-</pre>
+                        <pre><code>      Prefix Verb   URI Pattern                  Controller#Action
+      upvote_topic POST /topics/:id/upvote(.:format) topics#upvote
+</code></pre>
                     </div>
                 </blockquote>
             </div>
@@ -71,18 +71,17 @@ upvote_topic POST   /topics/:id/upvote(.:format) topics#upvote
                     <div class="message">
                         <p>Edit <code>app/views/topics/index.html.erb</code> so that the bottom loop looks like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="inline"><span class="inline-delimiter">&lt;%</span> <span class="instance-variable">@topics</span>.each <span class="keyword">do</span> |topic| <span class="inline-delimiter">%&gt;</span></span>
-  <span class="tag">&lt;tr&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.title <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.description <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> pluralize(topic.votes.count, <span class="string"><span class="delimiter">"</span><span class="content">vote</span><span class="delimiter">"</span></span>) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> button_to <span class="string"><span class="delimiter">'</span><span class="content">+1</span><span class="delimiter">'</span></span>, upvote_topic_path(topic), <span class="key">method</span>: <span class="symbol">:post</span> <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Show</span><span class="delimiter">'</span></span>, topic <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Edit</span><span class="delimiter">'</span></span>, edit_topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Destroy</span><span class="delimiter">'</span></span>, topic, <span class="key">method</span>: <span class="symbol">:delete</span>, <span class="key">data</span>: { <span class="key">confirm</span>: <span class="string"><span class="delimiter">'</span><span class="content">Are you sure?</span><span class="delimiter">'</span></span> } <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-  <span class="tag">&lt;/tr&gt;</span>
-<span class="inline"><span class="inline-delimiter">&lt;%</span> <span class="keyword">end</span> <span class="inline-delimiter">%&gt;</span></span>
-</pre>
+                    <pre><code class="language-erb">&lt;% @topics.each do |topic| %&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;%= topic.title %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= topic.description %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= pluralize(topic.votes.count, &quot;vote&quot;) %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= button_to &apos;+1&apos;, upvote_topic_path(topic), method: :post %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link_to &apos;Show&apos;, topic %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link_to &apos;Edit&apos;, edit_topic_path(topic) %&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;%= link_to &apos;Destroy&apos;, topic, method: :delete, data: { confirm: &apos;Are you sure?&apos; } %&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;% end %&gt;</code></pre>
                     <div class="message">
                         <ul>
                             <li>

@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Setting The Default Page
 ---
 
 <h1 class="doc_title">Setting The Default Page</h1>
@@ -31,12 +32,12 @@ layout: curriculum
                     <div class="message">
                         <p>Right above that line, add a new line: <code>root 'topics#index'</code>. When you are done the file should look like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="constant">Rails</span>.application.routes.draw <span class="keyword">do</span>
-  root <span class="string"><span class="delimiter">'</span><span class="content">topics#index</span><span class="delimiter">'</span></span>
-  resources <span class="symbol">:topics</span>
-  <span class="comment"># For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html</span>
-<span class="keyword">end</span>
-</pre>
+                    <pre><code class="language-ruby">Rails.application.routes.draw do
+  root 'topics#index'
+  resources :topics
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+end
+</code></pre>
                 </blockquote>
             </div>
             <div class="step">

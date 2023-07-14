@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Clean Up Links On The Topics List
 ---
 
 <h1 class="doc_title">Clean Up Links On The Topics List</h1>
@@ -41,9 +42,8 @@ layout: curriculum
                     <div class="message">
                         <p>Open <code>app/views/topics/index.html.erb</code> and remove these two lines:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Show</span><span class="delimiter">"</span></span>, topic <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-<span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Edit</span><span class="delimiter">"</span></span>, edit_topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
-</pre>
+                    <pre><code class="language-erb">&lt;td&gt;&lt;%= link_to &quot;Show&quot;, topic %&gt;&lt;/td&gt;
+&lt;td&gt;&lt;%= link_to &quot;Edit&quot;, edit_topic_path(topic) %&gt;&lt;/td&gt;</code></pre>
                 </blockquote>
             </div>
             <div class="step">
@@ -52,7 +52,7 @@ layout: curriculum
                     <div class="message">
                         <p>Change the line with the word "Destroy" to this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Delete</span><span class="delimiter">"</span></span>, topic, <span class="key">method</span>: <span class="symbol">:delete</span>, <span class="key">data</span>: { <span class="key">confirm</span>: <span class="string"><span class="delimiter">"</span><span class="content">Are you sure?</span><span class="delimiter">"</span></span> } <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+                    <pre><code class="language-erb">&lt;td&gt;&lt;%= link_to &quot;Delete&quot;, topic, method: :delete, data: { confirm: &quot;Are you sure?&quot; } %&gt;&lt;/td&gt;</code></pre>
                 </blockquote>
             </div>
             <div class="step">
@@ -74,20 +74,17 @@ layout: curriculum
                         <p>If you have web design skills already, you can go to town. If not, let's make a simple font change.</p>
 
                         <p>Change the body's <code>font-family</code> on lines 5 and 11 to <code>serif</code>:</p>
-                        <pre class="CodeRay">font-family: serif;
-</pre>
+                        <pre><code class="language-erb">font-family: serif;</code></pre>
                         <p>Reload your browser to see your web pages styled in a different font.</p>
 
                         <p>Let's add an image to the layout. Open <code>app/views/layouts/application.html.erb</code> in your text editor.</p>
 
                         <p>Right after the opening <code>&lt;body&gt;</code> tag, let's add an image:</p>
-                        <pre class="CodeRay">&lt;img src="http://i.imgur.com/MQHYB.jpg"/&gt;
-</pre>
+                        <pre><code class="language-erb">&lt;img src="http://i.imgur.com/MQHYB.jpg"/&gt;</code></pre>
                         <p>Reload your browser. You should see an image!</p>
 
                         <p>You can choose another image from the web and change the <code>src</code> attribute value. If the image is too big, you can resize it like this:</p>
-                        <pre class="CodeRay">&lt;img src="http://i.imgur.com/MQHYB.jpg" height="100" /&gt;
-</pre>
+                        <pre><code class="language-erb">&lt;img src="http://i.imgur.com/MQHYB.jpg" height="100" /&gt;</code></pre>
                         <p>The <code>height="100"</code> ensures that the image is 100 pixels tall, and no more.</p>
                     </div>
                 </blockquote>

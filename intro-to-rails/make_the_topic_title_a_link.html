@@ -1,5 +1,6 @@
 ---
 layout: curriculum
+title: Make The Topic Title A Link
 ---
 
 <h1 class="doc_title">Make The Topic Title A Link</h1>
@@ -10,16 +11,8 @@ layout: curriculum
             <p>Your friends recommended two changes for the site:</p>
         </div>
         <ul>
-            <li>
-                <div class="message">
-                    <p>Don't show the description on the list page</p>
-                </div>
-            </li>
-            <li>
-                <div class="message">
-                    <p>Make the title a link and when it's clicked show the description</p>
-                </div>
-            </li>
+            <li>Don't show the description on the list page</li>
+            <li>Make the title a link and when it's clicked show the description</li>
         </ul>
     </div>
     <div class="steps">
@@ -31,11 +24,11 @@ layout: curriculum
                     <div class="message">
                         <p>Let's start by removing the description. Open <code>app/views/topics/index.html.erb</code> and delete the line that looks like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.description <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+                    <pre><code class="language-erb">&lt;td&gt;&lt;%= topic.description %&gt;&lt;/td&gt;</code></pre>
                     <div class="message">
                         <p>Also delete the line that looks like this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;th&gt;</span>Description<span class="tag">&lt;/th&gt;</span></pre>
+                    <pre><code class="language-erb">&lt;th&gt;Description&lt;/th&gt;</code></pre>
                     <div class="message">
                         <p>If you save and try to load it in the browser you should see that the description no longer appears.</p>
                     </div>
@@ -47,11 +40,11 @@ layout: curriculum
                     <div class="message">
                         <p>Now make the title a link by editing <code>app/views/topics/index.html.erb</code> (again) and replacing this line:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.title <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+                    <pre><code class="language-erb">&lt;td&gt;&lt;%= topic.title %&gt;&lt;/td&gt;</code></pre>
                     <div class="message">
                         <p>with this:</p>
                     </div>
-                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to topic.title, topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+                    <pre><code class="language-erb">&lt;td&gt;&lt;%= link_to topic.title, topic_path(topic) %&gt;&lt;/td&gt;</code></pre>
                 </blockquote>
             </div>
         </blockquote>
@@ -59,11 +52,11 @@ layout: curriculum
     <div class="explanation">
         <h2>Explanation</h2>
         <blockquote>
-            <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.description <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+            <pre><code class="language-erb">&lt;td&gt;&lt;%= topic.description %&gt;&lt;/td&gt;</code></pre>
             <div class="message">
                 <p>This line was getting the description using .description and just printing it out.</p>
             </div>
-            <pre class="CodeRay"><span class="tag">&lt;th&gt;</span>Description<span class="tag">&lt;/th&gt;</span></pre>
+            <pre><code class="language-erb">&lt;th&gt;Description&lt;/th&gt;</code></pre>
             <div class="message">
                 <p><code>&lt;th&gt;</code> stands for table header and everything between <code>&lt;th&gt;</code> and
                     <code>&lt;/th&gt;</code> was being printed as a table header (bold). We removed it
@@ -72,7 +65,7 @@ layout: curriculum
                 </p>
             </div>
             <hr>
-            <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to topic.title, topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+            <pre><code class="language-erb">&lt;td&gt;&lt;%= link_to topic.title, topic_path(topic) %&gt;&lt;/td&gt;</code></pre>
             <div class="message">
                 <p>Here's another use of <code>link_to</code> to create a link on the page. This
                     <code>link_to</code> creates a link using the text from the topic title and goes
