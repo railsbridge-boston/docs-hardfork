@@ -6,7 +6,6 @@ body {
 footer {
     clear: both;
     min-height: 60px;
-    text-align: center;
     border-top: 1px solid #ccc;
     font-size: 0.8em;
 }
@@ -53,8 +52,8 @@ img.screenshot {
     max-width: 90%;
 }
 
-nav#navbar {
-    padding: 30px;
+a.navbar-brand {
+    font-size: 2.25rem;
 }
 
 .console {
@@ -68,6 +67,10 @@ nav#navbar {
     margin: 0;
     border-style: solid;
     border-width: 4px;
+}
+
+#navbarNavAltMarkup {
+    flex-grow: 0;
 }
 
 .label {
