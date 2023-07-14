@@ -56,6 +56,16 @@ a.navbar-brand {
     font-size: 2.25rem;
 }
 
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.curriculum_content {
+    height: calc(100vh - 6rem);
+    overflow-y: auto;
+}
+
 .console {
     margin: 10px 0;
 }
