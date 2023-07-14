@@ -1,0 +1,77 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Voting On Topics</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Create a model for votes</p>
+                </div>
+            </li>
+        </ul>
+        <table class="model-diagram">
+            <thead>
+                <tr>
+                    <th>Votes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>id</td>
+                </tr>
+                <tr>
+                    <td>topic_id</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="message">
+            <p>Every topic can be voted on. In order to count votes, we need to record votes. We'll add that table now.</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="console terminal">
+                <div class="message">
+                    <p>Type this in the terminal:</p>
+                </div>
+                <div class="wrapper">
+                    <span class="label">Terminal</span>
+                    <pre>rails generate model vote topic_id:integer
+rails db:migrate
+</pre>
+                </div>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <ul>
+                    <li>Just like before, we're creating a new model named "vote".</li>
+                    <li>The only thing really different is the integer we added called <code>topic_id</code>.
+
+                        <ul>
+                            <li>
+                                <code>topic_id</code> is the data we need to draw the line between votes and topics.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>We didn't generate a full scaffold this time because we aren't
+                        going to do the full CRUD for votes; they're just going to be
+                        considered part of topics as-is.</li>
+                </ul>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./hooking_up_votes_and_topics">Hooking up Votes and Topics</a></p>
+</div>

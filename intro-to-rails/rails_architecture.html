@@ -1,0 +1,73 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Rails Architecture</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Create a database table for topics with a title and a description</p>
+                </div>
+            </li>
+        </ul>
+        <div class="message">
+            <p>In this step we'll learn a bit about Rails architecture. By the end of this step you should understand the following concepts:</p>
+        </div>
+        <ul>
+            <li>Table</li>
+            <li>Model</li>
+            <li>View</li>
+            <li>Controller</li>
+        </ul>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <h2>Rails architecture and its relation to the database</h2>
+            <img alt="MVC" src="../img/mvc.png">
+            <div class="message">
+                <p>Rails implements a very specific notion of the <strong>Model/View/Controller</strong> pattern, which guides how you structure your web applications.</p>
+            </div>
+            <h3>Model</h3>
+            <div class="message">
+                <ul>
+                    <li>For all the Models we create in RailsBridge, Model objects have a corresponding record in the the database. The name of the table in the database is the plural version of the Model's class name. For example, if the Model is called 'Duck', it will automatically query or write to the 'ducks' table in the database.</li>
+                    <li>Methods internal to Rails make it easy to automatically write records to the the database and query the database to get the records again later.</li>
+                    <li>The Model is a bridge between the database and your application's code.</li>
+                </ul>
+            </div>
+            <h3>View</h3>
+            <div class="message">
+                <ul>
+                    <li>The View generates the HTML that will be displayed in the browser.</li>
+                    <li>View files are written in ERB (which stands for Embedded RuBy), a templating language. It contains HTML with Ruby code embedded in it. The ruby variables in the view stand as placeholders for content that will be filled in when a user requests the page.</li>
+                    <li>(There are several other templating languages available, but in RailsBridge we always stick to ERB.)</li>
+                </ul>
+            </div>
+            <h3>Controller</h3>
+            <div class="message">
+                <ul>
+                    <li>Controllers pass Ruby objects between the Models and the Views.</li>
+                    <li>Each url corresponds to a specific method in a Controller.</li>
+                    <li>After this step, when you visit any page in your application, that request will be handled by a method in a Controller.</li>
+                </ul>
+            </div>
+            <div class="message">
+                <p>When Models, Views and Controllers are all put together, they follow a pattern: Given a URL, Rails will look up which Controller method (also called an "Action") to use. The Controller Action will use methods in a corresponding Model. The Model will need to read or write to the database, and return an object containing that data to the Controller. The Controller will take that object and pass it to the View. (Actions normally have a corresponding View file, and Rails will automatically find and use that file.)</p>
+
+                <p>Models, Views and Controllers each have specific jobs. Separating responsibilities like this make it easier to develop, especially as it gets bigger. (When each file has a clear responsibility it's easier to fix problems and add new features.)</p>
+            </div>
+            <div class="message">
+                <p>If you want to learn more about Rails Architecture, you may want to watch this video explanation (3 min 30 sec) <a href="https://www.youtube.com/watch?v=eTdVkgF_Slo">MVC architecture <em>Youtube</em></a></p>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./CRUD_with_scaffolding">CRUD with Scaffolding</a></p>
+</div>

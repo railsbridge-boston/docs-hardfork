@@ -1,0 +1,158 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Setting The Default Page</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <div class="message">
+            <p>Now that the structure is complete, let's make the flow work smoothly.</p>
+
+            <p>Currently when you go to your homepage you see the default Rails message.</p>
+
+            <p>It would be easier to use our app if the homepage went directly to the topics list.</p>
+
+            <p>In this step we'll make that happen and learn a bit about routes in Rails.</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Add a root route</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Open the file <code>config/routes.rb</code> in an editor.</p>
+                    </div>
+                    <div class="message">
+                        <p>Search the file for the line <code>resources :topics</code>. It will be near the top.</p>
+                    </div>
+                    <div class="message">
+                        <p>Right above that line, add a new line: <code>root 'topics#index'</code>. When you are done the file should look like this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="constant">Rails</span>.application.routes.draw <span class="keyword">do</span>
+  root <span class="string"><span class="delimiter">'</span><span class="content">topics#index</span><span class="delimiter">'</span></span>
+  resources <span class="symbol">:topics</span>
+  <span class="comment"># For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html</span>
+<span class="keyword">end</span>
+</pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Remove the comment</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Near the bottom, there is a line that starts with a <code>#</code>. This is called a
+                            comment. It is ignored by ruby and is used for reference or further
+                            explanation of nearby code. If you want, you can remove it, or keep it
+                            there to look at later. It's totally up to you!</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Confirm your changes</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Go back to your homepage. You should be taken to the topics list automatically.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <ul>
+                    <li>
+                        <code>root 'topics#index'</code> is a Rails route that says the default
+                        address for your site is <code>topics#index</code>. <code>topics#index</code> is the topics
+                        list page (the topics controller with the index action).
+                    </li>
+                    <li>Rails routes control how URLs (web addresses) get matched with
+                        code on the server. Similar to how addresses match with houses and
+                        apartments.</li>
+                    <li>The file <code>config/routes.rb</code> is like an address directory listing the
+                        possible addresses and which code goes with each one.</li>
+                    <li>
+                        <code>routes.rb</code> uses some shortcuts so it doesn't always show all the
+                        possible URLs. To explore the URLs in more detail we can use the
+                        terminal.
+                    </li>
+                </ul>
+
+                <p>At the terminal type <code>rails routes</code>. You should get something that
+                    looks like this:</p>
+            </div>
+            <div class="console terminal">
+                <div class="message"></div>
+                <div class="wrapper">
+                    <span class="label">Terminal</span>
+                    <pre>$ rails routes
+
+    Prefix Verb   URI Pattern                Controller#Action
+      root GET    /                          topics#index
+    topics GET    /topics(.:format)          topics#index
+           POST   /topics(.:format)          topics#create
+ new_topic GET    /topics/new(.:format)      topics#new
+edit_topic GET    /topics/:id/edit(.:format) topics#edit
+     topic GET    /topics/:id(.:format)      topics#show
+           PATCH  /topics/:id(.:format)      topics#update
+           PUT    /topics/:id(.:format)      topics#update
+           DELETE /topics/:id(.:format)      topics#destroy
+</pre>
+                </div>
+            </div>
+            <div class="message">
+                <p>This shows all the URLs your application responds to. The code that starts
+                    with colons are variables so <code>:id</code> means the id number of the record. The
+                    code in parentheses is optional.</p>
+
+                <p>You can also get this information on your site in development. Go to
+                    <code>/rails/info/routes</code>
+                </p>
+            </div>
+            <div class="step">
+                <h3>Exploring Routes (optional)</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Now you can have a look at the paths that are available in your app.
+                            Let's try looking at one of the topics routes we just generated.
+                            Open up your rails console and play:</p>
+                    </div>
+                    <div class="console terminal">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>$ rails console</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>&gt; app.topics_path
+=&gt; "/topics"
+&gt; app.topics_url
+=&gt; "http://www.example.com/topics"
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p><code>app</code> is a special object that represents your entire application.
+                            You can ask it about its routes (as we just did), play with its
+                            database connections, or make pseudo-web requests against it with
+                            <code>get</code> or <code>post</code> (and lots more).
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./voting_on_topics">Voting on Topics</a></p>
+</div>

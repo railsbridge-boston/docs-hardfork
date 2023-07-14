@@ -1,0 +1,151 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Creating A Migration</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+
+        <table class="model-diagram">
+            <thead>
+                <tr>
+                    <th>Topics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>id</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="message">
+            <p>Our app should have a list of topics that people can vote on. We'll store our topics in the database. In this step you'll do the following:</p>
+        </div>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Create a simple <em>Table</em> in the database for topics with a title and a description</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Automatically generate the corresponding <em>Scaffold</em> in Rails (namely, the <em>Model</em>, the <em>View</em>, and the <em>Controller</em>).</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Define your migration</h3>
+                <blockquote>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Type this in the terminal:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>rails generate scaffold topic title:string description:text</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <ul>
+                            <li>
+                                <code>generate scaffold</code> tells Rails to create everything necessary to get up and running with topics.
+                            </li>
+                            <li>
+                                <code>topic</code> tells Rails the name of the new model.
+                            </li>
+                            <li>
+                                <code>title:string</code> says that topics have a title, which is a "string".
+                            </li>
+                            <li>
+                                <code>description:text</code> says that topics have a description which is a "text". A "text" is like a "string" that might be very long.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="message">
+                        <p>If you want, take some time to poke around the files listed in this step. You can learn about them in the <a href="rails_architecture">Rails Architecture</a> page.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Run the migration</h3>
+                <blockquote>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Type this in the terminal:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>rails db:migrate</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>This tells Rails to update the database to include a table for our new model.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <h2>Databases don't create tables by themselves - they need instructions.</h2>
+            <div class="message">
+                <p>One of the files the scaffold command created will be named something like
+                    <code>db/migrate/20170802211140_create_topics.rb</code>. The numbers in the name are
+                    the date and time the file was made, so yours will be named differently.
+                </p>
+
+                <p>The file contains Ruby code that describes what the table will look like.
+                    This is called a migration file. It tells the database how to transform
+                    itself into the new configuration.</p>
+                <pre class="CodeRay"><span class="keyword">class</span> <span class="class">CreateTopics</span> &lt; <span class="constant">ActiveRecord</span>::<span class="constant">Migration</span>[<span class="float">5.1</span>]
+  <span class="keyword">def</span> <span class="function">change</span>
+    create_table <span class="symbol">:topics</span> <span class="keyword">do</span> |t|
+      t.string <span class="symbol">:title</span>
+      t.text <span class="symbol">:description</span>
+
+      t.timestamps
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre>
+                <p>See how this lines up with the scaffold command?</p>
+                <pre class="CodeRay">rails generate scaffold topic title:string description:text
+</pre>
+                <p>The migration says to create a table named "topics", with a title column
+                    that's a string, and a description column that's text. Rails automatically
+                    adds timestamps, and will use it to automatically record when the data was
+                    created and updated.</p>
+            </div>
+            <h2>Rails tasks</h2>
+            <div class="message">
+                <p><strong>rake</strong> <em>(ruby make)</em> is a tool that allows you to run small Ruby programs (<strong>tasks</strong>) that you use often in your application.</p>
+
+                <p>Here, <code>rails db:migrate</code> uses a Rake task provided by the Rails framework. It uses the migration file we just created (<code>db/migrate/201xxxxxxxxxxx_create_topics.rb</code>) to change the database. Database migration files can be crucial to code collaboration.</p>
+
+            </div>
+            <div class="message tip vertical-centerer">
+                <i class="fa fa-info-circle fa-3x"></i>
+                <div class="vertically-centered">
+                    <p>You can run <code>rails -T</code> to see a list of all the Rake tasks your app currently responds to, along with a short description of each task.</p>
+                </div>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./rails_architecture">Rails Architecture</a></p>
+</div>

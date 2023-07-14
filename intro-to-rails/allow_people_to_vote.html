@@ -1,0 +1,139 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Allow People To Vote</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <div class="message">
+            <p>Now we're going to add a button people can click to cast a vote.</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Add a new controller action for voting</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Edit <code>app/controllers/topics_controller.rb</code> and add this method at the end of the controller, above the <code>private</code> keyword:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="keyword">def</span> <span class="function">upvote</span>
+  <span class="instance-variable">@topic</span> = <span class="constant">Topic</span>.find(params[<span class="symbol">:id</span>])
+  <span class="instance-variable">@topic</span>.votes.create
+  redirect_to(topics_path)
+<span class="keyword">end</span>
+</pre>
+                    <div class="message">
+                        <ul>
+                            <li>
+                                <code>@topic = Topic.find(params[:id])</code> finds the topic in the database with that id and stores it in the variable <code>@topic</code>.
+                            </li>
+                            <li>
+                                <code>@topic.votes.create</code> creates a new vote for the current topic and saves it in the database.
+                            </li>
+                            <li>
+                                <code>redirect_to(topics_path)</code> tells the browser to go back to <code>topics_path</code> (the topics list).
+                            </li>
+                        </ul>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Add a new route for voting</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Open <code>config/routes.rb</code> and find the section that looks like this:</p>
+                    </div>
+                    <pre class="CodeRay">resources <span class="symbol">:topics</span>
+</pre>
+                    <div class="message">
+                        <p>Replace that line so it looks like this:</p>
+                    </div>
+                    <pre class="CodeRay">resources <span class="symbol">:topics</span> <span class="keyword">do</span>
+  member <span class="keyword">do</span>
+    post <span class="string"><span class="delimiter">'</span><span class="content">upvote</span><span class="delimiter">'</span></span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre>
+                    <div class="message">
+                        <p>Verify that upvote route was added successfully by checking the output of <code>rails routes</code>. You should see a line that looks like this:</p>
+                        <pre class="CodeRay">      Prefix Verb   URI Pattern                  Controller#Action
+upvote_topic POST   /topics/:id/upvote(.:format) topics#upvote
+</pre>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Add the button to the view</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Edit <code>app/views/topics/index.html.erb</code> so that the bottom loop looks like this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="inline"><span class="inline-delimiter">&lt;%</span> <span class="instance-variable">@topics</span>.each <span class="keyword">do</span> |topic| <span class="inline-delimiter">%&gt;</span></span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.title <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> topic.description <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> pluralize(topic.votes.count, <span class="string"><span class="delimiter">"</span><span class="content">vote</span><span class="delimiter">"</span></span>) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> button_to <span class="string"><span class="delimiter">'</span><span class="content">+1</span><span class="delimiter">'</span></span>, upvote_topic_path(topic), <span class="key">method</span>: <span class="symbol">:post</span> <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Show</span><span class="delimiter">'</span></span>, topic <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Edit</span><span class="delimiter">'</span></span>, edit_topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">'</span><span class="content">Destroy</span><span class="delimiter">'</span></span>, topic, <span class="key">method</span>: <span class="symbol">:delete</span>, <span class="key">data</span>: { <span class="key">confirm</span>: <span class="string"><span class="delimiter">'</span><span class="content">Are you sure?</span><span class="delimiter">'</span></span> } <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+<span class="inline"><span class="inline-delimiter">&lt;%</span> <span class="keyword">end</span> <span class="inline-delimiter">%&gt;</span></span>
+</pre>
+                    <div class="message">
+                        <ul>
+                            <li>
+                                <code>pluralize(topic.votes.count, "vote")</code> displays the number of votes the topic has, plus the word "vote" or "votes" accordingly.
+                            </li>
+                            <li>
+                                <code>button_to '+1'</code> creates an HTML button with the text "+1".
+                            </li>
+                            <li>
+                                <code>upvote_topic_path(topic)</code> creates the appropriate URL for the action we want to invoke. In this case, we want to upvote the current topic.
+
+                                <ul>
+                                    <li>
+                                        <code>upvote_topic_path(topic)</code> would return <code>/topics/42/upvote</code> (if topic.id was 42)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <code>method: :post</code> ensures we do the create action of CRUD, not the read action.
+                            </li>
+                        </ul>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Confirm your changes in the browser</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Go back to /topics and play.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="deploying">
+        <h1>Deploying</h1>
+        <blockquote>
+            <div class="message">
+                <p>Before the next step, you could try deploying your app to Heroku!</p>
+
+                <ul>
+                    <li>If you have already deployed your app to Heroku, go on to <a href="deploying_to_heroku_again">Deploying to Heroku again</a>.</li>
+                    <li>If this is your first time deploying your app, start at <a href="deploying_to_heroku">Deploying to Heroku</a>
+                    </li>
+                </ul>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./redirect_to_the_topics_list_after_creating_a_new_topic.html">Redirect to the Topics List After Creating a New Topic</a></p>
+</div>

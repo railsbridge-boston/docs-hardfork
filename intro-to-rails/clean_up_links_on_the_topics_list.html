@@ -1,0 +1,117 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Clean Up Links On The Topics List</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+
+        <div class="message">
+            <p>Our app is nearly done! The main topics listing page is pretty busy. There are a lot of links that aren't necessary.</p>
+        </div>
+        <div class="message">
+            <p>Let's clean up the topics list page by doing the following:</p>
+        </div>
+
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Removing the "show" link</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Removing the "edit" link</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Changing "destroy" to "delete"</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Remove the "show" and "edit" links</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Open <code>app/views/topics/index.html.erb</code> and remove these two lines:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Show</span><span class="delimiter">"</span></span>, topic <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+<span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Edit</span><span class="delimiter">"</span></span>, edit_topic_path(topic) <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span>
+</pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Change "destroy" to "delete"</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Change the line with the word "Destroy" to this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="tag">&lt;td&gt;</span><span class="inline"><span class="inline-delimiter">&lt;%=</span> link_to <span class="string"><span class="delimiter">"</span><span class="content">Delete</span><span class="delimiter">"</span></span>, topic, <span class="key">method</span>: <span class="symbol">:delete</span>, <span class="key">data</span>: { <span class="key">confirm</span>: <span class="string"><span class="delimiter">"</span><span class="content">Are you sure?</span><span class="delimiter">"</span></span> } <span class="inline-delimiter">%&gt;</span></span><span class="tag">&lt;/td&gt;</span></pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Confirm your changes</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Now save your file and try reloading in your browser to see the changes.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Add some style!</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Give your new website a personal touch by styling it and adding an image.</p>
+
+                        <p>Your Rails application loads a CSS stylesheet from the file <code>app/assets/stylesheets/scaffolds.scss</code>. Open this file in your text editor.</p>
+
+                        <p>If you have web design skills already, you can go to town. If not, let's make a simple font change.</p>
+
+                        <p>Change the body's <code>font-family</code> on lines 5 and 11 to <code>serif</code>:</p>
+                        <pre class="CodeRay">font-family: serif;
+</pre>
+                        <p>Reload your browser to see your web pages styled in a different font.</p>
+
+                        <p>Let's add an image to the layout. Open <code>app/views/layouts/application.html.erb</code> in your text editor.</p>
+
+                        <p>Right after the opening <code>&lt;body&gt;</code> tag, let's add an image:</p>
+                        <pre class="CodeRay">&lt;img src="http://i.imgur.com/MQHYB.jpg"/&gt;
+</pre>
+                        <p>Reload your browser. You should see an image!</p>
+
+                        <p>You can choose another image from the web and change the <code>src</code> attribute value. If the image is too big, you can resize it like this:</p>
+                        <pre class="CodeRay">&lt;img src="http://i.imgur.com/MQHYB.jpg" height="100" /&gt;
+</pre>
+                        <p>The <code>height="100"</code> ensures that the image is 100 pixels tall, and no more.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <ul>
+                    <li>
+                        <p>The two links we removed were show and edit. We did this because the title now links to the show page and from the show page you can reach the edit page.</p>
+                    </li>
+                    <li>
+                        <p>The second change we made was to make the link text 'Delete' instead of destroy.</p>
+                    </li>
+                </ul>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./credits_and_next_steps">Credits and Next Steps</a></p>
+</div>

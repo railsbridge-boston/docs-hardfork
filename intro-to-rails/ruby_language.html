@@ -1,0 +1,340 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Ruby Language</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Be able to use the basic building blocks of Ruby code</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Use IRB to run Ruby code</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Do simple calculations</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Use and understand variables</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Use and understand arrays</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <p>Use loops and conditional statements</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Starting interactive ruby</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Type this in the terminal to start the Interactive Ruby Shell, a program which lets you try out Ruby code:</p>
+                    </div>
+                    <div class="console terminal">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>irb</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Yours might look different, but it should look something like this:</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>irb(main):001:0&gt; </pre>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Ruby math</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Next try some simple math that's built into Ruby. Type these lines into IRB:</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>3 + 3
+7 * 6
+</pre>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Using variables</h3>
+                <blockquote>
+                    <div class="console irb">
+                        <div class="message">
+                            <p><strong>Variables</strong> are names with values assigned to them.</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_variable = 5</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>This assigns the value <code>5</code> to the name <code>my_variable</code>.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Using variables in math</h3>
+                <blockquote>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>You can also do math with variables:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_variable + 2
+my_variable * 3
+</pre>
+                        </div>
+                        <div class="message">
+                            <p>Try a few math operations yourself and see if you can correctly predict the output.</p>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Using arrays</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Variables can also hold more than one value. This is called an <strong>array</strong>. Think of an array like a list of values.</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits = ["kiwi", "strawberry", "plum"]
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Here we're using the variable <code>fruits</code> to hold a collection of fruit names.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Array operators</h3>
+                <blockquote>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits = fruits + ["orange"]
+fruits = fruits - ["kiwi"]
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>
+                            <code>+</code> and <code>-</code> are called operators.
+                            We can use them with to <em>combine</em> or <em>difference</em> two arrays, just like we can use them to <em>add</em> or <em>subtract</em> two numbers.
+                            Try adding another fruit (like bananas?) to the array!
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Ruby classes</h3>
+                <blockquote>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>Everything in Ruby has a <strong>class</strong>. A class is - roughly - a blueprint that tells you what type of data it holds and how it can be used. Type this into IRB:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>7.class
+"kiwi".class
+fruits.class
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>These are the three classes introduced so far: <strong>Integer</strong> (numbers), <strong>String</strong> (text), and <strong>Array</strong> (lists).</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Ruby methods</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Each class has different <strong>methods</strong> that can be used on <strong>instances</strong>
+                            of that class. If you're not quite sure what an instance is, <a href="http://docs.railsbridgeboston.org/ruby/classes">this page
+                                on Ruby classes</a> might
+                            help</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits.length
+fruits.first
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>You can see all the methods available for an object:</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits.methods
+</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>And you can call multiple methods in a row:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits.methods.sort
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>In <code>fruit.methods.sort</code> above, <code>fruit.methods</code> returns an array, and
+                            <code>.sort</code> sorts that array. It's exactly like this, but without the <code>array</code>
+                            variable:
+                        </p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>array = fruits.methods
+array.sort
+</pre>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Iterating with each</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Arrays have a method called <strong>each</strong> which iterates through the list running code on each item.</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>fruits.each do |fruit|
+  puts fruit
+end
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>This takes the first item from the <code>fruits</code> array (<code>"strawberry"</code>),
+                            assigns it to the variable <code>fruit</code>, and runs the code between <code>do</code> and
+                            <code>end</code>. Then it does the same thing for each other item in the list. The
+                            code above should print a list of the fruits.
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Branching with if statements</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>An <strong>if statement</strong> runs code only when a condition is true.</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>if my_variable &gt; 1
+  puts "YAY!"
+end
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>In this example, <code>my_variable > 1</code> is the condition being evaluated. This prints <code>YAY!</code> if the value stored in <code>my_variable</code> is greater than 1.</p>
+                    </div>
+                    <div class="message">
+                        <p>Try changing the <code>&gt;</code> in the conditional to a <code>&lt;</code>.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Defining methods</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>You can also make your own methods:</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message"></div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>def pluralize(word)
+  word + "s"
+end
+pluralize("kiwi")
+</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Methods take <strong>parameters</strong>, which are the variables they work on. In this case, we made a method called pluralize that takes one parameter, a word.</p>
+                    </div>
+                    <div class="message">
+                        <p>Methods can also return data. In this case, pluralize returns the word with an 's' added to the end of it. In Ruby, methods return whatever the last line of the method evaluates to.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <blockquote>
+                    <div class="message">
+                        <p>Try defining a method now: try writing a method that takes a number as a parameter and returns twice that number.<br><br>
+                            Hints:
+                        <ul>
+                            <li>You'll need to pick a name for your method so you can define it.</li>
+                            <li>To multiply a number by 2, we use the syntax <code>my_variable * 2</code></li>
+                        </ul>
+                        Now try updating the method to take a second parameter, the amount to multiply the first number by.<br><br>
+                        Hints:
+                        <ul>
+                            <li>You can define a method as taking multiple arguments by separating them with a comma.</li>
+                            <li>When you call a method, pass multiple arguments by separating them with a comma.</li>
+                        </ul>
+                        Our original method always multiplied the input by 2, but adding the second parameter made the method more flexible and useful.
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./creating_a_rails_application">Creating a Rails Application</a></p>
+</div>

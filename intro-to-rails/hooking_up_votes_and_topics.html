@@ -1,0 +1,253 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Hooking Up Votes And Topics</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <div>
+            <table class="model-diagram" style="display:inline-block">
+                <thead>
+                    <tr>
+                        <th>Topics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                    </tr>
+                    <tr>
+                        <td>description</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="position: relative; width: 60px; height: 100px;display:inline-block">
+                <div class="arrow-left" style="left: 0;  top: 30px;"></div>
+                <div class="horiz-line" style="left: 5px;  top: 37px; width: 25px;"></div>
+                <div class="vert-line" style="left: 30px; top: 38px; height: 25px;"></div>
+                <div class="horiz-line" style="right: 0; top: 62px; width: 30px;"></div>
+            </div>
+            <table class="model-diagram" style="display:inline-block">
+                <thead>
+                    <tr>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                    </tr>
+                    <tr>
+                        <td>topic_id</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="message">
+            <p>Because there is an explicit relationship between a topic and its
+                votes, we need to specify that. In this step, we'll explicitly
+                declare the relationship between votes and topics.</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Teach the Topic model about Votes</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Edit <code>app/models/topic.rb</code> so that it looks like this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="keyword">class</span> <span class="class">Topic</span> &lt; <span class="constant">ApplicationRecord</span>
+  has_many <span class="symbol">:votes</span>, <span class="key">dependent</span>: <span class="symbol">:destroy</span>
+<span class="keyword">end</span>
+</pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Teach the Vote model about Topics</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Edit <code>app/models/vote.rb</code> so that it looks like this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="keyword">class</span> <span class="class">Vote</span> &lt; <span class="constant">ApplicationRecord</span>
+  belongs_to <span class="symbol">:topic</span>
+<span class="keyword">end</span>
+</pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Play around with Topics and Votes in the Rails console</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>First, make sure you've made at least one topic on the site.</p>
+                    </div>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Next, open a Rails console in a terminal window:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>rails console</pre>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <span>Expected result:</span>
+                        <pre>$ rails console
+Running via Spring preloader in process 1234
+Loading development environment (Rails 5.1.2)
+irb(main):001:0&gt;
+</pre>
+                    </div>
+                    <div class="message tip vertical-centerer">
+                        <i class="fa fa-info-circle fa-3x"></i>
+                        <div class="vertically-centered">
+                            <p>To get out of the console, type <code>exit</code>.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>At the console, try the following things</p>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>See how many topics exist:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>Topic.count</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>Save the first topic into a variable:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_topic = Topic.first</pre>
+                        </div>
+                    </div>
+                    <div class="message tip vertical-centerer">
+                        <i class="fa fa-info-circle fa-3x"></i>
+                        <div class="vertically-centered">
+                            <p><code>my_topic</code> here could have been any variable name, but we'll stick with <code>my_topic</code> for consistency.</p>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>Change the title of that topic to something else:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_topic.update(title: 'Edited in the console')</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>Add a vote to that topic:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_topic.votes.create</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>See how many votes that topic has:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_topic.votes.count</pre>
+                        </div>
+                    </div>
+                    <div class="console irb">
+                        <div class="message">
+                            <p>Remove a vote from that topic:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">IRB</span>
+                            <pre>my_topic.votes.first.destroy</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Note that the things you can do to <strong>Model classes</strong> (like <strong>Topic</strong> and <strong>Vote</strong>), differ from the things you can do to <strong>Model instances</strong> (like <code>my_topic</code>, here). <code>my_topic.votes</code> is an <strong>association</strong>, and here behaves mostly like a model class.</p>
+                    </div>
+                    <div>
+                        <div class="half-width">
+                            <strong>Model class / association methods</strong>
+                            <ul class="no-style-type">
+                                <li>Topic.first</li>
+                                <li>Topic.last</li>
+                                <li>Topic.all</li>
+                                <li>Topic.count</li>
+                                <li>Topic.find_by_id(5)</li>
+                                <li>Topic.destroy_all</li>
+                                <li>my_topic.votes.count</li>
+                                <li>my_topic.votes.create</li>
+                                <li>my_topic.votes.destroy_all</li>
+                            </ul>
+                        </div>
+                        <div class="half-width">
+                            <strong>Model instance methods</strong>
+                            <ul class="no-style-type">
+                                <li>my_topic.title</li>
+                                <li>my_topic.title = 'New title'</li>
+                                <li>my_topic.update(title: 'New title')</li>
+                                <li>my_topic.save</li>
+                                <li>my_topic.save!</li>
+                                <li>my_topic.destroy</li>
+                                <li>my_topic.votes.first.destroy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>An exhaustive list of things you can do to models and associations can be found in the <a href="http://guides.rubyonrails.org/active_record_querying.html">Active Record Query Interface RailsGuide</a>.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <p><code>has_many</code> and <code>belongs_to</code>:</p>
+
+                <ul>
+                    <li>In Rails, relationships between models are called associations.</li>
+                    <li>Associations (usually) come in pairs.</li>
+                    <li>A topic will have many votes so we put <code>has_many :votes</code> in the
+                        topic model.
+
+                        <ul>
+                            <li>When you ask a topic for its votes, you get an array of votes
+                                for that topic.</li>
+                        </ul>
+                    </li>
+                    <li>A vote is for a particular topic, so we put <code>belongs_to :topic</code>
+                        in the vote model.
+
+                        <ul>
+                            <li>When you ask a vote for its topic, you get the topic for that
+                                vote.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>It can still be important to clean up after yourself! <code>dependent: :destroy</code>
+                    on <code>has_many :votes</code> means when a <strong>Topic</strong> gets destroyed, all
+                    the <strong>votes</strong> that correspond to it will be destroyed, too. Without
+                    <code>dependent: :destroy</code>, those votes would live on the database forever.
+                </p>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./allow_people_to_vote">Allow People to Vote</a></p>
+</div>

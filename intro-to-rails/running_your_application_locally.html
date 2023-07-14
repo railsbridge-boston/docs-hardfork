@@ -1,0 +1,82 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Running Your Application Locally</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Let's fire up the application locally</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Start the server</h3>
+                <blockquote>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Type this in the terminal:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>rails server</pre>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Navigate to your application</h3>
+                <blockquote>
+                    You should see a notification appear in the bottom right corner of your editor. If it's hidden, click the "bell" icon to bring it back up.<br>
+                    Click on the <strong>Open in Browser</strong> button in the notification to navigate to your app. <br>
+                    <img alt="Open in browser button" class="screenshot" src="../img/open-in-browser.png">
+                    <p>You should see your web app actually running! It should look like this:</p>
+                    <img alt="Screenshot of a Ruby on Rails default home page" class="screenshot" src="../img/Start_page.png">
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Stop the server</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>When at the terminal where Rails server is running, you can always type <strong>Control-C</strong> to stop it.
+                            Try this now by switching back to your codespace, clicking on the terminal window to focus on it, and then typing <strong>Control-C</strong>.</p>
+                    </div>
+                    <div class="result">
+                        <span>Expected result:</span>
+                        <pre>^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2023-06-26 19:13:29 +0000 ===
+- Goodbye!
+Exiting
+</pre>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <p><code>rails server</code> ran your application.</p>
+            </div>
+            <div class="message">
+                <p>This provides a very simple means to see your changes before you commit and push them to Github.</p>
+            </div>
+            <div class="message">
+                <p>Control-C is a way of closing or cancelling terminal programs. Since <code>rails server</code> will run forever, you need to interrupt it with Control-C.</p>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./creating_a_migration">Creating a Migration</a></p>
+</div>

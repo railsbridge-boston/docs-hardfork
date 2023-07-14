@@ -1,0 +1,130 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Creating A Rails Application</h1>
+<div class="doc">
+    <img alt="Screenshot of a Ruby on Rails default home page" class="screenshot" src="../img/Start_page.png">
+    <div class="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>
+                <div class="message">
+                    <p>Create your new application</p>
+                </div>
+            </li>
+        </ul>
+        <div class="message">
+            <p>Let's get started! By the end of this step, we'll have a brand-new Rails app.</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="message tip vertical-centerer">
+                <i class="fa fa-info-circle fa-3x"></i>
+                <div class="vertically-centered">
+                    <p>If you have <em>any</em> problems, contact a TA immediately.</p>
+                </div>
+            </div>
+            <div class="step">
+                <h3>Confirm you're in the terminal</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Make sure you have exited irb. If you haven't, your screen will say <code>irb(main):001:0&gt;</code>. Leave irb by typing <code>exit</code>.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Create the rails app</h3>
+                <blockquote>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Type this in the terminal:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>rails new .</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p><code>rails new</code> creates a new Rails project in the specified folder. <em>This may take some time.</em></p>
+                    </div>
+                    <div class="message">
+                        <p>In this case we told it to create a new project in the current folder, denoted by the "." at the end.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>List the directory contents</h3>
+                <blockquote>
+                    <div class="console terminal">
+                        <div class="message">
+                            <p>Type this in the terminal:</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="label">Terminal</span>
+                            <pre>ls</pre>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p><code>ls</code> stands for "list (stuff)".</p>
+                    </div>
+                    <div class="message">
+                        <p>It shows you the contents of the current folder.</p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Review directory contents</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Let's look at the structure of the whole project.</p>
+
+                        <p>You can see the project directory. This is
+                            convenient when you're going to edit several files and want to navigate quickly.</p>
+
+                    </div>
+                </blockquote>
+            </div>
+            <div class="message">
+                <p>You can see that <code>rails new</code> created a lot of directories and
+                    files. The ones we want to focus on today are:</p>
+            </div>
+            <table>
+                <tr>
+                    <th>File/Folder</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>app/</td>
+                    <td>Contains the controllers, models, and views for your application. You will do most of your work here.</td>
+                </tr>
+                <tr>
+                    <td>config/</td>
+                    <td>Configure your application's runtime rules, routes, database, and more.</td>
+                </tr>
+                <tr>
+                    <td>db/</td>
+                    <td>Shows your current database schema, as well as the database migrations.</td>
+                </tr>
+                <tr>
+                    <td>public/</td>
+                    <td>The only folder seen to the world as-is. If you put files in here, they will be served directly without any processing by Rails.</td>
+                </tr>
+                <tr>
+                    <td>app/assets/</td>
+                    <td>This is where your images, JavaScript, stylesheets (CSS), and other static files should go. Modern rails apps use something called the Assets Pipeline, which combines all the JavaScript and CSS files in this directory into a single file for speediness.</td>
+                </tr>
+            </table>
+            <div class="message">
+                <p>There is a lot more that <code>rails new</code> created. Probably enough to fill a book, so we're going to ignore them for now.</p>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./running_your_application_locally">Running your Application Locally</a></p>
+</div>

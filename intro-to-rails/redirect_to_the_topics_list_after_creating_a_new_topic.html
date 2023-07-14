@@ -1,0 +1,102 @@
+---
+layout: curriculum
+---
+
+<h1 class="doc_title">Redirect To The Topics List After Creating A New Topic</h1>
+<div class="doc">
+    <div class="goals">
+        <h2>Goals</h2>
+
+        <div class="message">
+            <p>When a user creates a new topic, or edits an existing topic, they are
+                currently shown a page with just that topic. For our voting app it makes
+                more sense that they would be taken back to the topic list.</p>
+
+            <p>In this step we'll change the flow of our app so that the user is taken back to the topics list after they add a new topic (create) or
+                edit an existing topic (update).</p>
+        </div>
+    </div>
+    <div class="steps">
+        <h2>Steps</h2>
+        <blockquote>
+            <div class="step">
+                <h3>Change the topics controller</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Open <code>app/controllers/topics_controller.rb</code> and look at the create method. </p>
+                    </div>
+                    <div class="message">
+                        <p>Find the line:</p>
+                    </div>
+                    <pre class="CodeRay">format.html { redirect_to <span class="instance-variable">@topic</span>, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully created.</span><span class="delimiter">'</span></span> }</pre>
+                    <div class="message">
+                        <p>and change <code>@topic</code> to <code>topics_path</code> like this:</p>
+                    </div>
+                    <pre class="CodeRay">format.html { redirect_to topics_path, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully created.</span><span class="delimiter">'</span></span> }</pre>
+                    <div class="message">
+                        <p>so that the method looks like this:</p>
+                    </div>
+                    <pre class="CodeRay"><span class="keyword">def</span> <span class="function">create</span>
+  <span class="instance-variable">@topic</span> = <span class="constant">Topic</span>.new(topic_params)
+
+  respond_to <span class="keyword">do</span> |format|
+    <span class="keyword">if</span> <span class="instance-variable">@topic</span>.save
+      format.html { redirect_to topics_path, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully created.</span><span class="delimiter">'</span></span> }
+      format.json { render <span class="key">action</span>: <span class="string"><span class="delimiter">'</span><span class="content">show</span><span class="delimiter">'</span></span>, <span class="key">status</span>: <span class="symbol">:created</span>, <span class="key">location</span>: <span class="instance-variable">@topic</span> }
+    <span class="keyword">else</span>
+      format.html { render <span class="key">action</span>: <span class="string"><span class="delimiter">'</span><span class="content">new</span><span class="delimiter">'</span></span> }
+      format.json { render <span class="key">json</span>: <span class="instance-variable">@topic</span>.errors, <span class="key">status</span>: <span class="symbol">:unprocessable_entity</span> }
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre>
+                    <div class="message">
+                        <p>In the same file, locate the update method. </p>
+                    </div>
+                    <div class="message">
+                        <p>Find the line:</p>
+                    </div>
+                    <pre class="CodeRay">format.html { redirect_to <span class="instance-variable">@topic</span>, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully updated.</span><span class="delimiter">'</span></span> }</pre>
+                    <div class="message">
+                        <p>and change <code>@topic</code> to <code>topics_path</code> like before:</p>
+                    </div>
+                    <pre class="CodeRay">format.html { redirect_to topics_path, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully updated.</span><span class="delimiter">'</span></span> }</pre>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h3>Confirm your changes</h3>
+                <blockquote>
+                    <div class="message">
+                        <p>Create some new topics at /topics. Notice when you create a new topic, the application takes you back to the index page with all the topics.</p>
+                    </div>
+                </blockquote>
+            </div>
+        </blockquote>
+    </div>
+    <div class="explanation">
+        <h2>Explanation</h2>
+        <blockquote>
+            <div class="message">
+                <p>Let's look at the following code snippet, piece by piece:</p>
+                <pre class="CodeRay">format.html { redirect_to topics_path, <span class="key">notice</span>: <span class="string"><span class="delimiter">'</span><span class="content">Topic was successfully created.</span><span class="delimiter">'</span></span> }
+</pre>
+                <ul>
+                    <li>
+                        <code>format.html</code> means that the server should send html back to the browser
+                    </li>
+                    <li>
+                        <code>redirect_to topics_path</code> means show the <strong>topics list page</strong> when we're done creating or updating a topic
+                    </li>
+                    <li>
+                        <code>notice: 'Topic was successfully created/updated.'</code> puts the message into the flash so it will be displayed on the topics list. You can see the flash message at the very top of <code>app/views/topics/index.html.erb</code>
+                    </li>
+                </ul>
+            </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="step next_step">
+    <h1><span class="prefix">Next Step:</span></h1>
+    <p>Go on to <a href="./make_the_topic_title_a_link">Make the Topic Title a Link</a></p>
+</div>
