@@ -53,6 +53,10 @@ img.screenshot {
     max-width: 90%;
 }
 
+nav#navbar {
+    padding: 30px;
+}
+
 .console {
     margin: 10px 0;
 }
