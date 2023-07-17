@@ -64,6 +64,10 @@ img.screenshot {
     max-width: 90%;
 }
 
+#navbar .container-fluid {
+    padding: 0
+}
+
 a.navbar-brand {
     font-size: 2.25rem;
 }
